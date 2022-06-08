@@ -1,0 +1,100 @@
+"'View Issues' As screen":
+
+    Label_My_Issues As label:
+        FontWeight: =FontWeight.Semibold
+        Height: =70
+        Size: =25
+        Text: ="My Issues"
+        Width: =560
+        X: =8
+        Y: =58
+        ZIndex: =1
+
+    IssueHeaderGallery As gallery.variableTemplateHeightGallery:
+        Height: =942
+        Items: =MyProjectIssue
+        Layout: =Layout.Vertical
+        TemplateSize: =937
+        Y: =190
+        ZIndex: =2
+
+        IssueGallery As gallery.variableTemplateHeightGallery:
+            Height: =937
+            Items: =ThisItem.issues
+            Layout: =Layout.Vertical
+            TemplateSize: =157
+            Width: =630
+            ZIndex: =1
+
+            Label_Project_Name_1 As label:
+                FontWeight: =FontWeight.Semibold
+                Height: =70
+                OnSelect: =Select(Parent)
+                Size: =18
+                Text: =ThisItem.fields.summary
+                Width: =522
+                X: =58
+                Y: =3
+                ZIndex: =1
+
+            Label_Project_Key_1 As label:
+                Height: =48
+                OnSelect: =Select(Parent)
+                Size: =18
+                Text: =ThisItem.key
+                Width: =244
+                X: =58
+                Y: =63
+                ZIndex: =2
+
+            Label_Project_Category_1 As label:
+                Height: =59
+                OnSelect: =Select(Parent)
+                Size: =18
+                Text: =ThisItem.fields.created
+                Width: =294
+                X: =206
+                Y: =98
+                ZIndex: =3
+
+            Image_Project_Avtar_1 As image:
+                Height: =37
+                Image: =ThisItem.fields.issuetype.iconUrl
+                ImagePosition: =ImagePosition.Fill
+                OnSelect: =Select(Parent)
+                Width: =41
+                Y: =20
+                ZIndex: =4
+
+            ViewIssuesRelatedToProjects_1 As icon.Add:
+                Height: =39
+                Icon: =Icon.ArrowRight
+                OnSelect: |-
+                    =Set(varProjectIssueKey,ThisItem.key);
+                    Navigate('Add Worklog');
+                Width: =46
+                X: =534
+                Y: =105
+                ZIndex: =5
+
+            Label_Project_Key_2 As label:
+                Height: =48
+                OnSelect: =Select(Parent)
+                Size: =18
+                Text: =ThisItem.fields.status.name
+                Width: =174
+                X: =438
+                Y: =57
+                ZIndex: =6
+
+            Label_Issue_DueDate_Key As label:
+                Height: =46
+                OnSelect: =Select(Parent)
+                Size: =18
+                Text: |-
+                    ="Due Date:"
+                Width: =127
+                X: =58
+                Y: =111
+                ZIndex: =7
+

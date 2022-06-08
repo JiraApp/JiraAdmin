@@ -24,8 +24,7 @@ Home As screen:
         HoverFill: =ColorFade(Self.Fill, -20%)
         OnSelect: |-
             =ClearCollect(MyProjects,GetMyProjects.Run(User().Email,"rPajijhGTgMbtsWmoSd1C00F"));
-            Set(TotalProjects,MyProjects.total);
-            ClearCollect(MyProjectsValue,MyProjects.values)
+            Navigate('View Projects');
         RadiusBottomLeft: =20
         RadiusBottomRight: =20
         RadiusTopLeft: =20

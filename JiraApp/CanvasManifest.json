@@ -101,6 +101,9 @@
   },
   "ScreenOrder": [
     "Home",
-    "View Projects"
+    "View Projects",
+    "View Issues",
+    "Add Worklog",
+    "View WorkLog History"
   ]
 }

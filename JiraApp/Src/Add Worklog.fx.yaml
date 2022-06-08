@@ -1,0 +1,116 @@
+"'Add Worklog' As screen":
+
+    Label_My_Add_New_Worklog As label:
+        FontWeight: =FontWeight.Semibold
+        Height: =70
+        Size: =25
+        Text: ="Add New Worklog"
+        Width: =560
+        X: =8
+        Y: =58
+        ZIndex: =1
+
+    "'Back To View Issues' As icon.Add":
+        Color: =RGBA(235, 132, 44, 1)
+        Height: =58
+        Icon: =Icon.ArrowLeft
+        OnSelect: =Back()
+        Width: =66
+        ZIndex: =2
+
+    TextInput1 As text:
+        Default: =""
+        Height: =60
+        HintText: ="2w 1d 6h 5m"
+        Size: =21
+        Width: =232
+        X: =8
+        Y: =245
+        ZIndex: =3
+
+    Label6 As label:
+        Color: =RGBA(166, 166, 166, 1)
+        FontWeight: =FontWeight.Bold
+        Height: =70
+        Size: =21
+        Text: ="Time Spent"
+        Width: =560
+        Y: =164
+        ZIndex: =4
+
+    Label6_1 As label:
+        Color: =RGBA(166, 166, 166, 1)
+        FontWeight: =FontWeight.Bold
+        Height: =70
+        Size: =21
+        Text: ="Date Started"
+        Width: =560
+        X: =8
+        Y: =335
+        ZIndex: =5
+
+    DatePicker2 As datepicker:
+        BorderColor: =RGBA(166, 166, 166, 1)
+        DateTimeZone: =DateTimeZone.UTC
+        Height: =67
+        OnSelect: =
+        Size: =24
+        Width: =232
+        X: =8
+        Y: =405
+        ZIndex: =6
+
+    Label6_2 As label:
+        Color: =RGBA(166, 166, 166, 1)
+        FontWeight: =FontWeight.Bold
+        Height: =70
+        Size: =21
+        Text: ="Work Description"
+        Width: =560
+        X: =8
+        Y: =502
+        ZIndex: =7
+
+    RichTextEditor1 As richTextEditor:
+        Default: =""
+        Height: =222
+        Width: =579
+        X: =8
+        Y: =572
+        ZIndex: =8
+
+    Button1 As button:
+        Fill: =RGBA(66, 139, 202, 1)
+        Height: =72
+        HoverFill: =ColorFade(Self.Fill, -20%)
+        OnSelect: |-
+            =ClearCollect(MyIssueWorklog,CreateandGetIssueWorklogs.Run(varProjectIssueKey,DatePicker2.SelectedDate,Text(TextInput1.Text,Number),User().Email,"rPajijhGTgMbtsWmoSd1C00F",DatePicker2.SelectedDate));
+            Navigate('View WorkLog History')
+        RadiusBottomLeft: =0
+        RadiusBottomRight: =0
+        RadiusTopLeft: =0
+        RadiusTopRight: =0
+        Size: =24
+        Text: ="Save"
+        Width: =192
+        X: =66
+        Y: =968
+        ZIndex: =9
+
+    Button1_1 As button:
+        Color: =RGBA(0, 0, 0, 1)
+        Fill: =RGBA(224, 224, 224, 1)
+        Height: =72
+        HoverFill: =ColorFade(Self.Fill, -20%)
+        OnSelect: =Back()
+        RadiusBottomLeft: =0
+        RadiusBottomRight: =0
+        RadiusTopLeft: =0
+        RadiusTopRight: =0
+        Size: =24
+        Text: ="Cancel"
+        Width: =192
+        X: =326
+        Y: =968
+        ZIndex: =10
+

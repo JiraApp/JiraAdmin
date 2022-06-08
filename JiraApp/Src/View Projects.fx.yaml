@@ -68,7 +68,9 @@
             ViewIssuesRelatedToProjects As icon.Add:
                 Height: =39
                 Icon: =Icon.ArrowRight
-                OnSelect: =Select(Parent)
+                OnSelect: |-
+                    =ClearCollect(MyProjectIssue,GetIssuesRelatedtoProject.Run(ThisItem.key,User().Email,"rPajijhGTgMbtsWmoSd1C00F"));
+                    Navigate('View Issues')
                 Width: =46
                 X: =534
                 Y: =149
