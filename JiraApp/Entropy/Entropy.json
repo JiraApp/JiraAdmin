@@ -4,30 +4,50 @@
     "App": 1,
     "Button_View_My_All_Issues": 7,
     "Button_View_My_Projects": 6,
+    "galleryTemplate4": 28,
+    "galleryTemplate5": 30,
     "Home": 3,
     "Image_Company_Logo": 4,
-    "Label_Welcome_User": 5
+    "Image_Project_Avtar": 48,
+    "Label_My_Project": 26,
+    "Label_Project_Category": 33,
+    "Label_Project_Key": 32,
+    "Label_Project_Name": 31,
+    "Label_Welcome_User": 5,
+    "ProjectGallery": 29,
+    "ProjectHeaderGallery": 27,
+    "View Projects": 8,
+    "ViewIssuesRelatedToProjects": 49
   },
   "FunctionParamsInvariantScripts": {},
   "FunctionParamsInvariantScriptsOnInstances": {},
-  "HeaderLastSavedDateTimeUTC": "06/08/2022 11:06:38",
+  "HeaderLastSavedDateTimeUTC": "06/08/2022 14:35:37",
   "IsLegacyComponentAllowGlobalScopeCase": false,
-  "LocalConnectionIDReferences": {},
+  "LocalConnectionIDReferences": {
+    "13217afb-3380-4617-bee8-ca627eb416e8": "\"/providers/microsoft.powerapps/apis/shared_logicflows/connections/d6c2d34c4f67456d94133ddbc9085c30-1fa159e731227f78\""
+  },
   "LocalDatabaseReferencesAsEmpty": false,
   "LocalResourceFileNames": {
     "ntz": "f61f17c7-e864-44e7-a6ef-10feef6f9986.png"
   },
   "LocalResourceRootPaths": {
-    "ntz": "https://docserverpwaprodeus.blob.core.windows.net/2528008e-5280-4679-bbab-d0bf9c7e75b1-1/resource/Assets0Images0f61f17c7-e864-44e7-a6ef-10feef6f9986.png?sv=2017-04-17&sr=b&sig=oaS8ENdSN9Ilgkg%2FLvD1UErqSMuokrR%2BRrLevRPjoiM%3D&spr=https&se=2022-06-09T11%3A01%3A48Z&sp=r"
+    "ntz": "https://docserverpwaprodeus.blob.core.windows.net/bdb0968b-1770-4eeb-a231-41cc1ac94ff9-1/resource/Assets0Images0f61f17c7-e864-44e7-a6ef-10feef6f9986.png?sv=2017-04-17&sr=b&sig=6Q0MZOggJMbjimIDKU33WBCcy8Rs4%2FdpQB52l1keCkw%3D&spr=https&se=2022-06-09T11%3A22%3A01Z&sp=r"
   },
   "OrderComponentMetadata": {},
   "OrderComponentTemplate": {},
-  "OrderDataSource": {},
+  "OrderDataSource": {
+    "CustomGallerySample": 1,
+    "GetMyProjects": 0,
+    "MyProjects": 2,
+    "MyProjectsValue": 3
+  },
   "OrderGroupControls": {},
   "OrderPcfTemplate": {},
   "OrderTemplate": {},
   "OrderXMLTemplate": {
     "button": 2,
+    "gallery": 3,
+    "icon": 4,
     "image": 0,
     "label": 1
   },
@@ -35,9 +55,20 @@
     "App": 0,
     "Button_View_My_All_Issues": 3,
     "Button_View_My_Projects": 2,
+    "galleryTemplate4": 6,
+    "galleryTemplate5": 8,
     "Home": 0,
     "Image_Company_Logo": 0,
-    "Label_Welcome_User": 1
+    "Image_Project_Avtar": 10,
+    "Label_My_Project": 4,
+    "Label_Project_Category": 12,
+    "Label_Project_Key": 11,
+    "Label_Project_Name": 9,
+    "Label_Welcome_User": 1,
+    "ProjectGallery": 7,
+    "ProjectHeaderGallery": 5,
+    "View Projects": 0,
+    "ViewIssuesRelatedToProjects": 13
   },
   "ResourcesJsonIndices": {
     "Image-ntz": 1,
@@ -46,14 +77,14 @@
   "RuleScreenIdWithoutScreen": {},
   "TemplateVersions": {},
   "VolatileProperties": {
-    "AnalysisLoadTime": 0.0883219,
+    "AnalysisLoadTime": 0.0963328,
     "ControlCount": {
       "button": 2,
       "image": 1,
       "label": 1,
       "screen": 1
     },
-    "DeserializationLoadTime": 0.7220669,
+    "DeserializationLoadTime": 1.228226,
     "ErrorCount": 0
   },
   "WasLocalDatabaseReferencesEmpty": true

@@ -100,6 +100,7 @@
     "UserLocale": "en-US"
   },
   "ScreenOrder": [
-    "Home"
+    "Home",
+    "View Projects"
   ]
 }

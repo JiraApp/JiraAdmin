@@ -1,0 +1,76 @@
+"'View Projects' As screen":
+
+    Label_My_Project As label:
+        FontWeight: =FontWeight.Semibold
+        Height: =70
+        Size: =25
+        Text: ="My Projects"
+        Width: =560
+        X: =8
+        Y: =58
+        ZIndex: =1
+
+    ProjectHeaderGallery As gallery.variableTemplateHeightGallery:
+        Height: =942
+        Items: =MyProjects
+        Layout: =Layout.Vertical
+        TemplateSize: =937
+        Y: =190
+        ZIndex: =2
+
+        ProjectGallery As gallery.variableTemplateHeightGallery:
+            Height: =937
+            Items: =ThisItem.values
+            Layout: =Layout.Vertical
+            TemplateSize: =157
+            Width: =630
+            ZIndex: =1
+
+            Label_Project_Name As label:
+                FontWeight: =FontWeight.Semibold
+                Height: =70
+                OnSelect: =Select(Parent)
+                Size: =18
+                Text: =ThisItem.name
+                Width: =522
+                X: =77
+                ZIndex: =1
+
+            Label_Project_Key As label:
+                Height: =59
+                OnSelect: =Select(Parent)
+                Size: =18
+                Text: =ThisItem.key
+                Width: =522
+                X: =77
+                Y: =70
+                ZIndex: =2
+
+            Label_Project_Category As label:
+                Height: =59
+                OnSelect: =Select(Parent)
+                Size: =18
+                Text: =ThisItem.projectTypeKey
+                Width: =395
+                X: =77
+                Y: =129
+                ZIndex: =3
+
+            Image_Project_Avtar As image:
+                Height: =50
+                Image: =ThisItem.avatarUrls.'16x16'
+                ImagePosition: =ImagePosition.Fill
+                OnSelect: =Select(Parent)
+                Width: =64
+                Y: =20
+                ZIndex: =4
+
+            ViewIssuesRelatedToProjects As icon.Add:
+                Height: =39
+                Icon: =Icon.ArrowRight
+                OnSelect: =Select(Parent)
+                Width: =46
+                X: =534
+                Y: =149
+                ZIndex: =5
+

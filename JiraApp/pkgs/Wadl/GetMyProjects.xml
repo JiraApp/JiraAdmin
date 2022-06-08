@@ -1,0 +1,93 @@
+<application xmlns:xml="http://www.w3.org/XML/1998/namespace" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:service="https://unitedstates-002.azure-apim.net/apim/logicflows" xmlns:siena="http://schemas.microsoft.com/MicrosoftProjectSiena/WADL/2014/11" siena:serviceId="GetMyProjects" xmlns="http://wadl.dev.java.net/2009/02">
+  <doc title="GetMyProjects" />
+  <grammars>
+    <jsonTypes targetNamespace="https://unitedstates-002.azure-apim.net/apim/logicflows" xmlns="http://schemas.microsoft.com/MicrosoftProjectSiena/WADL/2014/11">
+      <string name="ManualTriggerInput_HTTP_Username_def" />
+      <string name="ManualTriggerInput_HTTP_Password_def" />
+      <object name="ManualTriggerInput">
+        <property name="HTTP_Username" type="string" />
+        <property name="HTTP_Password" type="string" />
+      </object>
+      <string name="ResponseActionOutput_self_def" />
+      <integer name="ResponseActionOutput_maxResults_def" />
+      <integer name="ResponseActionOutput_startAt_def" />
+      <integer name="ResponseActionOutput_total_def" />
+      <boolean name="ResponseActionOutput_isLast_def" />
+      <string name="ResponseActionOutput_values_def_items_def_expand_def" />
+      <string name="ResponseActionOutput_values_def_items_def_self_def" />
+      <string name="ResponseActionOutput_values_def_items_def_id_def" />
+      <string name="ResponseActionOutput_values_def_items_def_key_def" />
+      <string name="ResponseActionOutput_values_def_items_def_name_def" />
+      <string name="ResponseActionOutput_values_def_items_def_avatarUrls_def_48x48_def" />
+      <string name="ResponseActionOutput_values_def_items_def_avatarUrls_def_24x24_def" />
+      <string name="ResponseActionOutput_values_def_items_def_avatarUrls_def_16x16_def" />
+      <string name="ResponseActionOutput_values_def_items_def_avatarUrls_def_32x32_def" />
+      <object name="ResponseActionOutput_values_def_items_def_avatarUrls_def">
+        <property name="48x48" type="string" />
+        <property name="24x24" type="string" />
+        <property name="16x16" type="string" />
+        <property name="32x32" type="string" />
+      </object>
+      <string name="ResponseActionOutput_values_def_items_def_projectTypeKey_def" />
+      <boolean name="ResponseActionOutput_values_def_items_def_simplified_def" />
+      <string name="ResponseActionOutput_values_def_items_def_style_def" />
+      <boolean name="ResponseActionOutput_values_def_items_def_isPrivate_def" />
+      <object name="ResponseActionOutput_values_def_items_def_properties_def" />
+      <string name="ResponseActionOutput_values_def_items_def_entityId_def" />
+      <string name="ResponseActionOutput_values_def_items_def_uuid_def" />
+      <object name="ResponseActionOutput_values_def_items_def">
+        <property name="expand" type="string" />
+        <property name="self" type="string" />
+        <property name="id" type="string" />
+        <property name="key" type="string" />
+        <property name="name" type="string" />
+        <property name="avatarUrls" typeRef="ResponseActionOutput_values_def_items_def_avatarUrls_def" />
+        <property name="projectTypeKey" type="string" />
+        <property name="simplified" type="boolean" />
+        <property name="style" type="string" />
+        <property name="isPrivate" type="boolean" />
+        <property name="properties" typeRef="ResponseActionOutput_values_def_items_def_properties_def" />
+        <property name="entityId" type="string" />
+        <property name="uuid" type="string" />
+      </object>
+      <array typeRef="ResponseActionOutput_values_def_items_def" name="ResponseActionOutput_values_def" />
+      <object name="ResponseActionOutput">
+        <property name="self" type="string" />
+        <property name="maxResults" type="integer" />
+        <property name="startAt" type="integer" />
+        <property name="total" type="integer" />
+        <property name="isLast" type="boolean" />
+        <property name="values" typeRef="ResponseActionOutput_values_def" />
+      </object>
+      <object name="Run_responses_default_def" />
+    </jsonTypes>
+  </grammars>
+  <resources siena:authenticationProviderHref="#PowerAppAuth" base="https://unitedstates-002.azure-apim.net/apim/logicflows">
+    <resource path="/{connectionId}/triggers/manual/run">
+      <param style="template" name="connectionId" type="xs:string" required="true" />
+      <method siena:requiresAuthentication="true" name="POST" id="Run">
+        <doc title="Runs a logic flow trigger." />
+        <request>
+          <param style="query" name="api-version" type="xs:string" required="true" fixed="2015-02-01-preview">
+            <doc title="The api version" />
+          </param>
+          <representation mediaType="application/json">
+            <param style="plain" name="HTTP_Username" path="/HTTP_Username" type="xs:string" required="true" />
+            <param style="plain" name="HTTP_Password" path="/HTTP_Password" type="xs:string" required="true" />
+          </representation>
+        </request>
+        <response>
+          <representation mediaType="application/json" element="service:ResponseActionOutput" />
+        </response>
+      </method>
+    </resource>
+  </resources>
+  <authenticationProviders xmlns="http://schemas.microsoft.com/MicrosoftProjectSiena/WADL/2014/11">
+    <connectionProvider id="PowerAppAuth" siena:connectionProviderId="logicflows" />
+  </authenticationProviders>
+  <template xmlns="http://schemas.microsoft.com/MicrosoftProjectSiena/WADL/2014/11">
+    <variable name="connectionId">
+      <modifyParams style="template" name="connectionId" attribute="fixed" />
+    </variable>
+  </template>
+</application>
