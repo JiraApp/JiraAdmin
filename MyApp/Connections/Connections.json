@@ -1,0 +1,78 @@
+{
+  "05261a5e-4e6d-4a4e-9b23-9fb28ea46d62": {
+    "connectionParameters": {
+      "sku": "Enterprise"
+    },
+    "connectionRef": {
+      "apiTier": "Standard",
+      "displayName": "Jira Canvas App",
+      "iconUri": "https://az787822.vo.msecnd.net/defaulticons/api-dedicated.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_jira-20canvas-20app-5fb57e7af862529f37-5f5b30531a7cffdf5c",
+      "isCustomApiConnection": true,
+      "parameterHints": {},
+      "parameterHintsV2": {}
+    },
+    "datasets": {},
+    "dataSources": [
+      "JiraCanvasApp"
+    ],
+    "dependencies": {},
+    "dependents": [],
+    "id": "05261a5e-4e6d-4a4e-9b23-9fb28ea46d62"
+  },
+  "766e5717-bb46-4058-a42b-f8d6547655d0": {
+    "connectionParameters": {
+      "workFlowCallbackUri": "https://prod-168.westus.logic.azure.com:443/workflows/1d70ec9a7b904ef78f365159c4676280/triggers/manual/paths/invoke?api-version=2016-06-01&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=7N6pNHz-4gmtk7UtIkSo6ZqbjD1ZN7t7cbnnXGTX9jY",
+      "workflowEndpoint": "/subscriptions/c44298d0-c055-4569-9fb2-6ab8693eb98a/resourceGroups/162efad1472c40a2a66a659828d923fe-cb589467d5324d549586ce19f9dbfb80/providers/Microsoft.Logic/workflows/25a50f46-d6db-4671-aeab-14fcd52058f4",
+      "workflowName": "25a50f46-d6db-4671-aeab-14fcd52058f4",
+      "workflowPath": "/subscriptions/c44298d0-c055-4569-9fb2-6ab8693eb98a/resourceGroups/162efad1472c40a2a66a659828d923fe-cb589467d5324d549586ce19f9dbfb80/providers/Microsoft.Logic/workflows/25a50f46-d6db-4671-aeab-14fcd52058f4"
+    },
+    "connectionRef": {
+      "apiTier": "Standard",
+      "displayName": "Logic flows",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1534/1.0.1534.2605/logicflows/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_logicflows",
+      "parameterHints": {
+        "workflowEntityId": {},
+        "workflowName": {
+          "value": "25a50f46-d6db-4671-aeab-14fcd52058f4"
+        }
+      },
+      "parameterHintsV2": {
+        "workflowEntityId": {},
+        "workflowName": {
+          "value": "25a50f46-d6db-4671-aeab-14fcd52058f4"
+        }
+      }
+    },
+    "datasets": {},
+    "dataSources": [
+      "CreateWorklog-HTTP"
+    ],
+    "dependencies": {},
+    "dependents": [],
+    "id": "766e5717-bb46-4058-a42b-f8d6547655d0"
+  },
+  "fb0bd4db-c911-47db-ba37-82ecce45e71a": {
+    "connectionParameters": {
+      "jirainstance": "https://dynamicssmartzdemo.atlassian.net/",
+      "sku": "Enterprise",
+      "username": "Dev01@Netsmartz307.onmicrosoft.com"
+    },
+    "connectionRef": {
+      "apiTier": "Premium",
+      "displayName": "JIRA",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1577/1.0.1577.2796/jira/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_jira",
+      "parameterHints": {},
+      "parameterHintsV2": {}
+    },
+    "datasets": {},
+    "dataSources": [
+      "JIRA"
+    ],
+    "dependencies": {},
+    "dependents": [],
+    "id": "fb0bd4db-c911-47db-ba37-82ecce45e71a"
+  }
+}

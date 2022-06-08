@@ -1,0 +1,144 @@
+NavigationComponent As CanvasComponent:
+    Fill: =RGBA(0, 0, 0, 0)
+    Height: =83
+    Width: =640
+    X: =0
+    Y: =0
+    ZIndex: =1
+
+    Group1 As group:
+        Height: =5
+        Width: =5
+        X: =40
+        Y: =40
+        ZIndex: =15
+
+        Rectangle1 As rectangle:
+            BorderColor: =RGBA(32, 126, 247, 1)
+            BorderThickness: =2
+            Fill: =RGBA(255, 255, 255, 1)
+            Height: =83
+            Width: =Parent.Width
+            ZIndex: =1
+
+        Label1 As label:
+            Align: =Center
+            FontWeight: =FontWeight.Bold
+            Height: =83
+            Size: =11
+            Text: ="Your Work"
+            Width: =91.43
+            ZIndex: =2
+
+        Label1_1 As label:
+            Align: =Center
+            FontWeight: =FontWeight.Bold
+            Height: =83
+            Size: =11
+            Text: ="Projects"
+            Width: =91.43
+            X: =91
+            ZIndex: =3
+
+        Label1_2 As label:
+            Align: =Center
+            FontWeight: =FontWeight.Bold
+            Height: =83
+            Size: =11
+            Text: ="Filters"
+            Width: =91.43
+            X: =182
+            ZIndex: =4
+
+        Label1_3 As label:
+            Align: =Center
+            FontWeight: =FontWeight.Bold
+            Height: =83
+            Size: =11
+            Text: ="Dashboards"
+            Width: =101
+            X: =274
+            ZIndex: =5
+
+        Label1_4 As label:
+            Align: =Center
+            FontWeight: =FontWeight.Bold
+            Height: =83
+            Size: =11
+            Text: ="Peoples"
+            Width: =91.43
+            X: =375
+            ZIndex: =6
+
+        Label1_5 As label:
+            Align: =Center
+            FontWeight: =FontWeight.Bold
+            Height: =83
+            Size: =11
+            Text: ="Apps"
+            Width: =86
+            X: =466
+            ZIndex: =7
+
+        Button1 As button:
+            Fill: =RGBA(32, 126, 247, 1)
+            Height: =83
+            Text: ="Create"
+            Width: =88
+            X: =552
+            ZIndex: =8
+
+        Icon1 As icon.Add:
+            Color: =RGBA(0, 0, 0, 1)
+            Height: =20
+            Icon: =Icon.ChevronDown
+            Width: =86
+            X: =5
+            Y: =63
+            ZIndex: =9
+
+        Icon1_1 As icon.Add:
+            Color: =RGBA(0, 0, 0, 1)
+            Height: =20
+            Icon: =Icon.ChevronDown
+            Width: =86
+            X: =91
+            Y: =63
+            ZIndex: =10
+
+        Icon1_2 As icon.Add:
+            Color: =RGBA(0, 0, 0, 1)
+            Height: =20
+            Icon: =Icon.ChevronDown
+            Width: =86
+            X: =190
+            Y: =63
+            ZIndex: =11
+
+        Icon1_3 As icon.Add:
+            Color: =RGBA(0, 0, 0, 1)
+            Height: =20
+            Icon: =Icon.ChevronDown
+            Width: =86
+            X: =289
+            Y: =63
+            ZIndex: =12
+
+        Icon1_4 As icon.Add:
+            Color: =RGBA(0, 0, 0, 1)
+            Height: =20
+            Icon: =Icon.ChevronDown
+            Width: =86
+            X: =380
+            Y: =63
+            ZIndex: =13
+
+        Icon1_5 As icon.Add:
+            Color: =RGBA(0, 0, 0, 1)
+            Height: =20
+            Icon: =Icon.ChevronDown
+            Width: =86
+            X: =466
+            Y: =63
+            ZIndex: =14
+

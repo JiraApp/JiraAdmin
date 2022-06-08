@@ -1,0 +1,17 @@
+LogoComponent As CanvasComponent:
+    Fill: =RGBA(0, 0, 0, 0)
+    Height: =83
+    Width: =640
+    X: =0
+    Y: =0
+    ZIndex: =1
+
+    Logo As image:
+        BorderColor: =RGBA(32, 126, 247, 1)
+        BorderThickness: =2
+        Height: =83
+        Image: ='Jira_(software)-Logo.wine'
+        ImagePosition: =ImagePosition.Fill
+        Width: =Parent.Width
+        ZIndex: =1
+

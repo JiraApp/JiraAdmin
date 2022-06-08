@@ -1,0 +1,145 @@
+"'Main Screen' As screen":
+    BackgroundImage: =
+    ImagePosition: =ImagePosition.Fill
+
+    Gallery2 As gallery.variableTemplateHeightGallery:
+        Height: =602
+        Items: =JIRA.ListProjects()
+        Layout: =Layout.Vertical
+        TemplateSize: =53
+        Width: =1366
+        Y: =166
+        ZIndex: =2
+
+        Rectangle2 As rectangle:
+            BorderColor: =RGBA(32, 126, 247, 1)
+            BorderThickness: =2
+            Fill: =RGBA(32, 126, 247, 1)
+            Height: =2
+            OnSelect: =Select(Parent)
+            Width: =Parent.Width
+            Y: =47
+            ZIndex: =5
+
+        Container1_1 As groupContainer.horizontalAutoLayoutContainer:
+            Height: =53
+            LayoutMode: =LayoutMode.Auto
+            Width: =1356
+            ZIndex: =6
+
+            Label7_4 As label:
+                Align: =Left
+                AutoHeight: =true
+                FontWeight: =FontWeight.Semibold
+                Height: =83
+                Text: =ThisItem.id
+                Width: =100
+                ZIndex: =1
+
+            Label7_5 As label:
+                Align: =Left
+                AutoHeight: =true
+                FontWeight: =FontWeight.Semibold
+                Height: =83
+                Text: =ThisItem.key
+                Width: =140
+                ZIndex: =2
+
+            Label7_6 As label:
+                Align: =Left
+                AutoHeight: =true
+                FontWeight: =FontWeight.Semibold
+                Height: =83
+                Text: =ThisItem.name
+                Width: =400
+                ZIndex: =3
+
+            Label7_7 As label:
+                Align: =Left
+                AutoHeight: =true
+                FontWeight: =FontWeight.Semibold
+                Height: =83
+                Text: =ThisItem.projectTypeKey
+                Width: =200
+                ZIndex: =4
+
+    Rectangle3 As rectangle:
+        BorderColor: =RGBA(255, 255, 255, 1)
+        BorderThickness: =2
+        Fill: =RGBA(32, 126, 247, 1)
+        Height: =83
+        Width: =Parent.Width
+        Y: =83
+        ZIndex: =5
+
+    GroupHeader As group:
+        Height: =5
+        Width: =5
+        X: =40
+        Y: =40
+        ZIndex: =5
+
+        LogoComponent_1 As LogoComponent:
+            Height: =85
+
+        NavigationComponent_1 As NavigationComponent:
+            Height: =85
+            X: =640
+            ZIndex: =3
+
+        ProfileInitiateComponent_1 As ProfileInitiateComponent:
+            Height: =85
+            X: =1280
+            ZIndex: =4
+
+    Container1 As groupContainer.horizontalAutoLayoutContainer:
+        Height: =83
+        LayoutMode: =LayoutMode.Auto
+        Width: =Parent.Width
+        Y: =83
+        ZIndex: =6
+
+        Label7 As label:
+            Align: =Left
+            BorderColor: =RGBA(255, 255, 255, 1)
+            BorderThickness: =2
+            Color: =RGBA(255, 255, 255, 1)
+            FontWeight: =FontWeight.Bold
+            Height: =83
+            Text: ="Project ID"
+            Width: =100
+            ZIndex: =1
+
+        Label7_1 As label:
+            Align: =Left
+            BorderColor: =RGBA(255, 255, 255, 1)
+            BorderThickness: =2
+            Color: =RGBA(255, 255, 255, 1)
+            FontWeight: =FontWeight.Bold
+            Height: =83
+            Text: ="Project Code"
+            Width: =140
+            ZIndex: =2
+
+        Label7_2 As label:
+            Align: =Left
+            BorderColor: =RGBA(255, 255, 255, 1)
+            BorderThickness: =2
+            Color: =RGBA(255, 255, 255, 1)
+            FontWeight: =FontWeight.Bold
+            Height: =83
+            Text: ="Project Name"
+            Width: =400
+            ZIndex: =3
+
+        Label7_3 As label:
+            Align: =Left
+            BorderColor: =RGBA(255, 255, 255, 1)
+            BorderThickness: =2
+            Color: =RGBA(255, 255, 255, 1)
+            FontWeight: =FontWeight.Bold
+            Height: =83
+            Text: ="Project Type Key"
+            Width: =200
+            ZIndex: =4
+

@@ -1,0 +1,8 @@
+[
+  {
+    "ApiId": "/providers/microsoft.powerapps/apis/shared_jira-20canvas-20app-5fb57e7af862529f37-5f5b30531a7cffdf5c",
+    "Name": "JiraCanvasApp",
+    "ServiceKind": "ConnectedWadl",
+    "Type": "ServiceInfo"
+  }
+]

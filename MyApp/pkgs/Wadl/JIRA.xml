@@ -1,0 +1,836 @@
+<application xmlns:xml="http://www.w3.org/XML/1998/namespace" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:service="https://unitedstates-002.azure-apim.net/apim/jira" xmlns:siena="http://schemas.microsoft.com/MicrosoftProjectSiena/WADL/2014/11" siena:serviceId="JIRA" xmlns="http://wadl.dev.java.net/2009/02">
+  <doc title="JIRA">JIRA is a software development tool for agile teams to plan, track, and release world-class software. Connecting JIRA issues to the rest of your tools helps break down barriers and unleash the potential of your team.</doc>
+  <grammars>
+    <jsonTypes targetNamespace="https://unitedstates-002.azure-apim.net/apim/jira" xmlns="http://schemas.microsoft.com/MicrosoftProjectSiena/WADL/2014/11">
+      <integer name="CreateProjectResponse_id_def" />
+      <string name="CreateProjectResponse_key_def" />
+      <object name="CreateProjectResponse">
+        <property name="id" type="integer" />
+        <property name="key" type="string" />
+      </object>
+      <string name="CreateIssueResponse_id_def" />
+      <string name="CreateIssueResponse_key_def" />
+      <object name="CreateIssueResponse">
+        <property name="id" type="string" />
+        <property name="key" type="string" />
+      </object>
+      <string name="ListProjects_ResponseV2_nextPage_def" />
+      <object name="ListProjects_ResponseV2">
+        <property name="nextPage" type="string" />
+        <property name="values" typeRef="ProjectArray" />
+      </object>
+      <string name="Project_id_def" />
+      <string name="Project_key_def" />
+      <string name="Project_name_def" />
+      <string name="Project_projectTypeKey_def" />
+      <object name="Project">
+        <property name="id" type="string" />
+        <property name="key" type="string" />
+        <property name="name" type="string" />
+        <property name="projectTypeKey" type="string" />
+      </object>
+      <string name="ProjectArray_items_def_id_def" />
+      <string name="ProjectArray_items_def_key_def" />
+      <string name="ProjectArray_items_def_name_def" />
+      <string name="ProjectArray_items_def_projectTypeKey_def" />
+      <object name="ProjectArray_items_def">
+        <property name="id" type="string" />
+        <property name="key" type="string" />
+        <property name="name" type="string" />
+        <property name="projectTypeKey" type="string" />
+      </object>
+      <array typeRef="ProjectArray_items_def" name="ProjectArray" />
+      <string name="PartialIssue_id_def" />
+      <string name="PartialIssue_key_def" />
+      <string name="PartialIssue_fields_def_summary_def" />
+      <string name="PartialIssue_fields_def_issuetype_def_id_def" />
+      <string name="PartialIssue_fields_def_issuetype_def_description_def" />
+      <string name="PartialIssue_fields_def_issuetype_def_iconUrl_def" />
+      <string name="PartialIssue_fields_def_issuetype_def_name_def" />
+      <object name="PartialIssue_fields_def_issuetype_def">
+        <property name="id" type="string" />
+        <property name="description" type="string" />
+        <property name="iconUrl" type="string" />
+        <property name="name" type="string" />
+      </object>
+      <string name="PartialIssue_fields_def_status_def_description_def" />
+      <string name="PartialIssue_fields_def_status_def_iconUrl_def" />
+      <string name="PartialIssue_fields_def_status_def_name_def" />
+      <string name="PartialIssue_fields_def_status_def_id_def" />
+      <integer name="PartialIssue_fields_def_status_def_statusCategory_def_id_def" />
+      <string name="PartialIssue_fields_def_status_def_statusCategory_def_key_def" />
+      <string name="PartialIssue_fields_def_status_def_statusCategory_def_colorName_def" />
+      <string name="PartialIssue_fields_def_status_def_statusCategory_def_name_def" />
+      <object name="PartialIssue_fields_def_status_def_statusCategory_def">
+        <property name="id" type="integer" />
+        <property name="key" type="string" />
+        <property name="colorName" type="string" />
+        <property name="name" type="string" />
+      </object>
+      <object name="PartialIssue_fields_def_status_def">
+        <property name="description" type="string" />
+        <property name="iconUrl" type="string" />
+        <property name="name" type="string" />
+        <property name="id" type="string" />
+        <property name="statusCategory" typeRef="PartialIssue_fields_def_status_def_statusCategory_def" />
+      </object>
+      <string name="PartialIssue_fields_def_priority_def_iconUrl_def" />
+      <string name="PartialIssue_fields_def_priority_def_name_def" />
+      <string name="PartialIssue_fields_def_priority_def_id_def" />
+      <object name="PartialIssue_fields_def_priority_def">
+        <property name="iconUrl" type="string" />
+        <property name="name" type="string" />
+        <property name="id" type="string" />
+      </object>
+      <object name="PartialIssue_fields_def">
+        <property name="summary" type="string" />
+        <property name="issuetype" typeRef="PartialIssue_fields_def_issuetype_def" />
+        <property name="status" typeRef="PartialIssue_fields_def_status_def" />
+        <property name="priority" typeRef="PartialIssue_fields_def_priority_def" />
+      </object>
+      <object name="PartialIssue">
+        <property name="id" type="string" />
+        <property name="key" type="string" />
+        <property name="fields" typeRef="PartialIssue_fields_def" />
+      </object>
+      <string name="FullIssue_id_def" />
+      <string name="FullIssue_key_def" />
+      <string name="FullIssue_self_def" />
+      <string name="FullIssue_fields_def_issuetype_def_id_def" />
+      <string name="FullIssue_fields_def_issuetype_def_description_def" />
+      <string name="FullIssue_fields_def_issuetype_def_iconUrl_def" />
+      <string name="FullIssue_fields_def_issuetype_def_name_def" />
+      <object name="FullIssue_fields_def_issuetype_def">
+        <property name="id" type="string" />
+        <property name="description" type="string" />
+        <property name="iconUrl" type="string" />
+        <property name="name" type="string" />
+      </object>
+      <integer name="FullIssue_fields_def_timespent_def" />
+      <string name="FullIssue_fields_def_project_def_id_def" />
+      <string name="FullIssue_fields_def_project_def_key_def" />
+      <string name="FullIssue_fields_def_project_def_name_def" />
+      <string name="FullIssue_fields_def_project_def_projectTypeKey_def" />
+      <object name="FullIssue_fields_def_project_def">
+        <property name="id" type="string" />
+        <property name="key" type="string" />
+        <property name="name" type="string" />
+        <property name="projectTypeKey" type="string" />
+      </object>
+      <integer name="FullIssue_fields_def_aggregatetimespent_def" />
+      <string name="FullIssue_fields_def_resolution_def_self_def" />
+      <string name="FullIssue_fields_def_resolution_def_id_def" />
+      <string name="FullIssue_fields_def_resolution_def_description_def" />
+      <string name="FullIssue_fields_def_resolution_def_name_def" />
+      <object name="FullIssue_fields_def_resolution_def">
+        <property name="self" type="string" />
+        <property name="id" type="string" />
+        <property name="description" type="string" />
+        <property name="name" type="string" />
+      </object>
+      <dateTimeString name="FullIssue_fields_def_resolutiondate_def" />
+      <integer name="FullIssue_fields_def_workratio_def" />
+      <dateTimeString name="FullIssue_fields_def_created_def" />
+      <string name="FullIssue_fields_def_priority_def_iconUrl_def" />
+      <string name="FullIssue_fields_def_priority_def_name_def" />
+      <string name="FullIssue_fields_def_priority_def_id_def" />
+      <object name="FullIssue_fields_def_priority_def">
+        <property name="iconUrl" type="string" />
+        <property name="name" type="string" />
+        <property name="id" type="string" />
+      </object>
+      <integer name="FullIssue_fields_def_timeestimate_def" />
+      <integer name="FullIssue_fields_def_aggregatetimeoriginalestimate_def" />
+      <string name="FullIssue_fields_def_assignee_def_accountId_def" />
+      <string name="FullIssue_fields_def_assignee_def_key_def" />
+      <string name="FullIssue_fields_def_assignee_def_emailAddress_def" />
+      <string name="FullIssue_fields_def_assignee_def_displayName_def" />
+      <object name="FullIssue_fields_def_assignee_def">
+        <property name="accountId" type="string" />
+        <property name="key" type="string" />
+        <property name="emailAddress" type="string" />
+        <property name="displayName" type="string" />
+      </object>
+      <dateTimeString name="FullIssue_fields_def_updated_def" />
+      <string name="FullIssue_fields_def_status_def_description_def" />
+      <string name="FullIssue_fields_def_status_def_iconUrl_def" />
+      <string name="FullIssue_fields_def_status_def_name_def" />
+      <string name="FullIssue_fields_def_status_def_id_def" />
+      <integer name="FullIssue_fields_def_status_def_statusCategory_def_id_def" />
+      <string name="FullIssue_fields_def_status_def_statusCategory_def_key_def" />
+      <string name="FullIssue_fields_def_status_def_statusCategory_def_colorName_def" />
+      <string name="FullIssue_fields_def_status_def_statusCategory_def_name_def" />
+      <object name="FullIssue_fields_def_status_def_statusCategory_def">
+        <property name="id" type="integer" />
+        <property name="key" type="string" />
+        <property name="colorName" type="string" />
+        <property name="name" type="string" />
+      </object>
+      <object name="FullIssue_fields_def_status_def">
+        <property name="description" type="string" />
+        <property name="iconUrl" type="string" />
+        <property name="name" type="string" />
+        <property name="id" type="string" />
+        <property name="statusCategory" typeRef="FullIssue_fields_def_status_def_statusCategory_def" />
+      </object>
+      <integer name="FullIssue_fields_def_timeoriginalestimate_def" />
+      <string name="FullIssue_fields_def_description_def" />
+      <integer name="FullIssue_fields_def_aggregatetimeestimate_def" />
+      <string name="FullIssue_fields_def_summary_def" />
+      <string name="FullIssue_fields_def_components_def_items_def_id_def" />
+      <string name="FullIssue_fields_def_components_def_items_def_name_def" />
+      <object name="FullIssue_fields_def_components_def_items_def">
+        <property name="id" type="string" />
+        <property name="name" type="string" />
+      </object>
+      <array typeRef="FullIssue_fields_def_components_def_items_def" name="FullIssue_fields_def_components_def" />
+      <string name="FullIssue_fields_def_creator_def_accountId_def" />
+      <string name="FullIssue_fields_def_creator_def_key_def" />
+      <string name="FullIssue_fields_def_creator_def_emailAddress_def" />
+      <string name="FullIssue_fields_def_creator_def_displayName_def" />
+      <object name="FullIssue_fields_def_creator_def">
+        <property name="accountId" type="string" />
+        <property name="key" type="string" />
+        <property name="emailAddress" type="string" />
+        <property name="displayName" type="string" />
+      </object>
+      <string name="FullIssue_fields_def_reporter_def_accountId_def" />
+      <string name="FullIssue_fields_def_reporter_def_key_def" />
+      <string name="FullIssue_fields_def_reporter_def_emailAddress_def" />
+      <string name="FullIssue_fields_def_reporter_def_displayName_def" />
+      <object name="FullIssue_fields_def_reporter_def">
+        <property name="accountId" type="string" />
+        <property name="key" type="string" />
+        <property name="emailAddress" type="string" />
+        <property name="displayName" type="string" />
+      </object>
+      <integer name="FullIssue_fields_def_aggregateprogress_def_progress_def" />
+      <integer name="FullIssue_fields_def_aggregateprogress_def_total_def" />
+      <integer name="FullIssue_fields_def_aggregateprogress_def_percent_def" />
+      <object name="FullIssue_fields_def_aggregateprogress_def">
+        <property name="progress" type="integer" />
+        <property name="total" type="integer" />
+        <property name="percent" type="integer" />
+      </object>
+      <dateTimeString name="FullIssue_fields_def_duedate_def" />
+      <integer name="FullIssue_fields_def_progress_def_progress_def" />
+      <integer name="FullIssue_fields_def_progress_def_total_def" />
+      <integer name="FullIssue_fields_def_progress_def_percent_def" />
+      <object name="FullIssue_fields_def_progress_def">
+        <property name="progress" type="integer" />
+        <property name="total" type="integer" />
+        <property name="percent" type="integer" />
+      </object>
+      <object name="FullIssue_fields_def">
+        <property name="issuetype" typeRef="FullIssue_fields_def_issuetype_def" />
+        <property name="timespent" type="integer" />
+        <property name="project" typeRef="FullIssue_fields_def_project_def" />
+        <property name="aggregatetimespent" type="integer" />
+        <property name="resolution" typeRef="FullIssue_fields_def_resolution_def" />
+        <property name="resolutiondate" typeRef="FullIssue_fields_def_resolutiondate_def" />
+        <property name="workratio" type="integer" />
+        <property name="created" typeRef="FullIssue_fields_def_created_def" />
+        <property name="priority" typeRef="FullIssue_fields_def_priority_def" />
+        <property name="timeestimate" type="integer" />
+        <property name="aggregatetimeoriginalestimate" type="integer" />
+        <property name="assignee" typeRef="FullIssue_fields_def_assignee_def" />
+        <property name="updated" typeRef="FullIssue_fields_def_updated_def" />
+        <property name="status" typeRef="FullIssue_fields_def_status_def" />
+        <property name="timeoriginalestimate" type="integer" />
+        <property name="description" type="string" />
+        <property name="aggregatetimeestimate" type="integer" />
+        <property name="summary" type="string" />
+        <property name="components" typeRef="FullIssue_fields_def_components_def" />
+        <property name="creator" typeRef="FullIssue_fields_def_creator_def" />
+        <property name="reporter" typeRef="FullIssue_fields_def_reporter_def" />
+        <property name="aggregateprogress" typeRef="FullIssue_fields_def_aggregateprogress_def" />
+        <property name="duedate" typeRef="FullIssue_fields_def_duedate_def" />
+        <property name="progress" typeRef="FullIssue_fields_def_progress_def" />
+      </object>
+      <object name="FullIssue">
+        <property name="id" type="string" />
+        <property name="key" type="string" />
+        <property name="self" type="string" />
+        <property name="fields" typeRef="FullIssue_fields_def" />
+      </object>
+      <string name="Creator_accountId_def" />
+      <string name="Creator_key_def" />
+      <string name="Creator_emailAddress_def" />
+      <string name="Creator_displayName_def" />
+      <object name="Creator">
+        <property name="accountId" type="string" />
+        <property name="key" type="string" />
+        <property name="emailAddress" type="string" />
+        <property name="displayName" type="string" />
+      </object>
+      <string name="Assignee_accountId_def" />
+      <string name="Assignee_key_def" />
+      <string name="Assignee_emailAddress_def" />
+      <string name="Assignee_displayName_def" />
+      <object name="Assignee">
+        <property name="accountId" type="string" />
+        <property name="key" type="string" />
+        <property name="emailAddress" type="string" />
+        <property name="displayName" type="string" />
+      </object>
+      <string name="User_accountId_def" />
+      <string name="User_key_def" />
+      <string name="User_emailAddress_def" />
+      <string name="User_displayName_def" />
+      <object name="User">
+        <property name="accountId" type="string" />
+        <property name="key" type="string" />
+        <property name="emailAddress" type="string" />
+        <property name="displayName" type="string" />
+      </object>
+      <string name="UserList_items_def_accountId_def" />
+      <string name="UserList_items_def_key_def" />
+      <string name="UserList_items_def_emailAddress_def" />
+      <string name="UserList_items_def_displayName_def" />
+      <object name="UserList_items_def">
+        <property name="accountId" type="string" />
+        <property name="key" type="string" />
+        <property name="emailAddress" type="string" />
+        <property name="displayName" type="string" />
+      </object>
+      <array typeRef="UserList_items_def" name="UserList" />
+      <string name="Reporter_AccountId_def" />
+      <string name="Reporter_key_def" />
+      <string name="Reporter_emailAddress_def" />
+      <string name="Reporter_displayName_def" />
+      <object name="Reporter">
+        <property name="AccountId" type="string" />
+        <property name="key" type="string" />
+        <property name="emailAddress" type="string" />
+        <property name="displayName" type="string" />
+      </object>
+      <string name="IssueTypes_items_def_name_def" />
+      <string name="IssueTypes_items_def_id_def" />
+      <object name="IssueTypes_items_def">
+        <property name="name" type="string" />
+        <property name="id" type="string" />
+      </object>
+      <array typeRef="IssueTypes_items_def" name="IssueTypes" />
+      <string name="CreateIssueRequest_fields_def_issuetype_def_id_def" />
+      <object name="CreateIssueRequest_fields_def_issuetype_def">
+        <property name="id" type="string" />
+      </object>
+      <string name="CreateIssueRequest_fields_def_summary_def" />
+      <string name="CreateIssueRequest_fields_def_components_def" />
+      <string name="CreateIssueRequest_fields_def_reporter_def_id_def" />
+      <object name="CreateIssueRequest_fields_def_reporter_def">
+        <property name="id" type="string" />
+      </object>
+      <string name="CreateIssueRequest_fields_def_description_def" />
+      <string name="CreateIssueRequest_fields_def_priority_def_id_def" />
+      <object name="CreateIssueRequest_fields_def_priority_def">
+        <property name="id" type="string" />
+      </object>
+      <string name="CreateIssueRequest_fields_def_labels_def" />
+      <string name="CreateIssueRequest_fields_def_assignee_def_id_def" />
+      <object name="CreateIssueRequest_fields_def_assignee_def">
+        <property name="id" type="string" />
+      </object>
+      <string name="CreateIssueRequest_fields_def_parent_def_id_def" />
+      <object name="CreateIssueRequest_fields_def_parent_def">
+        <property name="id" type="string" />
+      </object>
+      <string name="CreateIssueRequest_fields_def_customfield_10119_def" />
+      <object name="CreateIssueRequest_fields_def">
+        <property name="issuetype" typeRef="CreateIssueRequest_fields_def_issuetype_def" />
+        <property name="summary" type="string" />
+        <property name="components" type="string" />
+        <property name="reporter" typeRef="CreateIssueRequest_fields_def_reporter_def" />
+        <property name="description" type="string" />
+        <property name="priority" typeRef="CreateIssueRequest_fields_def_priority_def" />
+        <property name="labels" type="string" />
+        <property name="assignee" typeRef="CreateIssueRequest_fields_def_assignee_def" />
+        <property name="parent" typeRef="CreateIssueRequest_fields_def_parent_def" />
+        <property name="customfield_10119" type="string" />
+      </object>
+      <object name="CreateIssueRequest">
+        <property name="fields" typeRef="CreateIssueRequest_fields_def" />
+      </object>
+      <string name="UpdateIssueRequest_fields_def_summary_def" />
+      <string name="UpdateIssueRequest_fields_def_description_def" />
+      <string name="UpdateIssueRequest_fields_def_reporter_def_id_def" />
+      <object name="UpdateIssueRequest_fields_def_reporter_def">
+        <property name="id" type="string" />
+      </object>
+      <string name="UpdateIssueRequest_fields_def_priority_def_id_def" />
+      <object name="UpdateIssueRequest_fields_def_priority_def">
+        <property name="id" type="string" />
+      </object>
+      <string name="UpdateIssueRequest_fields_def_labels_def" />
+      <string name="UpdateIssueRequest_fields_def_assignee_def_id_def" />
+      <object name="UpdateIssueRequest_fields_def_assignee_def">
+        <property name="id" type="string" />
+      </object>
+      <string name="UpdateIssueRequest_fields_def_parent_def_id_def" />
+      <object name="UpdateIssueRequest_fields_def_parent_def">
+        <property name="id" type="string" />
+      </object>
+      <object name="UpdateIssueRequest_fields_def">
+        <property name="summary" type="string" />
+        <property name="description" type="string" />
+        <property name="reporter" typeRef="UpdateIssueRequest_fields_def_reporter_def" />
+        <property name="priority" typeRef="UpdateIssueRequest_fields_def_priority_def" />
+        <property name="labels" type="string" />
+        <property name="assignee" typeRef="UpdateIssueRequest_fields_def_assignee_def" />
+        <property name="parent" typeRef="UpdateIssueRequest_fields_def_parent_def" />
+      </object>
+      <object name="UpdateIssueRequest">
+        <property name="fields" typeRef="UpdateIssueRequest_fields_def" />
+      </object>
+      <string name="StatusList_items_def_id_def" />
+      <string name="StatusList_items_def_name_def" />
+      <object name="StatusList_items_def">
+        <property name="id" type="string" />
+        <property name="name" type="string" />
+      </object>
+      <array typeRef="StatusList_items_def" name="StatusList" />
+      <string name="PriorityList_items_def_name_def" />
+      <string name="PriorityList_items_def_id_def" />
+      <object name="PriorityList_items_def">
+        <property name="name" type="string" />
+        <property name="id" type="string" />
+      </object>
+      <array typeRef="PriorityList_items_def" name="PriorityList" />
+      <string name="Comment_body_def" />
+      <object name="Comment">
+        <property name="body" type="string" />
+      </object>
+      <string name="CommentResponse_id_def" />
+      <string name="CommentResponse_body_def" />
+      <dateTimeString name="CommentResponse_created_def" />
+      <object name="CommentResponse">
+        <property name="id" type="string" />
+        <property name="body" type="string" />
+        <property name="created" typeRef="CommentResponse_created_def" />
+      </object>
+      <string name="EditIssue_param_body_def_transition_def_id_def" />
+      <string name="EditIssue_param_body_def_transition_def_looped_def" />
+      <object name="EditIssue_param_body_def_transition_def">
+        <property name="id" type="string" />
+        <property name="looped" type="string" />
+      </object>
+      <string name="EditIssue_param_body_def_fields_def" />
+      <string name="EditIssue_param_body_def_update_def" />
+      <string name="EditIssue_param_body_def_historyMetadata_def_type_def" />
+      <string name="EditIssue_param_body_def_historyMetadata_def_description_def" />
+      <string name="EditIssue_param_body_def_historyMetadata_def_descriptionKey_def" />
+      <string name="EditIssue_param_body_def_historyMetadata_def_activityDescription_def" />
+      <string name="EditIssue_param_body_def_historyMetadata_def_activityDescriptionKey_def" />
+      <string name="EditIssue_param_body_def_historyMetadata_def_emailDescription_def" />
+      <string name="EditIssue_param_body_def_historyMetadata_def_emailDescriptionKey_def" />
+      <string name="EditIssue_param_body_def_historyMetadata_def_actor_def_id_def" />
+      <string name="EditIssue_param_body_def_historyMetadata_def_actor_def_displayName_def" />
+      <string name="EditIssue_param_body_def_historyMetadata_def_actor_def_displayNameKey_def" />
+      <string name="EditIssue_param_body_def_historyMetadata_def_actor_def_type_def" />
+      <string name="EditIssue_param_body_def_historyMetadata_def_actor_def_avatarUrl_def" />
+      <string name="EditIssue_param_body_def_historyMetadata_def_actor_def_url_def" />
+      <object name="EditIssue_param_body_def_historyMetadata_def_actor_def">
+        <property name="id" type="string" />
+        <property name="displayName" type="string" />
+        <property name="displayNameKey" type="string" />
+        <property name="type" type="string" />
+        <property name="avatarUrl" type="string" />
+        <property name="url" type="string" />
+      </object>
+      <string name="EditIssue_param_body_def_historyMetadata_def_generator_def_id_def" />
+      <string name="EditIssue_param_body_def_historyMetadata_def_generator_def_displayName_def" />
+      <string name="EditIssue_param_body_def_historyMetadata_def_generator_def_displayNameKey_def" />
+      <string name="EditIssue_param_body_def_historyMetadata_def_generator_def_type_def" />
+      <string name="EditIssue_param_body_def_historyMetadata_def_generator_def_avatarUrl_def" />
+      <string name="EditIssue_param_body_def_historyMetadata_def_generator_def_url_def" />
+      <object name="EditIssue_param_body_def_historyMetadata_def_generator_def">
+        <property name="id" type="string" />
+        <property name="displayName" type="string" />
+        <property name="displayNameKey" type="string" />
+        <property name="type" type="string" />
+        <property name="avatarUrl" type="string" />
+        <property name="url" type="string" />
+      </object>
+      <string name="EditIssue_param_body_def_historyMetadata_def_cause_def_id_def" />
+      <string name="EditIssue_param_body_def_historyMetadata_def_cause_def_displayName_def" />
+      <string name="EditIssue_param_body_def_historyMetadata_def_cause_def_displayNameKey_def" />
+      <string name="EditIssue_param_body_def_historyMetadata_def_cause_def_type_def" />
+      <string name="EditIssue_param_body_def_historyMetadata_def_cause_def_avatarUrl_def" />
+      <string name="EditIssue_param_body_def_historyMetadata_def_cause_def_url_def" />
+      <object name="EditIssue_param_body_def_historyMetadata_def_cause_def">
+        <property name="id" type="string" />
+        <property name="displayName" type="string" />
+        <property name="displayNameKey" type="string" />
+        <property name="type" type="string" />
+        <property name="avatarUrl" type="string" />
+        <property name="url" type="string" />
+      </object>
+      <string name="EditIssue_param_body_def_historyMetadata_def_extraData_def" />
+      <object name="EditIssue_param_body_def_historyMetadata_def">
+        <property name="type" type="string" />
+        <property name="description" type="string" />
+        <property name="descriptionKey" type="string" />
+        <property name="activityDescription" type="string" />
+        <property name="activityDescriptionKey" type="string" />
+        <property name="emailDescription" type="string" />
+        <property name="emailDescriptionKey" type="string" />
+        <property name="actor" typeRef="EditIssue_param_body_def_historyMetadata_def_actor_def" />
+        <property name="generator" typeRef="EditIssue_param_body_def_historyMetadata_def_generator_def" />
+        <property name="cause" typeRef="EditIssue_param_body_def_historyMetadata_def_cause_def" />
+        <property name="extraData" type="string" />
+      </object>
+      <string name="EditIssue_param_body_def_properties_def_items_def_key_def" />
+      <object name="EditIssue_param_body_def_properties_def_items_def_value_def" />
+      <object name="EditIssue_param_body_def_properties_def_items_def">
+        <property name="key" type="string" />
+        <property name="value" typeRef="EditIssue_param_body_def_properties_def_items_def_value_def" />
+      </object>
+      <array typeRef="EditIssue_param_body_def_properties_def_items_def" name="EditIssue_param_body_def_properties_def" />
+      <object name="EditIssue_param_body_def">
+        <property name="transition" typeRef="EditIssue_param_body_def_transition_def" />
+        <property name="fields" type="string" />
+        <property name="update" type="string" />
+        <property name="historyMetadata" typeRef="EditIssue_param_body_def_historyMetadata_def" />
+        <property name="properties" typeRef="EditIssue_param_body_def_properties_def" />
+      </object>
+      <object name="EditIssue_responses_204_def" />
+      <string name="UpdateProject_param_body_def_key_def" />
+      <string name="UpdateProject_param_body_def_name_def" />
+      <string name="UpdateProject_param_body_def_projectTypeKey_def" />
+      <string name="UpdateProject_param_body_def_projectTemplateKey_def" />
+      <string name="UpdateProject_param_body_def_description_def" />
+      <string name="UpdateProject_param_body_def_lead_def" />
+      <string name="UpdateProject_param_body_def_leadAccountId_def" />
+      <string name="UpdateProject_param_body_def_url_def" />
+      <string name="UpdateProject_param_body_def_assigneeType_def" />
+      <string name="UpdateProject_param_body_def_avatarId_def" />
+      <string name="UpdateProject_param_body_def_issueSecurityScheme_def" />
+      <string name="UpdateProject_param_body_def_permissionScheme_def" />
+      <string name="UpdateProject_param_body_def_notificationScheme_def" />
+      <string name="UpdateProject_param_body_def_categoryId_def" />
+      <object name="UpdateProject_param_body_def">
+        <property name="key" type="string" />
+        <property name="name" type="string" />
+        <property name="projectTypeKey" type="string" />
+        <property name="projectTemplateKey" type="string" />
+        <property name="description" type="string" />
+        <property name="lead" type="string" />
+        <property name="leadAccountId" type="string" />
+        <property name="url" type="string" />
+        <property name="assigneeType" type="string" />
+        <property name="avatarId" type="string" />
+        <property name="issueSecurityScheme" type="string" />
+        <property name="permissionScheme" type="string" />
+        <property name="notificationScheme" type="string" />
+        <property name="categoryId" type="string" />
+      </object>
+      <string name="GetAllProjectCategories_responses_200_def_items_def_self_def" />
+      <string name="GetAllProjectCategories_responses_200_def_items_def_id_def" />
+      <string name="GetAllProjectCategories_responses_200_def_items_def_description_def" />
+      <string name="GetAllProjectCategories_responses_200_def_items_def_name_def" />
+      <object name="GetAllProjectCategories_responses_200_def_items_def">
+        <property name="self" type="string" />
+        <property name="id" type="string" />
+        <property name="description" type="string" />
+        <property name="name" type="string" />
+      </object>
+      <array typeRef="GetAllProjectCategories_responses_200_def_items_def" name="GetAllProjectCategories_responses_200_def" />
+      <string name="CreateProjectCategory_param_body_def_name_def" />
+      <string name="CreateProjectCategory_param_body_def_description_def" />
+      <object name="CreateProjectCategory_param_body_def">
+        <property name="name" type="string" />
+        <property name="description" type="string" />
+      </object>
+      <object name="CancelTask_responses_202_def" />
+      <object isDynamicSchema="true" name="CreateIssueV2_param_item_def" />
+      <string name="CreateProject_param_Project_def_key_def" />
+      <string name="CreateProject_param_Project_def_name_def" />
+      <string name="CreateProject_param_Project_def_projectTypeKey_def" />
+      <string name="CreateProject_param_Project_def_leadAccountId_def" />
+      <string name="CreateProject_param_Project_def_description_def" />
+      <object name="CreateProject_param_Project_def">
+        <property name="key" type="string" />
+        <property name="name" type="string" />
+        <property name="projectTypeKey" type="string" />
+        <property name="leadAccountId" type="string" />
+        <property name="description" type="string" />
+      </object>
+    </jsonTypes>
+  </grammars>
+  <resources siena:authenticationProviderHref="#PowerAppAuth" base="https://unitedstates-002.azure-apim.net/apim/jira">
+    <resource path="/{connectionId}/3/issue/{issueIdOrKey}">
+      <param style="template" name="connectionId" type="xs:string" required="true" />
+      <param style="template" name="issueIdOrKey" type="xs:string" required="true">
+        <doc title="Provide the Issue ID or Key for the issue you wish to edit" />
+      </param>
+      <method siena:requiresAuthentication="true" name="PUT" id="EditIssue" actionName="EditIssue" siena:isDeprecated="false">
+        <doc title="Edit Issue&#xA;Edits an issue. A transition may be applied and issue properties updated as part of the edit." />
+        <request>
+          <param style="query" name="notifyUsers" type="xs:boolean">
+            <doc title="Do you want to notify users?" />
+          </param>
+          <param style="query" name="overrideScreenSecurity" type="xs:boolean">
+            <doc title="Do you want to override the screen security?" />
+          </param>
+          <param style="query" name="overrideEditableFlag" type="xs:boolean">
+            <doc title="Do you want to override the editable flag?" />
+          </param>
+          <representation mediaType="application/json">
+            <param style="plain" name="transition" path="/transition" type="service:EditIssue_param_body_def_transition_def" />
+            <param style="plain" name="fields" path="/fields" type="xs:string" />
+            <param style="plain" name="update" path="/update" type="xs:string" />
+            <param style="plain" name="historyMetadata" path="/historyMetadata" type="service:EditIssue_param_body_def_historyMetadata_def" />
+            <param style="plain" name="properties" path="/properties" type="service:EditIssue_param_body_def_properties_def" />
+          </representation>
+        </request>
+      </method>
+    </resource>
+    <resource path="/{connectionId}/3/project/{projectIdOrKey}">
+      <param style="template" name="connectionId" type="xs:string" required="true" />
+      <param style="template" name="projectIdOrKey" type="xs:string" required="true">
+        <doc title="The project ID or project key (case sensitive)." />
+      </param>
+      <method siena:requiresAuthentication="true" name="DELETE" id="DeleteProject" actionName="DeleteProject" siena:isDeprecated="false">
+        <doc title="Delete Project&#xA;Deletes a project. Permissions required: Administer Jira (global permissions)" />
+        <request>
+          <param style="query" name="enableUndo" type="xs:boolean" default="false">
+            <doc title="Whether this project is placed in the Jira recycle bin where it will be available for restoration." />
+          </param>
+        </request>
+      </method>
+    </resource>
+    <resource path="/{connectionId}/3/project/{projectIdOrKey}">
+      <param style="template" name="connectionId" type="xs:string" required="true" />
+      <param style="template" name="projectIdOrKey" type="xs:string" required="true">
+        <doc title="Provide the project ID or Key you want to update1" />
+      </param>
+      <method siena:requiresAuthentication="true" name="PUT" id="UpdateProject" actionName="UpdateProject" siena:isDeprecated="false">
+        <doc title="Update Project&#xA;Updates the project details of a project." />
+        <request>
+          <representation mediaType="application/json">
+            <param style="plain" name="key" path="/key" type="xs:string" />
+            <param style="plain" name="name" path="/name" type="xs:string" />
+            <param style="plain" name="projectTypeKey" path="/projectTypeKey" type="xs:string" />
+            <param style="plain" name="projectTemplateKey" path="/projectTemplateKey" type="xs:string" />
+            <param style="plain" name="description" path="/description" type="xs:string" />
+            <param style="plain" name="lead" path="/lead" type="xs:string" />
+            <param style="plain" name="leadAccountId" path="/leadAccountId" type="xs:string" />
+            <param style="plain" name="url" path="/url" type="xs:string" />
+            <param style="plain" name="assigneeType" path="/assigneeType" type="xs:string" />
+            <param style="plain" name="avatarId" path="/avatarId" type="xs:string" />
+            <param style="plain" name="issueSecurityScheme" path="/issueSecurityScheme" type="xs:string" />
+            <param style="plain" name="permissionScheme" path="/permissionScheme" type="xs:string" />
+            <param style="plain" name="notificationScheme" path="/notificationScheme" type="xs:string" />
+            <param style="plain" name="categoryId" path="/categoryId" type="xs:string" />
+          </representation>
+        </request>
+      </method>
+    </resource>
+    <resource path="/{connectionId}/3/projectCategory">
+      <param style="template" name="connectionId" type="xs:string" required="true" />
+      <method siena:requiresAuthentication="true" name="GET" id="GetAllProjectCategories" actionName="GetAllProjectCategories" siena:isDeprecated="false">
+        <doc title="Get All Project Categories&#xA;Returns all project categories." />
+        <request />
+        <response>
+          <representation mediaType="application/json" element="service:GetAllProjectCategories_responses_200_def" />
+        </response>
+      </method>
+    </resource>
+    <resource path="/{connectionId}/3/projectCategory">
+      <param style="template" name="connectionId" type="xs:string" required="true" />
+      <method siena:requiresAuthentication="true" name="POST" id="CreateProjectCategory" actionName="CreateProjectCategory" siena:isDeprecated="false">
+        <doc title="Create Project Category&#xA;Creates a project category. Permissions required: Administer Jira (global permissions)" />
+        <request>
+          <representation mediaType="application/json">
+            <param style="plain" name="name" path="/name" type="xs:string">
+              <doc title="name" />
+            </param>
+            <param style="plain" name="description" path="/description" type="xs:string">
+              <doc title="description" />
+            </param>
+          </representation>
+        </request>
+      </method>
+    </resource>
+    <resource path="/{connectionId}/3/projectCategory/{id}">
+      <param style="template" name="connectionId" type="xs:string" required="true" />
+      <param style="template" name="id" type="xs:long" required="true">
+        <doc title="ID of the project category to delete." />
+      </param>
+      <method siena:requiresAuthentication="true" name="DELETE" id="RemoveProjectCategory" actionName="RemoveProjectCategory" siena:isDeprecated="false">
+        <doc title="Remove Project Category&#xA;Deletes a project category. Permissions required: Administer Jira (global permissions)" />
+        <request />
+      </method>
+    </resource>
+    <resource path="/{connectionId}/3/task/{taskId}">
+      <param style="template" name="connectionId" type="xs:string" required="true" />
+      <param style="template" name="taskId" type="xs:string" required="true">
+        <doc title="The ID of the task." />
+      </param>
+      <method siena:requiresAuthentication="true" name="GET" id="GetTask" actionName="GetTask" siena:isDeprecated="false">
+        <doc title="Get Task&#xA;Returns the status of a long-running asynchronous task. When a task has finished, this operation returns the JSON blob applicable to the task." />
+        <request />
+      </method>
+    </resource>
+    <resource path="/{connectionId}/3/task/{taskId}/cancel">
+      <param style="template" name="connectionId" type="xs:string" required="true" />
+      <param style="template" name="taskId" type="xs:string" required="true">
+        <doc title="The ID of the task." />
+      </param>
+      <method siena:requiresAuthentication="true" name="POST" id="CancelTask" actionName="CancelTask" siena:isDeprecated="false">
+        <doc title="Cancel Task&#xA;Cancels a task. Permissions required: either of: Administer Jira or Creator of the task." />
+        <request>
+          <param style="header" name="X-Atlassian-Token" type="xs:string" required="true" fixed="nocheck">
+            <doc title="The X-Atlassian-Token nocheck requirement" />
+          </param>
+        </request>
+      </method>
+    </resource>
+    <resource path="/{connectionId}/3/user">
+      <param style="template" name="connectionId" type="xs:string" required="true" />
+      <method siena:requiresAuthentication="true" name="GET" id="GetUser" actionName="GetUser" siena:isDeprecated="false">
+        <doc title="Get User&#xA;Returns a user. Permissions required: Browse users and groups." />
+        <request>
+          <param style="query" name="accountId" type="xs:string" required="true">
+            <doc title="The account ID of the user, which uniquely identifies the user across all Atlassian products. For example, *5b10ac8d82e05b22cc7d4ef5*. Required." />
+          </param>
+          <param style="query" name="expand" type="xs:string">
+            <doc title="Use expand to include additional information about users in the response. This parameter accepts a comma-separated list. Expand options include: *  `groups` includes all groups and nested groups to which the user belongs. *  `applicationRoles` includes details of all the applications to which the user has access." />
+          </param>
+        </request>
+      </method>
+    </resource>
+    <resource path="/{connectionId}/issue">
+      <param style="template" name="connectionId" type="xs:string" required="true" />
+      <method siena:requiresAuthentication="true" name="POST" id="CreateIssue" actionName="CreateIssue" visibility="important" siena:isDeprecated="true" siena:family="CreateIssue" siena:revision="1" siena:status="Production">
+        <doc title="Create a new issue&#xA;This operation is used to create a new issue." />
+        <request>
+          <param style="query" name="projectKey" type="xs:string" required="true">
+            <doc title="Pick a project to create the issue in." />
+          </param>
+          <representation mediaType="application/json">
+            <param style="plain" name="fields" path="/fields" type="service:CreateIssueRequest_fields_def" required="true" />
+          </representation>
+        </request>
+        <response>
+          <representation mediaType="application/json" element="service:CreateIssueResponse" />
+        </response>
+      </method>
+    </resource>
+    <resource path="/{connectionId}/v2/issue">
+      <param style="template" name="connectionId" type="xs:string" required="true" />
+      <method siena:requiresAuthentication="true" name="POST" id="CreateIssueV2" actionName="CreateIssueV2" visibility="important" siena:isDeprecated="false" siena:family="CreateIssue" siena:revision="2" siena:status="Production">
+        <doc title="Create a new issue (V2)&#xA;This operation is used to create a new issue." />
+        <request>
+          <param style="query" name="projectKey" type="xs:string" required="true">
+            <doc title="Pick a project to create the issue in." />
+          </param>
+          <param style="query" name="issueTypeIds" type="xs:string" required="true">
+            <doc title="Pick an issue type." />
+          </param>
+          <representation mediaType="application/json" />
+        </request>
+        <response>
+          <representation mediaType="application/json" element="service:CreateIssueResponse" />
+        </response>
+      </method>
+    </resource>
+    <resource path="/{connectionId}/issue/{issueKey}">
+      <param style="template" name="connectionId" type="xs:string" required="true" />
+      <param style="template" name="issueKey" type="xs:string" required="true">
+        <doc title="Unique Key of the issue." />
+      </param>
+      <method siena:requiresAuthentication="true" name="GET" id="GetIssue" actionName="GetIssue" visibility="advanced" siena:isDeprecated="false">
+        <doc title="Get issue by key&#xA;This operation is used to retrieve the issue object for a given issue Key." />
+        <request />
+        <response>
+          <representation mediaType="application/json" element="service:FullIssue" />
+        </response>
+      </method>
+    </resource>
+    <resource path="/{connectionId}/issue/{issueKey}/comment">
+      <param style="template" name="connectionId" type="xs:string" required="true" />
+      <param style="template" name="issueKey" type="xs:string" required="true">
+        <doc title="Unique Key of the issue to add a comment to." />
+      </param>
+      <method siena:requiresAuthentication="true" name="POST" id="AddComment" actionName="AddComment" visibility="advanced" siena:isDeprecated="false">
+        <doc title="Add comment&#xA;This operation is used to add a comment to an existing JIRA issue." />
+        <request>
+          <representation mediaType="application/json">
+            <param style="plain" name="body" path="/body" type="xs:string" required="true" />
+          </representation>
+        </request>
+        <response>
+          <representation mediaType="application/json" element="service:CommentResponse" />
+        </response>
+      </method>
+    </resource>
+    <resource path="/{connectionId}/project">
+      <param style="template" name="connectionId" type="xs:string" required="true" />
+      <method siena:requiresAuthentication="true" name="GET" id="ListProjects" actionName="ListProjects" visibility="advanced" siena:isDeprecated="true" siena:family="ListProjects" siena:revision="1" siena:status="Production">
+        <doc title="Get projects&#xA;This operation is used to retrieve a list of projects for your JIRA instance." />
+        <request />
+        <response>
+          <representation mediaType="application/json" element="service:ProjectArray" />
+        </response>
+      </method>
+    </resource>
+    <resource path="/{connectionId}/project">
+      <param style="template" name="connectionId" type="xs:string" required="true" />
+      <method siena:requiresAuthentication="true" name="POST" id="CreateProject" actionName="CreateProject" visibility="advanced" siena:isDeprecated="false">
+        <doc title="Create a new project&#xA;This operation is used to create a new JIRA project." />
+        <request>
+          <representation mediaType="application/json">
+            <param style="plain" name="key" path="/key" type="xs:string" required="true" />
+            <param style="plain" name="name" path="/name" type="xs:string" required="true" />
+            <param style="plain" name="projectTypeKey" path="/projectTypeKey" type="xs:string" required="true">
+              <option value="Software - Scrum software development" />
+              <option value="Software - Kanban software development" />
+              <option value="Software - Basic software development" />
+              <option value="Business - Project management" />
+              <option value="Business - Task management" />
+              <option value="Business - Process management" />
+            </param>
+            <param style="plain" name="leadAccountId" path="/leadAccountId" type="xs:string" required="true" />
+            <param style="plain" name="description" path="/description" type="xs:string" />
+          </representation>
+        </request>
+        <response>
+          <representation mediaType="application/json" element="service:CreateProjectResponse" />
+        </response>
+      </method>
+    </resource>
+    <resource path="/{connectionId}/project/search">
+      <param style="template" name="connectionId" type="xs:string" required="true" />
+      <method siena:requiresAuthentication="true" name="GET" id="ListProjectsV2" actionName="ListProjects_V2" visibility="advanced" siena:isDeprecated="false" siena:family="ListProjects" siena:revision="2" siena:status="Production">
+        <doc title="Get projects&#xA;This operation is used to retrieve a list of projects for your JIRA instance." />
+        <request />
+        <response>
+          <representation mediaType="application/json" element="service:ListProjects_ResponseV2" />
+        </response>
+      </method>
+    </resource>
+    <resource path="/{connectionId}/user/permission/search">
+      <param style="template" name="connectionId" type="xs:string" required="true" />
+      <method siena:requiresAuthentication="true" name="GET" id="ListProjectUsers" actionName="ListProjectUsers" visibility="advanced" siena:isDeprecated="false">
+        <doc title="List users by project&#xA;This operation is used to retrieve a list of all users associated with a project." />
+        <request>
+          <param style="query" name="projectKey" type="xs:string" required="true">
+            <doc title="Unique key of the project." />
+          </param>
+        </request>
+        <response>
+          <representation mediaType="application/json" element="service:UserList" />
+        </response>
+      </method>
+    </resource>
+  </resources>
+  <authenticationProviders xmlns="http://schemas.microsoft.com/MicrosoftProjectSiena/WADL/2014/11">
+    <connectionProvider id="PowerAppAuth" siena:connectionProviderId="shared_jira" />
+  </authenticationProviders>
+  <template xmlns="http://schemas.microsoft.com/MicrosoftProjectSiena/WADL/2014/11">
+    <variable name="connectionId">
+      <modifyParams style="template" name="connectionId" attribute="fixed" />
+    </variable>
+  </template>
+</application>
