@@ -5,7 +5,7 @@ Home As screen:
         Image: =ntz
         ImagePosition: =ImagePosition.Fill
         Width: =372
-        X: =128
+        X: =154
         ZIndex: =1
 
     Label_Welcome_User As label:
