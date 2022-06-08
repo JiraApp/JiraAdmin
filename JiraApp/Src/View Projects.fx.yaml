@@ -76,3 +76,11 @@
                 Y: =149
                 ZIndex: =5
 
+    "'Back To View Issues_3' As icon.Add":
+        Color: =RGBA(235, 132, 44, 1)
+        Height: =58
+        Icon: =Icon.ArrowLeft
+        OnSelect: =Navigate(Home)
+        Width: =66
+        ZIndex: =3
+

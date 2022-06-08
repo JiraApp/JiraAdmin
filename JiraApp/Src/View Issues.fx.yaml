@@ -98,3 +98,12 @@
                 Y: =111
                 ZIndex: =7
 
+    "'Back To View Issues_2' As icon.Add":
+        Color: =RGBA(235, 132, 44, 1)
+        Height: =58
+        Icon: =Icon.ArrowLeft
+        OnSelect: =Navigate('View Projects')
+        Width: =66
+        X: =8
+        ZIndex: =3
+
