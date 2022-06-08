@@ -57,7 +57,7 @@
     "connectionParameters": {
       "jirainstance": "https://dynamicssmartzdemo.atlassian.net/",
       "sku": "Enterprise",
-      "username": "Dev01@Netsmartz307.onmicrosoft.com"
+      "username": "nikita.singla@Netsmartz307.onmicrosoft.com"
     },
     "connectionRef": {
       "apiTier": "Premium",

@@ -10,7 +10,7 @@
   "ControlUniqueIds": {
     "App": 1,
     "Body1": 48,
-    "Button1": 13,
+    "Button1": 15,
     "Button2": 51,
     "Container1": 28,
     "Container1_1": 35,
@@ -18,20 +18,20 @@
     "Gallery2": 33,
     "galleryTemplate1": 44,
     "galleryTemplate2": 34,
-    "Group1": 20,
+    "Group1": 22,
     "GroupHeader": 41,
-    "Icon1": 14,
-    "Icon1_1": 15,
-    "Icon1_2": 16,
-    "Icon1_3": 17,
-    "Icon1_4": 18,
-    "Icon1_5": 19,
-    "Label1": 7,
-    "Label1_1": 8,
-    "Label1_2": 9,
-    "Label1_3": 10,
-    "Label1_4": 11,
-    "Label1_5": 12,
+    "Icon1": 16,
+    "Icon1_1": 17,
+    "Icon1_2": 18,
+    "Icon1_3": 19,
+    "Icon1_4": 20,
+    "Icon1_5": 21,
+    "Label1": 9,
+    "Label1_1": 10,
+    "Label1_2": 11,
+    "Label1_3": 12,
+    "Label1_4": 13,
+    "Label1_5": 14,
     "Label7": 29,
     "Label7_1": 30,
     "Label7_2": 31,
@@ -40,17 +40,17 @@
     "Label7_5": 37,
     "Label7_6": 38,
     "Label7_7": 39,
-    "Logo": 4,
-    "LogoComponent": 3,
+    "Logo": 6,
+    "LogoComponent": 5,
     "LogoComponent_1": 24,
     "Main Screen": 23,
-    "NavigationComponent": 5,
+    "NavigationComponent": 7,
     "NavigationComponent_1": 25,
     "NextArrow3": 47,
-    "ProfileInitiateComponent": 21,
+    "ProfileInitiateComponent": 3,
     "ProfileInitiateComponent_1": 26,
-    "ProfileName": 22,
-    "Rectangle1": 6,
+    "ProfileName": 4,
+    "Rectangle1": 8,
     "Rectangle2": 40,
     "Rectangle3": 27,
     "Screen1": 42,
@@ -61,30 +61,30 @@
   },
   "FunctionParamsInvariantScripts": {},
   "FunctionParamsInvariantScriptsOnInstances": {},
-  "HeaderLastSavedDateTimeUTC": "06/08/2022 08:00:33",
+  "HeaderLastSavedDateTimeUTC": "06/08/2022 08:08:16",
   "IsLegacyComponentAllowGlobalScopeCase": false,
   "LocalConnectionIDReferences": {
-    "05261a5e-4e6d-4a4e-9b23-9fb28ea46d62": "\"/providers/microsoft.powerapps/apis/shared_jira-20canvas-20app-5fb57e7af862529f37-5f5b30531a7cffdf5c/connections/63dea5eda71946b28f7cbee36ceaa08d\"",
-    "766e5717-bb46-4058-a42b-f8d6547655d0": "\"/providers/microsoft.powerapps/apis/shared_logicflows/connections/25a50f46-d6db-4671-aeab-14fcd52058f4\"",
-    "fb0bd4db-c911-47db-ba37-82ecce45e71a": "\"/providers/microsoft.powerapps/apis/shared_jira/connections/e3611fdf13a7479ea2c1d921dd24d6ea\""
+    "05261a5e-4e6d-4a4e-9b23-9fb28ea46d62": "\"/providers/microsoft.powerapps/apis/shared_jira-20canvas-20app-5fb57e7af862529f37-5f5b30531a7cffdf5c/connections/495cbc09e9074a108bd241d11201731e\"",
+    "766e5717-bb46-4058-a42b-f8d6547655d0": "\"/providers/microsoft.powerapps/apis/shared_logicflows/connections/d8eb18418e3543b8aad4d7413e13f682\"",
+    "fb0bd4db-c911-47db-ba37-82ecce45e71a": "\"/providers/microsoft.powerapps/apis/shared_jira/connections/003e0cddaf9648beb02d6eab7e210669\""
   },
   "LocalDatabaseReferencesAsEmpty": false,
   "LocalResourceFileNames": {
     "Jira_(software)-Logo.wine": "9b6eee19-f40d-43a6-9c98-922aeee457d1.png"
   },
   "LocalResourceRootPaths": {
-    "Jira_(software)-Logo.wine": "https://docserverpwaprodwus.blob.core.windows.net/1f013fcd-e6eb-4efc-b26e-b1d8c55a1f8d-1/resource/Assets0Images09b6eee19-f40d-43a6-9c98-922aeee457d1.png?sv=2017-04-17&sr=b&sig=%2FIWGeUF4ZLOqYEcsYbLwVa3ca5hHjy6HDpaX9tq0hrQ%3D&spr=https&se=2022-06-09T07%3A50%3A14Z&sp=r"
+    "Jira_(software)-Logo.wine": "https://docserverpwaprodeus.blob.core.windows.net/d6737b5e-9f0f-4843-a616-9d6de0105fa5-1/resource/Assets0Images09b6eee19-f40d-43a6-9c98-922aeee457d1.png?sv=2017-04-17&sr=b&sig=VtLSDrKBFhAkUKs4uqUXGvPC3GS6Kkw5uVppCIlkux8%3D&spr=https&se=2022-06-09T08%3A18%3A09Z&sp=r"
   },
   "OldLogoFileName": "osc3ilmq.jpg",
   "OrderComponentMetadata": {
-    "8dafbf936be2420691ff3afaf334fb2b": 0,
-    "c6209a6b1abd496790e4080a5b940714": 2,
-    "cc733bc2dee5481f900b06095ad4f5a2": 1
+    "8dafbf936be2420691ff3afaf334fb2b": 1,
+    "c6209a6b1abd496790e4080a5b940714": 0,
+    "cc733bc2dee5481f900b06095ad4f5a2": 2
   },
   "OrderComponentTemplate": {
-    "8dafbf936be2420691ff3afaf334fb2b": 0,
-    "c6209a6b1abd496790e4080a5b940714": 2,
-    "cc733bc2dee5481f900b06095ad4f5a2": 1
+    "8dafbf936be2420691ff3afaf334fb2b": 1,
+    "c6209a6b1abd496790e4080a5b940714": 0,
+    "cc733bc2dee5481f900b06095ad4f5a2": 2
   },
   "OrderDataSource": {
     "CreateWorklog-HTTP": 2,
@@ -186,7 +186,7 @@
   "RuleScreenIdWithoutScreen": {},
   "TemplateVersions": {},
   "VolatileProperties": {
-    "AnalysisLoadTime": 0.3596747,
+    "AnalysisLoadTime": 0.336578,
     "ControlCount": {
       "8dafbf936be2420691ff3afaf334fb2b": 2,
       "button": 2,
@@ -203,7 +203,7 @@
       "screen": 2,
       "text": 1
     },
-    "DeserializationLoadTime": 0.6814828,
+    "DeserializationLoadTime": 1.3669629,
     "ErrorCount": 0
   },
   "WasLocalDatabaseReferencesEmpty": true
