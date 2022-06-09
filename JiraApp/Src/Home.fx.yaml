@@ -40,6 +40,9 @@ Home As screen:
         Fill: =RGBA(254, 198, 61, 1)
         Height: =79
         HoverFill: =ColorFade(Self.Fill, -20%)
+        OnSelect: |-
+            =
+            Navigate('View Issues');
         RadiusBottomLeft: =20
         RadiusBottomRight: =20
         RadiusTopLeft: =20
