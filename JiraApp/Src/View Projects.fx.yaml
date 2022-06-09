@@ -69,7 +69,7 @@
                 Height: =39
                 Icon: =Icon.ArrowRight
                 OnSelect: |-
-                    =ClearCollect(MyProjectIssue,GetIssuesRelatedtoProject.Run(ThisItem.key,User().Email,"rPajijhGTgMbtsWmoSd1C00F"));
+                    =ClearCollect(MyProjectIssue,GetIssuesRelatedtoProject.Run(ThisItem.key,User().Email,varAPItoken));
                     Navigate('View Issues')
                 Width: =46
                 X: =534
