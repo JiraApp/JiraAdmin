@@ -18,3 +18,69 @@
         Width: =66
         ZIndex: =2
 
+    ProjectHeaderGallery_1 As gallery.variableTemplateHeightGallery:
+        Height: =942
+        Items: =MyIssueWorklog
+        Layout: =Layout.Vertical
+        TemplateSize: =937
+        Y: =194
+        ZIndex: =3
+
+        ProjectGallery_1 As gallery.variableTemplateHeightGallery:
+            Height: =937
+            Items: =ThisItem.worklogs
+            Layout: =Layout.Vertical
+            TemplateSize: =157
+            Width: =630
+            ZIndex: =1
+
+            Label_Project_Name_2 As label:
+                FontWeight: =FontWeight.Semibold
+                Height: =70
+                OnSelect: =Select(Parent)
+                Size: =18
+                Text: =ThisItem.issueId
+                Width: =522
+                X: =77
+                ZIndex: =1
+
+            Label_Project_Key_3 As label:
+                Height: =39
+                OnSelect: =Select(Parent)
+                Size: =18
+                Text: =ThisItem.issueId
+                Width: =279
+                X: =77
+                Y: =59
+                ZIndex: =2
+
+            Label_Project_Category_2 As label:
+                Height: =59
+                OnSelect: =Select(Parent)
+                Size: =18
+                Text: =ThisItem.started
+                Width: =395
+                X: =77
+                Y: =98
+                ZIndex: =3
+
+            Image_Project_Avtar_2 As image:
+                Height: =50
+                Image: =ThisItem.author.avatarUrls.'16x16'
+                ImagePosition: =ImagePosition.Fill
+                OnSelect: =Select(Parent)
+                Width: =64
+                Y: =20
+                ZIndex: =4
+
+            ViewIssuesRelatedToProjects_2 As icon.Add:
+                Height: =39
+                Icon: =Icon.ArrowRight
+                OnSelect: |-
+                    =ClearCollect(MyProjectIssue,GetIssuesRelatedtoProject.Run(ThisItem.key,User().Email,"rPajijhGTgMbtsWmoSd1C00F"));
+                    Navigate('View Issues')
+                Width: =46
+                X: =534
+                Y: =118
+                ZIndex: =5
+
