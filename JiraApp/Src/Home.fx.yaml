@@ -23,7 +23,7 @@ Home As screen:
         Height: =79
         HoverFill: =ColorFade(Self.Fill, -20%)
         OnSelect: |-
-            =ClearCollect(MyProjects,GetMyProjects.Run(User().Email,"rPajijhGTgMbtsWmoSd1C00F"));
+            =ClearCollect(MyProjects,GetMyProjects.Run(User().Email,varAPItoken));
             Navigate('View Projects');
         RadiusBottomLeft: =20
         RadiusBottomRight: =20
