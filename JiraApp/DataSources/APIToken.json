@@ -17,7 +17,7 @@
       "{Link}": "Link to item",
       "{ModerationComment}": "Comments associated with the content approval of this list item",
       "{ModerationStatus}": "Content approval status",
-      "{Name}": "Name ({Name})",
+      "{Name}": "Name",
       "{Path}": "Folder path",
       "{Thumbnail}": "Thumbnail",
       "{TriggerWindowEndToken}": "Trigger Window End Token",
@@ -32,8 +32,8 @@
       "Editor#Claims": "Modified By Claims",
       "ID": "ID",
       "Modified": "Modified",
-      "Name": "User Name",
-      "Title": "Title"
+      "Title": "Title",
+      "UserEmail": "UserEmail"
     },
     "DatasetName": "https://netsmartz307.sharepoint.com/sites/APIToken",
     "EncodeDataset": true,
