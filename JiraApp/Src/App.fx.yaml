@@ -1,4 +1,4 @@
 App As appinfo:
     BackEnabled: =false
-    OnStart: =ClearCollect(Tokencoll,APIToken)
+    OnStart: =ClearCollect(Tokencoll,Filter(APIToken,UserEmail=User().Email))
 
