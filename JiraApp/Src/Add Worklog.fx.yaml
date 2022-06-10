@@ -94,12 +94,12 @@
         ZIndex: =7
 
     Button1 As button:
-        DisplayMode: =If(varIsBlank,DisplayMode.Disabled,DisplayMode.Edit)
+        DisplayMode: =If(IsBlank(TextInput1.Text),DisplayMode.Disabled,If(varIsBlank,DisplayMode.Disabled,DisplayMode.Edit))
         Fill: =RGBA(66, 139, 202, 1)
         Height: =72
         HoverFill: =ColorFade(Self.Fill, -20%)
         OnSelect: |-
-            =ClearCollect(MyIssueWorklog,CreateandGetIssueWorklogs.Run(varProjectIssueKey,DatePicker2.SelectedDate,varCalculatedSeconds,User().Email,varAPItoken,DatePicker2.SelectedDate));
+            =ClearCollect(MyIssueWorklog,CreateandGetIssueWorklogs.Run(varProjectIssueKey,DatePicker2.SelectedDate,varCalculatedSeconds,User().Email,varAPItoken,DatePicker2.SelectedDate,TextInput2.Text));
             Reset(TextInput1);
             Reset(DatePicker2);
             Navigate('View WorkLog History')
@@ -157,6 +157,7 @@
         Mode: =TextMode.MultiLine
         Size: =21
         Width: =560
+        X: =8
         Y: =572
         ZIndex: =13
 

@@ -38,7 +38,7 @@
     "DatasetName": "https://netsmartz307.sharepoint.com/sites/APIToken",
     "EncodeDataset": true,
     "IsSampleData": false,
-    "IsWritable": false,
+    "IsWritable": true,
     "Name": "APIToken",
     "Type": "ConnectedDataSourceInfo"
   }

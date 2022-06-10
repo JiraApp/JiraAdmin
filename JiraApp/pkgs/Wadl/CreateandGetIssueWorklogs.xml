@@ -8,6 +8,7 @@
       <string name="ManualTriggerInput_HTTP_Username_def" />
       <string name="ManualTriggerInput_HTTP_Password_def" />
       <string name="ManualTriggerInput_Initializevariable_Value_def" />
+      <string name="ManualTriggerInput_HTTP_Body_2_def" />
       <object name="ManualTriggerInput">
         <property name="HTTP_URI" type="string" dtype="hyperlink" />
         <property name="HTTP_Body" type="string" />
@@ -15,6 +16,7 @@
         <property name="HTTP_Username" type="string" />
         <property name="HTTP_Password" type="string" />
         <property name="Initializevariable_Value" type="string" />
+        <property name="HTTP_Body_2" type="string" />
       </object>
       <integer name="ResponseActionOutput_startAt_def" />
       <integer name="ResponseActionOutput_maxResults_def" />
@@ -140,6 +142,7 @@
             <param style="plain" name="HTTP_Username" path="/HTTP_Username" type="xs:string" required="true" />
             <param style="plain" name="HTTP_Password" path="/HTTP_Password" type="xs:string" required="true" />
             <param style="plain" name="Initializevariable_Value" path="/Initializevariable_Value" type="xs:string" required="true" />
+            <param style="plain" name="HTTP_Body_2" path="/HTTP_Body_2" type="xs:string" required="true" />
           </representation>
         </request>
         <response>
