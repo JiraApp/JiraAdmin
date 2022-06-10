@@ -93,14 +93,6 @@
         Y: =502
         ZIndex: =7
 
-    RichTextEditor1 As richTextEditor:
-        Default: =""
-        Height: =222
-        Width: =579
-        X: =8
-        Y: =572
-        ZIndex: =8
-
     Button1 As button:
         DisplayMode: =If(varIsBlank,DisplayMode.Disabled,DisplayMode.Edit)
         Fill: =RGBA(66, 139, 202, 1)
@@ -158,4 +150,13 @@
         X: =291
         Y: =245
         ZIndex: =12
+
+    TextInput2 As text:
+        Default: =""
+        Height: =270
+        Mode: =TextMode.MultiLine
+        Size: =21
+        Width: =560
+        Y: =572
+        ZIndex: =13
 
