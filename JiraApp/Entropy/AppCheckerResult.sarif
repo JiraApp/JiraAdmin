@@ -14,19 +14,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'View WorkLog History'.'Back To View Issues_1'.AccessibleLabel"
+                  "fullyQualifiedName": "'Filter Component'.Icon1.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'View WorkLog History'.'Back To View Issues_1'.AccessibleLabel",
+                  "fullyQualifiedName": "'Filter Component'.Icon1.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "View WorkLog History",
-                "type": "'View WorkLog History'.'Back To View Issues_1'"
+                "module": "Filter Component",
+                "type": "'Filter Component'.Icon1"
               }
             }
           ],
@@ -44,19 +44,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'View WorkLog History'.'Back To View Issues_1'.TabIndex"
+                  "fullyQualifiedName": "'Filter Component'.Icon1.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'View WorkLog History'.'Back To View Issues_1'.TabIndex",
+                  "fullyQualifiedName": "'Filter Component'.Icon1.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
-                "module": "View WorkLog History",
-                "type": "'View WorkLog History'.'Back To View Issues_1'"
+                "module": "Filter Component",
+                "type": "'Filter Component'.Icon1"
               }
             }
           ],
@@ -74,19 +74,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'View WorkLog History'.ProjectHeaderGallery_1.AccessibleLabel"
+                  "fullyQualifiedName": "'Filter Component'.DatePicker1.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'View WorkLog History'.ProjectHeaderGallery_1.AccessibleLabel",
+                  "fullyQualifiedName": "'Filter Component'.DatePicker1.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "View WorkLog History",
-                "type": "'View WorkLog History'.ProjectHeaderGallery_1"
+                "module": "Filter Component",
+                "type": "'Filter Component'.DatePicker1"
               }
             }
           ],
@@ -104,49 +104,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'View WorkLog History'.ProjectHeaderGallery_1.TabIndex"
+                  "fullyQualifiedName": "'Filter Component'.DatePicker1_1.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'View WorkLog History'.ProjectHeaderGallery_1.TabIndex",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "TabIndex",
-                "module": "View WorkLog History",
-                "type": "'View WorkLog History'.ProjectHeaderGallery_1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'View WorkLog History'.ProjectHeaderGallery_1.ProjectGallery_1.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'View WorkLog History'.ProjectHeaderGallery_1.ProjectGallery_1.AccessibleLabel",
+                  "fullyQualifiedName": "'Filter Component'.DatePicker1_1.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "View WorkLog History",
-                "type": "'View WorkLog History'.ProjectHeaderGallery_1.ProjectGallery_1"
+                "module": "Filter Component",
+                "type": "'Filter Component'.DatePicker1_1"
               }
             }
           ],
@@ -164,19 +134,49 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'View WorkLog History'.ProjectHeaderGallery_1.ProjectGallery_1.TabIndex"
+                  "fullyQualifiedName": "'Filter Component'.Gallery1.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'View WorkLog History'.ProjectHeaderGallery_1.ProjectGallery_1.TabIndex",
+                  "fullyQualifiedName": "'Filter Component'.Gallery1.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Filter Component",
+                "type": "'Filter Component'.Gallery1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Filter Component'.Gallery1.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Filter Component'.Gallery1.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
-                "module": "View WorkLog History",
-                "type": "'View WorkLog History'.ProjectHeaderGallery_1.ProjectGallery_1"
+                "module": "Filter Component",
+                "type": "'Filter Component'.Gallery1"
               }
             }
           ],
@@ -188,6 +188,36 @@
           },
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
           "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Filter Component'.Gallery1.ComboBox2.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Filter Component'.Gallery1.ComboBox2.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Filter Component",
+                "type": "'Filter Component'.Gallery1.ComboBox2"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 0
         },
         {
           "locations": [
@@ -344,36 +374,6 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'View Issues'.'Back To View Issues_2'.TabIndex"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'View Issues'.'Back To View Issues_2'.TabIndex",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "TabIndex",
-                "module": "View Issues",
-                "type": "'View Issues'.'Back To View Issues_2'"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
                   "fullyQualifiedName": "'View Issues'.'Back To View Issues_2'.AccessibleLabel"
                 }
               ],
@@ -398,6 +398,36 @@
           },
           "ruleId": "acc-AccessibleLabelNeeded",
           "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'View Issues'.'Back To View Issues_2'.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'View Issues'.'Back To View Issues_2'.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "View Issues",
+                "type": "'View Issues'.'Back To View Issues_2'"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 1
         },
         {
           "locations": [
@@ -524,36 +554,6 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'View Issues'.IssueHeaderGallery.IssueGallery.ViewIssuesRelatedToProjects_1.TabIndex"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'View Issues'.IssueHeaderGallery.IssueGallery.ViewIssuesRelatedToProjects_1.TabIndex",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "TabIndex",
-                "module": "View Issues",
-                "type": "'View Issues'.IssueHeaderGallery.IssueGallery.ViewIssuesRelatedToProjects_1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
                   "fullyQualifiedName": "'View Issues'.IssueHeaderGallery.IssueGallery.ViewIssuesRelatedToProjects_1.AccessibleLabel"
                 }
               ],
@@ -578,6 +578,36 @@
           },
           "ruleId": "acc-AccessibleLabelNeeded",
           "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'View Issues'.IssueHeaderGallery.IssueGallery.ViewIssuesRelatedToProjects_1.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'View Issues'.IssueHeaderGallery.IssueGallery.ViewIssuesRelatedToProjects_1.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "View Issues",
+                "type": "'View Issues'.IssueHeaderGallery.IssueGallery.ViewIssuesRelatedToProjects_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 1
         },
         {
           "locations": [
@@ -824,19 +854,169 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'View WorkLog History'.ProjectHeaderGallery_1.ProjectGallery_1.ViewIssuesRelatedToProjects_2.TabIndex"
+                  "fullyQualifiedName": "'View WorkLog History'.'Back To View Issues_1'.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'View WorkLog History'.ProjectHeaderGallery_1.ProjectGallery_1.ViewIssuesRelatedToProjects_2.TabIndex",
+                  "fullyQualifiedName": "'View WorkLog History'.'Back To View Issues_1'.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "View WorkLog History",
+                "type": "'View WorkLog History'.'Back To View Issues_1'"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'View WorkLog History'.'Back To View Issues_1'.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'View WorkLog History'.'Back To View Issues_1'.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
                 "module": "View WorkLog History",
-                "type": "'View WorkLog History'.ProjectHeaderGallery_1.ProjectGallery_1.ViewIssuesRelatedToProjects_2"
+                "type": "'View WorkLog History'.'Back To View Issues_1'"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'View WorkLog History'.ProjectHeaderGallery_1.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'View WorkLog History'.ProjectHeaderGallery_1.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "View WorkLog History",
+                "type": "'View WorkLog History'.ProjectHeaderGallery_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'View WorkLog History'.ProjectHeaderGallery_1.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'View WorkLog History'.ProjectHeaderGallery_1.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "View WorkLog History",
+                "type": "'View WorkLog History'.ProjectHeaderGallery_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'View WorkLog History'.ProjectHeaderGallery_1.ProjectGallery_1.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'View WorkLog History'.ProjectHeaderGallery_1.ProjectGallery_1.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "View WorkLog History",
+                "type": "'View WorkLog History'.ProjectHeaderGallery_1.ProjectGallery_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'View WorkLog History'.ProjectHeaderGallery_1.ProjectGallery_1.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'View WorkLog History'.ProjectHeaderGallery_1.ProjectGallery_1.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "View WorkLog History",
+                "type": "'View WorkLog History'.ProjectHeaderGallery_1.ProjectGallery_1"
               }
             }
           ],
@@ -884,199 +1064,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Filter Component'.Icon1.AccessibleLabel"
+                  "fullyQualifiedName": "'View WorkLog History'.ProjectHeaderGallery_1.ProjectGallery_1.ViewIssuesRelatedToProjects_2.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Filter Component'.Icon1.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Filter Component",
-                "type": "'Filter Component'.Icon1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Filter Component'.Icon1.TabIndex"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Filter Component'.Icon1.TabIndex",
+                  "fullyQualifiedName": "'View WorkLog History'.ProjectHeaderGallery_1.ProjectGallery_1.ViewIssuesRelatedToProjects_2.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
-                "module": "Filter Component",
-                "type": "'Filter Component'.Icon1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Filter Component'.DatePicker1.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Filter Component'.DatePicker1.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Filter Component",
-                "type": "'Filter Component'.DatePicker1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Filter Component'.DatePicker1_1.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Filter Component'.DatePicker1_1.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Filter Component",
-                "type": "'Filter Component'.DatePicker1_1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Filter Component'.Gallery1.ComboBox2.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Filter Component'.Gallery1.ComboBox2.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Filter Component",
-                "type": "'Filter Component'.Gallery1.ComboBox2"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Filter Component'.Gallery1.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Filter Component'.Gallery1.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Filter Component",
-                "type": "'Filter Component'.Gallery1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Filter Component'.Gallery1.TabIndex"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Filter Component'.Gallery1.TabIndex",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "TabIndex",
-                "module": "Filter Component",
-                "type": "'Filter Component'.Gallery1"
+                "module": "View WorkLog History",
+                "type": "'View WorkLog History'.ProjectHeaderGallery_1.ProjectGallery_1.ViewIssuesRelatedToProjects_2"
               }
             }
           ],

@@ -15,6 +15,7 @@
         Height: =942
         Items: =MyProjectIssue
         Layout: =Layout.Vertical
+        ShowScrollbar: =false
         TemplateSize: =937
         Y: =190
         ZIndex: =2

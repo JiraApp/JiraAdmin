@@ -14,6 +14,7 @@
         Height: =942
         Items: =MyProjects
         Layout: =Layout.Vertical
+        ShowScrollbar: =false
         TemplateSize: =937
         Y: =190
         ZIndex: =2

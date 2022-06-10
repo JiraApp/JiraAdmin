@@ -22,12 +22,13 @@
         Height: =673
         Items: =MyIssueWorklog
         Layout: =Layout.Vertical
+        ShowScrollbar: =false
         TemplateSize: =937
         Y: =288
         ZIndex: =3
 
         ProjectGallery_1 As gallery.variableTemplateHeightGallery:
-            Height: =937
+            Height: =Parent.Height
             Items: =ThisItem.worklogs
             Layout: =Layout.Vertical
             TemplateSize: =157
