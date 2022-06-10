@@ -61,14 +61,14 @@
   },
   "FunctionParamsInvariantScripts": {},
   "FunctionParamsInvariantScriptsOnInstances": {},
-  "HeaderLastSavedDateTimeUTC": "06/10/2022 09:30:50",
+  "HeaderLastSavedDateTimeUTC": "06/10/2022 09:31:15",
   "IsLegacyComponentAllowGlobalScopeCase": false,
   "LocalConnectionIDReferences": {
     "0586035b-e9c2-491b-93fc-154e83b81b18": "\"/providers/microsoft.powerapps/apis/shared_logicflows/connections/3444e89a8feb4508a44174d2cf0afb96-1fa159e731227f78\"",
     "13217afb-3380-4617-bee8-ca627eb416e8": "\"/providers/microsoft.powerapps/apis/shared_logicflows/connections/d6c2d34c4f67456d94133ddbc9085c30-1fa159e731227f78\"",
     "631daac8-9c36-4747-bd23-3932d915913c": "\"/providers/microsoft.powerapps/apis/shared_sharepointonline/connections/769f360e44e34ec88e0513b89f4f16df\"",
     "9ff7a90f-adad-48ad-a11e-ab5a46f8a010": "\"/providers/microsoft.powerapps/apis/shared_logicflows/connections/a7997ced-a200-47bc-8d55-962772cf61a9\"",
-    "e7311505-f4f4-4d98-8312-d2d00ab64eaf": "\"/providers/Microsoft.PowerApps/apis/shared_logicflows/connections/051BDE70D0BA4526A3453FE63AAAA40B-1FA159E731227F78\""
+    "e7311505-f4f4-4d98-8312-d2d00ab64eaf": "\"/providers/microsoft.powerapps/apis/shared_logicflows/connections/051bde70d0ba4526a3453fe63aaaa40b-1fa159e731227f78\""
   },
   "LocalDatabaseReferencesAsEmpty": false,
   "LocalResourceFileNames": {
@@ -135,7 +135,7 @@
     "Label_My_Issues": 16,
     "Label_My_Project": 5,
     "Label_Project_Category": 13,
-    "Label_Project_Category_1": 25,
+    "Label_Project_Category_1": 26,
     "Label_Project_Category_2": 49,
     "Label_Project_Key": 12,
     "Label_Project_Key_1": 24,
@@ -160,7 +160,7 @@
     "View Projects": 34,
     "View WorkLog History": 46,
     "ViewIssuesRelatedToProjects": 14,
-    "ViewIssuesRelatedToProjects_1": 26,
+    "ViewIssuesRelatedToProjects_1": 25,
     "ViewIssuesRelatedToProjects_2": 50
   },
   "ResourcesJsonIndices": {
