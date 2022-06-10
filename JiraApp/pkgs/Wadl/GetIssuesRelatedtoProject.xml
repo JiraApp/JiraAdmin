@@ -37,7 +37,6 @@
         <property name="avatarId" type="integer" />
         <property name="hierarchyLevel" type="integer" />
       </object>
-      <integer name="ResponseActionOutput_issues_def_items_def_fields_def_timespent_def" />
       <string name="ResponseActionOutput_issues_def_items_def_fields_def_project_def_self_def" />
       <string name="ResponseActionOutput_issues_def_items_def_fields_def_project_def_id_def" />
       <string name="ResponseActionOutput_issues_def_items_def_fields_def_project_def_key_def" />
@@ -63,9 +62,7 @@
         <property name="simplified" type="boolean" />
         <property name="avatarUrls" typeRef="ResponseActionOutput_issues_def_items_def_fields_def_project_def_avatarUrls_def" />
       </object>
-      <integer name="ResponseActionOutput_issues_def_items_def_fields_def_aggregatetimespent_def" />
       <integer name="ResponseActionOutput_issues_def_items_def_fields_def_workratio_def" />
-      <string name="ResponseActionOutput_issues_def_items_def_fields_def_lastViewed_def" />
       <string name="ResponseActionOutput_issues_def_items_def_fields_def_watches_def_self_def" />
       <integer name="ResponseActionOutput_issues_def_items_def_fields_def_watches_def_watchCount_def" />
       <boolean name="ResponseActionOutput_issues_def_items_def_fields_def_watches_def_isWatching_def" />
@@ -99,7 +96,6 @@
         <property name="nonEditableReason" typeRef="ResponseActionOutput_issues_def_items_def_fields_def_customfield_10018_def_nonEditableReason_def" />
       </object>
       <string name="ResponseActionOutput_issues_def_items_def_fields_def_customfield_10019_def" />
-      <integer name="ResponseActionOutput_issues_def_items_def_fields_def_timeestimate_def" />
       <string name="ResponseActionOutput_issues_def_items_def_fields_def_assignee_def_self_def" />
       <string name="ResponseActionOutput_issues_def_items_def_fields_def_assignee_def_accountId_def" />
       <string name="ResponseActionOutput_issues_def_items_def_fields_def_assignee_def_avatarUrls_def_48x48_def" />
@@ -151,11 +147,9 @@
         <property name="id" type="string" />
         <property name="statusCategory" typeRef="ResponseActionOutput_issues_def_items_def_fields_def_status_def_statusCategory_def" />
       </object>
-      <integer name="ResponseActionOutput_issues_def_items_def_fields_def_aggregatetimeestimate_def" />
       <string name="ResponseActionOutput_issues_def_items_def_fields_def_summary_def" />
       <string name="ResponseActionOutput_issues_def_items_def_fields_def_creator_def_self_def" />
       <string name="ResponseActionOutput_issues_def_items_def_fields_def_creator_def_accountId_def" />
-      <string name="ResponseActionOutput_issues_def_items_def_fields_def_creator_def_emailAddress_def" />
       <string name="ResponseActionOutput_issues_def_items_def_fields_def_creator_def_avatarUrls_def_48x48_def" />
       <string name="ResponseActionOutput_issues_def_items_def_fields_def_creator_def_avatarUrls_def_24x24_def" />
       <string name="ResponseActionOutput_issues_def_items_def_fields_def_creator_def_avatarUrls_def_16x16_def" />
@@ -173,7 +167,6 @@
       <object name="ResponseActionOutput_issues_def_items_def_fields_def_creator_def">
         <property name="self" type="string" />
         <property name="accountId" type="string" />
-        <property name="emailAddress" type="string" />
         <property name="avatarUrls" typeRef="ResponseActionOutput_issues_def_items_def_fields_def_creator_def_avatarUrls_def" />
         <property name="displayName" type="string" />
         <property name="active" type="boolean" />
@@ -182,7 +175,6 @@
       </object>
       <string name="ResponseActionOutput_issues_def_items_def_fields_def_reporter_def_self_def" />
       <string name="ResponseActionOutput_issues_def_items_def_fields_def_reporter_def_accountId_def" />
-      <string name="ResponseActionOutput_issues_def_items_def_fields_def_reporter_def_emailAddress_def" />
       <string name="ResponseActionOutput_issues_def_items_def_fields_def_reporter_def_avatarUrls_def_48x48_def" />
       <string name="ResponseActionOutput_issues_def_items_def_fields_def_reporter_def_avatarUrls_def_24x24_def" />
       <string name="ResponseActionOutput_issues_def_items_def_fields_def_reporter_def_avatarUrls_def_16x16_def" />
@@ -200,29 +192,25 @@
       <object name="ResponseActionOutput_issues_def_items_def_fields_def_reporter_def">
         <property name="self" type="string" />
         <property name="accountId" type="string" />
-        <property name="emailAddress" type="string" />
         <property name="avatarUrls" typeRef="ResponseActionOutput_issues_def_items_def_fields_def_reporter_def_avatarUrls_def" />
         <property name="displayName" type="string" />
         <property name="active" type="boolean" />
         <property name="timeZone" type="string" />
         <property name="accountType" type="string" />
       </object>
-      <string name="ResponseActionOutput_issues_def_items_def_fields_def_customfield_10000_def" />
       <integer name="ResponseActionOutput_issues_def_items_def_fields_def_aggregateprogress_def_progress_def" />
       <integer name="ResponseActionOutput_issues_def_items_def_fields_def_aggregateprogress_def_total_def" />
-      <integer name="ResponseActionOutput_issues_def_items_def_fields_def_aggregateprogress_def_percent_def" />
       <object name="ResponseActionOutput_issues_def_items_def_fields_def_aggregateprogress_def">
         <property name="progress" type="integer" />
         <property name="total" type="integer" />
-        <property name="percent" type="integer" />
       </object>
+      <string name="ResponseActionOutput_issues_def_items_def_fields_def_customfield_10000_def" />
+      <string name="ResponseActionOutput_issues_def_items_def_fields_def_duedate_def" />
       <integer name="ResponseActionOutput_issues_def_items_def_fields_def_progress_def_progress_def" />
       <integer name="ResponseActionOutput_issues_def_items_def_fields_def_progress_def_total_def" />
-      <integer name="ResponseActionOutput_issues_def_items_def_fields_def_progress_def_percent_def" />
       <object name="ResponseActionOutput_issues_def_items_def_fields_def_progress_def">
         <property name="progress" type="integer" />
         <property name="total" type="integer" />
-        <property name="percent" type="integer" />
       </object>
       <string name="ResponseActionOutput_issues_def_items_def_fields_def_votes_def_self_def" />
       <integer name="ResponseActionOutput_issues_def_items_def_fields_def_votes_def_votes_def" />
@@ -235,26 +223,22 @@
       <object name="ResponseActionOutput_issues_def_items_def_fields_def">
         <property name="statuscategorychangedate" type="string" />
         <property name="issuetype" typeRef="ResponseActionOutput_issues_def_items_def_fields_def_issuetype_def" />
-        <property name="timespent" type="integer" />
         <property name="project" typeRef="ResponseActionOutput_issues_def_items_def_fields_def_project_def" />
-        <property name="aggregatetimespent" type="integer" />
         <property name="workratio" type="integer" />
-        <property name="lastViewed" type="string" />
         <property name="watches" typeRef="ResponseActionOutput_issues_def_items_def_fields_def_watches_def" />
         <property name="created" type="string" />
         <property name="priority" typeRef="ResponseActionOutput_issues_def_items_def_fields_def_priority_def" />
         <property name="customfield_10018" typeRef="ResponseActionOutput_issues_def_items_def_fields_def_customfield_10018_def" />
         <property name="customfield_10019" type="string" />
-        <property name="timeestimate" type="integer" />
         <property name="assignee" typeRef="ResponseActionOutput_issues_def_items_def_fields_def_assignee_def" />
         <property name="updated" type="string" />
         <property name="status" typeRef="ResponseActionOutput_issues_def_items_def_fields_def_status_def" />
-        <property name="aggregatetimeestimate" type="integer" />
         <property name="summary" type="string" />
         <property name="creator" typeRef="ResponseActionOutput_issues_def_items_def_fields_def_creator_def" />
         <property name="reporter" typeRef="ResponseActionOutput_issues_def_items_def_fields_def_reporter_def" />
-        <property name="customfield_10000" type="string" />
         <property name="aggregateprogress" typeRef="ResponseActionOutput_issues_def_items_def_fields_def_aggregateprogress_def" />
+        <property name="customfield_10000" type="string" />
+        <property name="duedate" type="string" />
         <property name="progress" typeRef="ResponseActionOutput_issues_def_items_def_fields_def_progress_def" />
         <property name="votes" typeRef="ResponseActionOutput_issues_def_items_def_fields_def_votes_def" />
       </object>

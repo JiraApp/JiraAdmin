@@ -9,6 +9,9 @@
       <string name="ManualTriggerInput_HTTP_Password_def" />
       <string name="ManualTriggerInput_Initializevariable_Value_def" />
       <string name="ManualTriggerInput_HTTP_Body_2_def" />
+      <integer name="ManualTriggerInput_Initializevariable2_Value_def" />
+      <string dtype="hyperlink" name="ManualTriggerInput_HTTP3_URI_def" />
+      <string name="ManualTriggerInput_HTTP3_URI_1_def" />
       <object name="ManualTriggerInput">
         <property name="HTTP_URI" type="string" dtype="hyperlink" />
         <property name="HTTP_Body" type="string" />
@@ -17,6 +20,9 @@
         <property name="HTTP_Password" type="string" />
         <property name="Initializevariable_Value" type="string" />
         <property name="HTTP_Body_2" type="string" />
+        <property name="Initializevariable2_Value" type="integer" />
+        <property name="HTTP3_URI" type="string" dtype="hyperlink" />
+        <property name="HTTP3_URI_1" type="string" />
       </object>
       <integer name="ResponseActionOutput_startAt_def" />
       <integer name="ResponseActionOutput_maxResults_def" />
@@ -143,6 +149,9 @@
             <param style="plain" name="HTTP_Password" path="/HTTP_Password" type="xs:string" required="true" />
             <param style="plain" name="Initializevariable_Value" path="/Initializevariable_Value" type="xs:string" required="true" />
             <param style="plain" name="HTTP_Body_2" path="/HTTP_Body_2" type="xs:string" required="true" />
+            <param style="plain" name="Initializevariable2_Value" path="/Initializevariable2_Value" type="xs:long" required="true" />
+            <param style="plain" name="HTTP3_URI" path="/HTTP3_URI" type="xs:anyURI" siena:dtype="hyperlink" required="true" />
+            <param style="plain" name="HTTP3_URI_1" path="/HTTP3_URI_1" type="xs:string" required="true" />
           </representation>
         </request>
         <response>

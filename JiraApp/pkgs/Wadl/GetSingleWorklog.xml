@@ -1,0 +1,139 @@
+<application xmlns:xml="http://www.w3.org/XML/1998/namespace" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:service="https://unitedstates-002.azure-apim.net/apim/logicflows" xmlns:siena="http://schemas.microsoft.com/MicrosoftProjectSiena/WADL/2014/11" siena:serviceId="GetSingleWorklog" xmlns="http://wadl.dev.java.net/2009/02">
+  <doc title="Get Single Worklog" />
+  <grammars>
+    <jsonTypes targetNamespace="https://unitedstates-002.azure-apim.net/apim/logicflows" xmlns="http://schemas.microsoft.com/MicrosoftProjectSiena/WADL/2014/11">
+      <string dtype="hyperlink" name="ManualTriggerInput_HTTP_URI_def" />
+      <string name="ManualTriggerInput_HTTP_URI_1_def" />
+      <string name="ManualTriggerInput_HTTP_Username_def" />
+      <string name="ManualTriggerInput_HTTP_Password_def" />
+      <object name="ManualTriggerInput">
+        <property name="HTTP_URI" type="string" dtype="hyperlink" />
+        <property name="HTTP_URI_1" type="string" />
+        <property name="HTTP_Username" type="string" />
+        <property name="HTTP_Password" type="string" />
+      </object>
+      <string name="ResponseActionOutput_self_def" />
+      <string name="ResponseActionOutput_author_def_self_def" />
+      <string name="ResponseActionOutput_author_def_accountId_def" />
+      <string name="ResponseActionOutput_author_def_avatarUrls_def_48x48_def" />
+      <string name="ResponseActionOutput_author_def_avatarUrls_def_24x24_def" />
+      <string name="ResponseActionOutput_author_def_avatarUrls_def_16x16_def" />
+      <string name="ResponseActionOutput_author_def_avatarUrls_def_32x32_def" />
+      <object name="ResponseActionOutput_author_def_avatarUrls_def">
+        <property name="48x48" type="string" />
+        <property name="24x24" type="string" />
+        <property name="16x16" type="string" />
+        <property name="32x32" type="string" />
+      </object>
+      <string name="ResponseActionOutput_author_def_displayName_def" />
+      <boolean name="ResponseActionOutput_author_def_active_def" />
+      <string name="ResponseActionOutput_author_def_timeZone_def" />
+      <string name="ResponseActionOutput_author_def_accountType_def" />
+      <object name="ResponseActionOutput_author_def">
+        <property name="self" type="string" />
+        <property name="accountId" type="string" />
+        <property name="avatarUrls" typeRef="ResponseActionOutput_author_def_avatarUrls_def" />
+        <property name="displayName" type="string" />
+        <property name="active" type="boolean" />
+        <property name="timeZone" type="string" />
+        <property name="accountType" type="string" />
+      </object>
+      <string name="ResponseActionOutput_updateAuthor_def_self_def" />
+      <string name="ResponseActionOutput_updateAuthor_def_accountId_def" />
+      <string name="ResponseActionOutput_updateAuthor_def_avatarUrls_def_48x48_def" />
+      <string name="ResponseActionOutput_updateAuthor_def_avatarUrls_def_24x24_def" />
+      <string name="ResponseActionOutput_updateAuthor_def_avatarUrls_def_16x16_def" />
+      <string name="ResponseActionOutput_updateAuthor_def_avatarUrls_def_32x32_def" />
+      <object name="ResponseActionOutput_updateAuthor_def_avatarUrls_def">
+        <property name="48x48" type="string" />
+        <property name="24x24" type="string" />
+        <property name="16x16" type="string" />
+        <property name="32x32" type="string" />
+      </object>
+      <string name="ResponseActionOutput_updateAuthor_def_displayName_def" />
+      <boolean name="ResponseActionOutput_updateAuthor_def_active_def" />
+      <string name="ResponseActionOutput_updateAuthor_def_timeZone_def" />
+      <string name="ResponseActionOutput_updateAuthor_def_accountType_def" />
+      <object name="ResponseActionOutput_updateAuthor_def">
+        <property name="self" type="string" />
+        <property name="accountId" type="string" />
+        <property name="avatarUrls" typeRef="ResponseActionOutput_updateAuthor_def_avatarUrls_def" />
+        <property name="displayName" type="string" />
+        <property name="active" type="boolean" />
+        <property name="timeZone" type="string" />
+        <property name="accountType" type="string" />
+      </object>
+      <string name="ResponseActionOutput_comment_def_type_def" />
+      <integer name="ResponseActionOutput_comment_def_version_def" />
+      <string name="ResponseActionOutput_comment_def_content_def_items_def_type_def" />
+      <string name="ResponseActionOutput_comment_def_content_def_items_def_content_def_items_def_text_def" />
+      <string name="ResponseActionOutput_comment_def_content_def_items_def_content_def_items_def_type_def" />
+      <object name="ResponseActionOutput_comment_def_content_def_items_def_content_def_items_def">
+        <property name="text" type="string" />
+        <property name="type" type="string" />
+      </object>
+      <array typeRef="ResponseActionOutput_comment_def_content_def_items_def_content_def_items_def" name="ResponseActionOutput_comment_def_content_def_items_def_content_def" />
+      <object name="ResponseActionOutput_comment_def_content_def_items_def">
+        <property name="type" type="string" />
+        <property name="content" typeRef="ResponseActionOutput_comment_def_content_def_items_def_content_def" />
+      </object>
+      <array typeRef="ResponseActionOutput_comment_def_content_def_items_def" name="ResponseActionOutput_comment_def_content_def" />
+      <object name="ResponseActionOutput_comment_def">
+        <property name="type" type="string" />
+        <property name="version" type="integer" />
+        <property name="content" typeRef="ResponseActionOutput_comment_def_content_def" />
+      </object>
+      <string name="ResponseActionOutput_created_def" />
+      <string name="ResponseActionOutput_updated_def" />
+      <string name="ResponseActionOutput_started_def" />
+      <string name="ResponseActionOutput_timeSpent_def" />
+      <integer name="ResponseActionOutput_timeSpentSeconds_def" />
+      <string name="ResponseActionOutput_id_def" />
+      <string name="ResponseActionOutput_issueId_def" />
+      <object name="ResponseActionOutput">
+        <property name="self" type="string" />
+        <property name="author" typeRef="ResponseActionOutput_author_def" />
+        <property name="updateAuthor" typeRef="ResponseActionOutput_updateAuthor_def" />
+        <property name="comment" typeRef="ResponseActionOutput_comment_def" />
+        <property name="created" type="string" />
+        <property name="updated" type="string" />
+        <property name="started" type="string" />
+        <property name="timeSpent" type="string" />
+        <property name="timeSpentSeconds" type="integer" />
+        <property name="id" type="string" />
+        <property name="issueId" type="string" />
+      </object>
+      <object name="Run_responses_default_def" />
+    </jsonTypes>
+  </grammars>
+  <resources siena:authenticationProviderHref="#PowerAppAuth" base="https://unitedstates-002.azure-apim.net/apim/logicflows">
+    <resource path="/{connectionId}/triggers/manual/run">
+      <param style="template" name="connectionId" type="xs:string" required="true" />
+      <method siena:requiresAuthentication="true" name="POST" id="Run">
+        <doc title="Runs a logic flow trigger." />
+        <request>
+          <param style="query" name="api-version" type="xs:string" required="true" fixed="2015-02-01-preview">
+            <doc title="The api version" />
+          </param>
+          <representation mediaType="application/json">
+            <param style="plain" name="HTTP_URI" path="/HTTP_URI" type="xs:anyURI" siena:dtype="hyperlink" required="true" />
+            <param style="plain" name="HTTP_URI_1" path="/HTTP_URI_1" type="xs:string" required="true" />
+            <param style="plain" name="HTTP_Username" path="/HTTP_Username" type="xs:string" required="true" />
+            <param style="plain" name="HTTP_Password" path="/HTTP_Password" type="xs:string" required="true" />
+          </representation>
+        </request>
+        <response>
+          <representation mediaType="application/json" element="service:ResponseActionOutput" />
+        </response>
+      </method>
+    </resource>
+  </resources>
+  <authenticationProviders xmlns="http://schemas.microsoft.com/MicrosoftProjectSiena/WADL/2014/11">
+    <connectionProvider id="PowerAppAuth" siena:connectionProviderId="logicflows" />
+  </authenticationProviders>
+  <template xmlns="http://schemas.microsoft.com/MicrosoftProjectSiena/WADL/2014/11">
+    <variable name="connectionId">
+      <modifyParams style="template" name="connectionId" attribute="fixed" />
+    </variable>
+  </template>
+</application>

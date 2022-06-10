@@ -19,11 +19,11 @@
         ZIndex: =2
 
     ProjectHeaderGallery_1 As gallery.variableTemplateHeightGallery:
-        Height: =942
+        Height: =673
         Items: =MyIssueWorklog
         Layout: =Layout.Vertical
         TemplateSize: =937
-        Y: =194
+        Y: =288
         ZIndex: =3
 
         ProjectGallery_1 As gallery.variableTemplateHeightGallery:
@@ -39,7 +39,7 @@
                 Height: =70
                 OnSelect: =Select(Parent)
                 Size: =18
-                Text: =ThisItem.issueId
+                Text: =varProjectIssueName
                 Width: =522
                 X: =77
                 ZIndex: =1
@@ -48,7 +48,7 @@
                 Height: =39
                 OnSelect: =Select(Parent)
                 Size: =18
-                Text: =ThisItem.issueId
+                Text: =varProjectIssueKey
                 Width: =279
                 X: =77
                 Y: =59
@@ -58,7 +58,8 @@
                 Height: =59
                 OnSelect: =Select(Parent)
                 Size: =18
-                Text: =ThisItem.started
+                Text: |-
+                    ="Date: " & First(Split(ThisItem.started,"T").Result).Result
                 Width: =395
                 X: =77
                 Y: =98
@@ -66,7 +67,7 @@
 
             Image_Project_Avtar_2 As image:
                 Height: =50
-                Image: =ThisItem.author.avatarUrls.'16x16'
+                Image: =varProjectIssueAvtar
                 ImagePosition: =ImagePosition.Fill
                 OnSelect: =Select(Parent)
                 Width: =64
@@ -77,10 +78,142 @@
                 Height: =39
                 Icon: =Icon.ArrowRight
                 OnSelect: |-
-                    =ClearCollect(MyProjectIssue,GetIssuesRelatedtoProject.Run(ThisItem.key,User().Email,"rPajijhGTgMbtsWmoSd1C00F"));
-                    Navigate('View Issues')
+                    =Set(UpdateWorklog,1);
+                    Set(varProjectWorklogKey,ThisItem.id);
+                    ClearCollect(MyWorklog,
+                    GetSingleWorklog.Run(ThisItem.issueId,ThisItem.id,User().Email,varAPItoken));
+                    Navigate('Add Worklog')
                 Width: =46
                 X: =534
                 Y: =118
                 ZIndex: =5
+
+            Label3 As label:
+                Height: =78
+                OnSelect: =Select(Parent)
+                Size: =21
+                Text: =ThisItem.timeSpent
+                Width: =145
+                X: =455
+                Y: =40
+                ZIndex: =6
+
+    Container1 As groupContainer.horizontalAutoLayoutContainer:
+        Height: =111
+        LayoutMode: =LayoutMode.Auto
+        Width: =640
+        Y: =144
+        ZIndex: =4
+
+        Container2 As groupContainer.verticalAutoLayoutContainer:
+            Height: =225
+            LayoutDirection: =LayoutDirection.Vertical
+            LayoutMinHeight: =112
+            LayoutMinWidth: =213.3
+            LayoutMode: =LayoutMode.Auto
+            Width: =200
+            ZIndex: =1
+
+            Label5 As label:
+                Align: =Center
+                Color: =RGBA(166, 166, 166, 1)
+                FontWeight: =FontWeight.Bold
+                LayoutMinHeight: =70
+                LayoutMinWidth: =560
+                Size: =21
+                Text: ="Current Week"
+                Width: =Parent.Width
+                ZIndex: =1
+
+            Label5_3 As label:
+                Align: =Center
+                Color: =RGBA(137, 227, 179, 1)
+                FontWeight: =FontWeight.Bold
+                Height: =70
+                LayoutMinHeight: =70
+                LayoutMinWidth: =560
+                Size: =21
+                Text: ="24h"
+                Width: =Parent.Width
+                ZIndex: =2
+
+        Container2_1 As groupContainer.verticalAutoLayoutContainer:
+            Height: =225
+            LayoutDirection: =LayoutDirection.Vertical
+            LayoutMinHeight: =112
+            LayoutMinWidth: =213.3
+            LayoutMode: =LayoutMode.Auto
+            Width: =200
+            ZIndex: =2
+
+            Label5_1 As label:
+                Align: =Center
+                Color: =RGBA(166, 166, 166, 1)
+                FontWeight: =FontWeight.Bold
+                LayoutMinHeight: =70
+                LayoutMinWidth: =560
+                Size: =21
+                Text: ="Last Week"
+                Width: =Parent.Width
+                ZIndex: =1
+
+            Label5_4 As label:
+                Align: =Center
+                Color: =RGBA(251, 144, 152, 1)
+                FontWeight: =FontWeight.Bold
+                Height: =70
+                LayoutMinHeight: =70
+                LayoutMinWidth: =560
+                Size: =21
+                Text: ="40h"
+                Width: =Parent.Width
+                ZIndex: =2
+
+        Container2_2 As groupContainer.verticalAutoLayoutContainer:
+            Height: =225
+            LayoutDirection: =LayoutDirection.Vertical
+            LayoutMinHeight: =112
+            LayoutMinWidth: =213.3
+            LayoutMode: =LayoutMode.Auto
+            Width: =200
+            ZIndex: =3
+
+            Label5_2 As label:
+                Align: =Center
+                Color: =RGBA(166, 166, 166, 1)
+                FontWeight: =FontWeight.Bold
+                LayoutMinHeight: =70
+                LayoutMinWidth: =560
+                Size: =21
+                Text: ="Last Month"
+                Width: =Parent.Width
+                ZIndex: =1
+
+            Label5_5 As label:
+                Align: =Center
+                Color: =RGBA(138, 147, 250, 1)
+                FontWeight: =FontWeight.Bold
+                Height: =70
+                LayoutMinHeight: =70
+                LayoutMinWidth: =560
+                Size: =21
+                Text: ="145h"
+                Width: =Parent.Width
+                ZIndex: =2
+
+    Button2 As button:
+        Fill: =RGBA(0, 141, 177, 1)
+        Height: =82
+        OnSelect: =Set(varFilters,true);
+        Size: =24
+        Text: ="Filters"
+        Width: =484
+        X: =84
+        Y: =1020
+        ZIndex: =5
+
+    "'Filter Component_1' As 'Filter Component'":
+        Height: =Parent.Height
+        Visible: =varFilters
+        ZIndex: =6
 

@@ -19,7 +19,7 @@
         ZIndex: =2
 
     TextInput1 As text:
-        Default: =""
+        Default: =If(UpdateWorklog=1,First(MyWorklog).timeSpent,"")
         Height: =60
         HintText: ="2w 1d 6h 5m"
         OnChange: |-
@@ -74,6 +74,7 @@
     DatePicker2 As datepicker:
         BorderColor: =RGBA(166, 166, 166, 1)
         DateTimeZone: =DateTimeZone.UTC
+        DefaultDate: =If(UpdateWorklog=1,First(MyWorklog).started,Today())
         Height: =67
         OnSelect: =
         Size: =24
@@ -99,9 +100,10 @@
         Height: =72
         HoverFill: =ColorFade(Self.Fill, -20%)
         OnSelect: |-
-            =ClearCollect(MyIssueWorklog,CreateandGetIssueWorklogs.Run(varProjectIssueKey,DatePicker2.SelectedDate,varCalculatedSeconds,User().Email,varAPItoken,DatePicker2.SelectedDate,TextInput2.Text));
+            =ClearCollect(MyIssueWorklog,CreateandGetIssueWorklogs.Run(varProjectIssueKey,DatePicker2.SelectedDate,varCalculatedSeconds,User().Email,varAPItoken,DatePicker2.SelectedDate,TextInput2.Text,UpdateWorklog,varProjectIssueKey,varProjectWorklogKey));
             Reset(TextInput1);
             Reset(DatePicker2);
+            Reset(TextInput2);
             Navigate('View WorkLog History')
         RadiusBottomLeft: =0
         RadiusBottomRight: =0
@@ -152,7 +154,7 @@
         ZIndex: =12
 
     TextInput2 As text:
-        Default: =""
+        Default: =If(UpdateWorklog=1,First(First(First(MyWorklog).comment.content).content).text,"")
         Height: =270
         Mode: =TextMode.MultiLine
         Size: =21
