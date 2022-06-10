@@ -41,7 +41,7 @@ Home As screen:
         Height: =79
         HoverFill: =ColorFade(Self.Fill, -20%)
         OnSelect: |-
-            =
+            =ClearCollect(MyProjectIssue,GetAssigneeRelatedtoProject.Run("1001",User().Email,varAPItoken,Lower(User().Email)));
             Navigate('View Issues');
         RadiusBottomLeft: =20
         RadiusBottomRight: =20
