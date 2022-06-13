@@ -33,8 +33,8 @@ Home As screen:
         Size: =24
         Text: ="View My Projects"
         Width: =473
-        X: =71
-        Y: =507
+        X: =83
+        Y: =537
         ZIndex: =3
 
     Button_View_My_All_Issues As button:
@@ -53,7 +53,7 @@ Home As screen:
         Size: =24
         Text: ="View My All Issues"
         Width: =473
-        X: =71
-        Y: =660
+        X: =83
+        Y: =690
         ZIndex: =4
 
