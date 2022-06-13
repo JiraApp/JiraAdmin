@@ -91,14 +91,15 @@
   },
   "FunctionParamsInvariantScripts": {},
   "FunctionParamsInvariantScriptsOnInstances": {},
-  "HeaderLastSavedDateTimeUTC": "06/13/2022 06:47:56",
+  "HeaderLastSavedDateTimeUTC": "06/13/2022 08:11:46",
   "IsLegacyComponentAllowGlobalScopeCase": false,
   "LocalConnectionIDReferences": {
     "13217afb-3380-4617-bee8-ca627eb416e8": "\"/providers/microsoft.powerapps/apis/shared_logicflows/connections/d6c2d34c4f67456d94133ddbc9085c30-1fa159e731227f78\"",
     "213f0291-60c7-4194-a637-773ae02bea09": "\"/providers/microsoft.powerapps/apis/shared_logicflows/connections/3444e89a8feb4508a44174d2cf0afb96-1fa159e731227f78\"",
     "486d3ab2-79b5-438e-9047-6f035c002105": "\"/providers/microsoft.powerapps/apis/shared_logicflows/connections/42bff610161342ceabbb0e02bc972fe6-1fa159e731227f78\"",
+    "599278c4-7e6e-4e18-ab47-fedf6fce8c18": "\"/providers/Microsoft.PowerApps/apis/shared_logicflows/connections/AA72DA3365D440B285128A71E9BAA9C2-1FA159E731227F78\"",
     "631daac8-9c36-4747-bd23-3932d915913c": "\"/providers/microsoft.powerapps/apis/shared_sharepointonline/connections/769f360e44e34ec88e0513b89f4f16df\"",
-    "8189d14b-ae6b-43e0-8d77-f015b75b43d2": "\"/providers/microsoft.powerapps/apis/shared_logicflows/connections/a7997ced-a200-47bc-8d55-962772cf61a9\"",
+    "9060e455-8ffb-4c33-bd7d-3b20c2c6c4c0": "\"/providers/microsoft.powerapps/apis/shared_logicflows/connections/a7997ceda20047bc8d55962772cf61a9-1fa159e731227f78\"",
     "e7311505-f4f4-4d98-8312-d2d00ab64eaf": "\"/providers/microsoft.powerapps/apis/shared_logicflows/connections/051bde70-d0ba-4526-a345-3fe63aaaa40b\""
   },
   "LocalDatabaseReferencesAsEmpty": false,
@@ -116,20 +117,22 @@
     "37bc61ef725642d699a7ec43fb7706ab": 0
   },
   "OrderDataSource": {
-    "APIToken": 5,
-    "ComboBoxSample": 6,
+    "APIToken": 6,
+    "ComboBoxSample": 7,
     "CreateandGetIssueWorklogs": 0,
-    "CustomGallerySample": 7,
+    "CustomGallerySample": 8,
     "GetAssigneeRelatedtoProject": 1,
+    "gethistoryworkloghours": 5,
     "GetIssuesRelatedtoProject": 2,
     "GetMyProjects": 3,
     "GetSingleWorklog": 4,
-    "MyIssueWorklog": 8,
-    "MyProjectIssue": 9,
-    "MyProjects": 10,
-    "MyProjectValues": 11,
-    "MyWorklog": 12,
-    "Tokencoll": 13
+    "MyIssueWorklog": 9,
+    "MyIssueWorklogIssues": 15,
+    "MyProjectIssue": 10,
+    "MyProjects": 11,
+    "MyProjectValues": 12,
+    "MyWorklog": 13,
+    "Tokencoll": 14
   },
   "OrderGroupControls": {
     "Group2": {
@@ -266,13 +269,13 @@
       "groupContainer": 4,
       "icon": 8,
       "image": 4,
-      "label": 32,
+      "label": 34,
       "rectangle": 1,
       "screen": 5,
       "text": 2
     },
     "DeserializationLoadTime": 2.6368453,
-    "ErrorCount": 0
+    "ErrorCount": 3
   },
   "WasLocalDatabaseReferencesEmpty": true
 }

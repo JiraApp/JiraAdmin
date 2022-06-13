@@ -76,7 +76,7 @@
                     Set(varProjectIssueKey,ThisItem.key);
                     Set(varProjectIssueName,ThisItem.fields.summary);
                     Set(varProjectIssueAvtar,ThisItem.fields.issuetype.iconUrl);
-                    Set(varProjectWorklogKey,ThisItem.id);
+                    //Set(varProjectWorklogKey,ThisItem.id);
                     Navigate('Add Worklog');
                 Width: =46
                 X: =534

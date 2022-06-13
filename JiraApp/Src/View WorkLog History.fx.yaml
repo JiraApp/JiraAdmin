@@ -1,4 +1,5 @@
 "'View WorkLog History' As screen":
+    OnVisible: =ClearCollect(MyIssueWorklogIssues,MyIssueWorklog.issues);
 
     Label_My_Add_New_Worklog_1 As label:
         FontWeight: =FontWeight.Semibold
@@ -29,7 +30,7 @@
 
         ProjectGallery_1 As gallery.variableTemplateHeightGallery:
             Height: =Parent.Height
-            Items: =ThisItem.worklogs
+            Items: =ThisItem.issues
             Layout: =Layout.Vertical
             TemplateSize: =157
             Width: =630
@@ -40,7 +41,7 @@
                 Height: =70
                 OnSelect: =Select(Parent)
                 Size: =18
-                Text: =varProjectIssueName
+                Text: =ThisItem.fields.summary
                 Width: =522
                 X: =77
                 ZIndex: =1
@@ -49,7 +50,7 @@
                 Height: =39
                 OnSelect: =Select(Parent)
                 Size: =18
-                Text: =varProjectIssueKey
+                Text: =ThisItem.key
                 Width: =279
                 X: =77
                 Y: =59
@@ -60,7 +61,7 @@
                 OnSelect: =Select(Parent)
                 Size: =18
                 Text: |-
-                    ="Date: " & First(Split(ThisItem.started,"T").Result).Result
+                    ="Date: " & First(Split(First(ThisItem.changelog.histories).created,"T").Result).Result
                 Width: =395
                 X: =77
                 Y: =98
@@ -68,7 +69,7 @@
 
             Image_Project_Avtar_2 As image:
                 Height: =50
-                Image: =varProjectIssueAvtar
+                Image: =ThisItem.fields.issuetype.iconUrl
                 ImagePosition: =ImagePosition.Fill
                 OnSelect: =Select(Parent)
                 Width: =64
@@ -134,7 +135,7 @@
                 LayoutMinHeight: =70
                 LayoutMinWidth: =560
                 Size: =21
-                Text: ="24h"
+                Text: =varthisweekhour.totaldaylog
                 Width: =Parent.Width
                 ZIndex: =2
 
