@@ -2194,7 +2194,7 @@
           },
           {
             "Category": "Design",
-            "InvariantScript": "18",
+            "InvariantScript": "25",
             "Property": "Size",
             "RuleProviderType": "Unknown"
           },
@@ -3003,7 +3003,7 @@
               },
               {
                 "Category": "Design",
-                "InvariantScript": "18",
+                "InvariantScript": "25",
                 "Property": "Size",
                 "RuleProviderType": "Unknown"
               },
@@ -4005,17 +4005,17 @@
         ],
         "ControlUniqueId": "17",
         "GroupedControlsKey": [
-          "Gallery1",
-          "Button3_1",
-          "Button3",
-          "DatePicker1_1",
-          "DatePicker1",
-          "Label7_2",
-          "Label7_1",
-          "Label7",
-          "Label4",
+          "Rectangle1",
           "Icon1",
-          "Rectangle1"
+          "Label4",
+          "Label7",
+          "Label7_1",
+          "Label7_2",
+          "DatePicker1",
+          "DatePicker1_1",
+          "Button3",
+          "Button3_1",
+          "Gallery1"
         ],
         "HasDynamicProperties": false,
         "Index": 0,
@@ -4094,7 +4094,7 @@
       "Y",
       "ZIndex"
     ],
-    "LastModifiedTimestamp": "637904716404052786",
+    "LastModifiedTimestamp": "637906996433906163",
     "Name": "Filter Component",
     "Rules": [
       {
@@ -4153,7 +4153,7 @@
   "IsPcfControl": false,
   "IsPremiumPcfControl": false,
   "IsWidgetTemplate": false,
-  "LastModifiedTimestamp": "637904716404052786",
+  "LastModifiedTimestamp": "637906996433906163",
   "Name": "37bc61ef725642d699a7ec43fb7706ab",
   "OverridableProperties": {},
   "Version": "637904663295356987"
