@@ -71,18 +71,6 @@
         Y: =335
         ZIndex: =5
 
-    DatePicker2 As datepicker:
-        BorderColor: =RGBA(166, 166, 166, 1)
-        DateTimeZone: =DateTimeZone.UTC
-        DefaultDate: =If(UpdateWorklog=1,First(MyWorklog).started,Today())
-        Height: =67
-        OnSelect: =
-        Size: =24
-        Width: =232
-        X: =8
-        Y: =405
-        ZIndex: =6
-
     Label6_2 As label:
         Color: =RGBA(166, 166, 166, 1)
         FontWeight: =FontWeight.Bold
@@ -162,4 +150,13 @@
         X: =8
         Y: =572
         ZIndex: =13
+
+    DatePicker2 As datepicker:
+        DefaultDate: =If(UpdateWorklog=1,First(MyWorklog).started,Today())
+        Height: =68
+        Size: =24
+        Width: =232
+        X: =8
+        Y: =405
+        ZIndex: =14
 

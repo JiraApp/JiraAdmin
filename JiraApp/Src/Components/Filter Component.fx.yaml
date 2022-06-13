@@ -79,7 +79,7 @@
 
         DatePicker1_1 As datepicker:
             Height: =47
-            Size: =18
+            Size: =25
             Width: =285
             X: =152
             Y: =331
@@ -127,7 +127,7 @@
                 OnSelect: =Select(Parent)
                 SearchFields: =["name"]
                 SearchItems: =Search(ThisItem.values,ComboBox2.SearchText,"name")
-                Size: =18
+                Size: =25
                 Width: =285
                 ZIndex: =1
 
