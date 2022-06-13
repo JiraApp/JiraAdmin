@@ -92,7 +92,7 @@
             Reset(TextInput1);
             Reset(DatePicker2);
             Reset(TextInput2);
-            ClearCollect(varthisweekhour,gethistoryworkloghours.Run(User().Email,varAPItoken));
+            //ClearCollect(varthisweekhour,gethistoryworkloghours.Run(User().Email,varAPItoken));
             Navigate('View WorkLog History')
         RadiusBottomLeft: =0
         RadiusBottomRight: =0

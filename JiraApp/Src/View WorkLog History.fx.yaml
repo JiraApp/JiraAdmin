@@ -141,7 +141,7 @@
                 LayoutMinHeight: =70
                 LayoutMinWidth: =560
                 Size: =21
-                Text: =varthisweekhour.
+                Text: ="24h"
                 Width: =Parent.Width
                 ZIndex: =2
 
