@@ -5,7 +5,7 @@ Home As screen:
         Image: =ntz
         ImagePosition: =ImagePosition.Fill
         Width: =372
-        X: =154
+        X: =134
         ZIndex: =1
 
     Label_Welcome_User As label:
@@ -32,8 +32,8 @@ Home As screen:
         Size: =24
         Text: ="View My Projects"
         Width: =508
-        X: =72
-        Y: =572
+        X: =66
+        Y: =542
         ZIndex: =3
 
     Button_View_My_All_Issues As button:
@@ -52,7 +52,7 @@ Home As screen:
         Size: =24
         Text: ="View My All Issues"
         Width: =508
-        X: =72
-        Y: =705
+        X: =66
+        Y: =670
         ZIndex: =4
 
