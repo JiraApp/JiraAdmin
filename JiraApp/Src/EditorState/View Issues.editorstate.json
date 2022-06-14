@@ -1091,7 +1091,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Label_Issue_DueDate_Key",
-      "ParentIndex": 9,
+      "ParentIndex": 8,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -1677,7 +1677,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Label_Project_Category_1",
-      "ParentIndex": 8,
+      "ParentIndex": 9,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
