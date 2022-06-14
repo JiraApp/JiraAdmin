@@ -115,10 +115,10 @@
                 ZIndex: =8
 
             Icon5 As icon.Add:
-                Height: =40
+                Height: =37
                 Icon: =Icon.Add
                 OnSelect: =Select(Parent)
-                Width: =40
+                Width: =37
                 X: =543
                 Y: =100
                 ZIndex: =9
@@ -129,6 +129,5 @@
         Icon: =Icon.ArrowLeft
         OnSelect: =If(MyIssues=1,Navigate(Home),Navigate('View Projects'))
         Width: =66
-        X: =8
         ZIndex: =3
 

@@ -95,7 +95,7 @@
   },
   "FunctionParamsInvariantScripts": {},
   "FunctionParamsInvariantScriptsOnInstances": {},
-  "HeaderLastSavedDateTimeUTC": "06/14/2022 07:13:02",
+  "HeaderLastSavedDateTimeUTC": "06/14/2022 07:14:13",
   "IsLegacyComponentAllowGlobalScopeCase": false,
   "LocalConnectionIDReferences": {
     "13217afb-3380-4617-bee8-ca627eb416e8": "\"/providers/microsoft.powerapps/apis/shared_logicflows/connections/89713dc4d1374777a0d53fa27f383ca2\"",
@@ -202,7 +202,7 @@
     "Home": 30,
     "Icon1": 69,
     "Icon2": 66,
-    "Icon5": 29,
+    "Icon5": 27,
     "Image_Company_Logo": 0,
     "Image_Project_Avtar": 12,
     "Image_Project_Avtar_1": 24,
@@ -215,7 +215,7 @@
     "Label_My_Issues": 17,
     "Label_My_Project": 5,
     "Label_Project_Category": 14,
-    "Label_Project_Category_1": 28,
+    "Label_Project_Category_1": 29,
     "Label_Project_Category_2": 64,
     "Label_Project_Key": 13,
     "Label_Project_Key_1": 26,
@@ -254,7 +254,7 @@
     "View Projects": 49,
     "View WorkLog History": 61,
     "ViewIssuesRelatedToProjects": 15,
-    "ViewIssuesRelatedToProjects_1": 27,
+    "ViewIssuesRelatedToProjects_1": 28,
     "ViewIssuesRelatedToProjects_2": 65
   },
   "ResourcesJsonIndices": {
