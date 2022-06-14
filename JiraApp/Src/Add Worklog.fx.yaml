@@ -95,7 +95,7 @@
         RadiusTopLeft: =0
         RadiusTopRight: =0
         Size: =24
-        Text: ="Save"
+        Text: ="SAVE"
         Width: =192
         X: =83
         Y: =985
@@ -112,7 +112,7 @@
         RadiusTopLeft: =0
         RadiusTopRight: =0
         Size: =24
-        Text: ="Cancel"
+        Text: ="CANCEL"
         Width: =192
         X: =343
         Y: =985
