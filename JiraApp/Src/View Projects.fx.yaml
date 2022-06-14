@@ -1,7 +1,7 @@
 "'View Projects' As screen":
 
     Label_My_Project As label:
-        FontWeight: =FontWeight.Semibold
+        FontWeight: =FontWeight.Bold
         Height: =70
         Size: =27
         Text: ="My Projects"
@@ -23,12 +23,12 @@
             Height: =937
             Items: =ThisItem.values
             Layout: =Layout.Vertical
-            TemplateSize: =157
+            TemplateSize: =193
             Width: =630
             ZIndex: =1
 
             Label_Project_Name As label:
-                FontWeight: =FontWeight.Semibold
+                FontWeight: =FontWeight.Bold
                 Height: =70
                 OnSelect: =Select(Parent)
                 Size: =18
@@ -81,8 +81,8 @@
             Rectangle2 As rectangle:
                 Height: =2
                 OnSelect: =Select(Parent)
-                Width: =ProjectGallery.TemplateWidth-2*Rectangle2.X
-                X: =2
+                Width: =618
+                Y: =1
                 ZIndex: =6
 
     "'Back To View Issues_3' As icon.Add":
