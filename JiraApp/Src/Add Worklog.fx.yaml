@@ -51,9 +51,7 @@
         ZIndex: =3
 
     Label6 As label:
-        Color: =RGBA(166, 166, 166, 1)
         Fill: =RGBA(255, 255, 255, 1)
-        FontWeight: =FontWeight.Bold
         Height: =60
         Size: =21
         Text: ="Time Spent"
@@ -63,8 +61,6 @@
         ZIndex: =4
 
     Label6_1 As label:
-        Color: =RGBA(166, 166, 166, 1)
-        FontWeight: =FontWeight.Bold
         Height: =70
         Size: =21
         Text: ="Date Started"
@@ -74,8 +70,6 @@
         ZIndex: =5
 
     Label6_2 As label:
-        Color: =RGBA(166, 166, 166, 1)
-        FontWeight: =FontWeight.Bold
         Height: =70
         Size: =21
         Text: ="Work Description"
@@ -146,7 +140,7 @@
 
     TextInput2 As text:
         Default: =If(UpdateWorklog=1,First(First(First(MyWorklog).comment.content).content).text,"")
-        Height: =156
+        Height: =180
         Mode: =TextMode.MultiLine
         Size: =21
         Width: =560
