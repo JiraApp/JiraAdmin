@@ -43,7 +43,27 @@
             ))))))
             ))));
             Set(varCalculatedSeconds,vartimeValue.weeks*604800 + vartimeValue.days*86400 + vartimeValue.hours*3600 + vartimeValue.minutes*60)
-        OnSelect: =
+        OnSelect: |-
+            =If(IsMatch(TextInput1.Text,"(?:(?<weeks>\d+)w\s+)?(?:(?<days>\d+)d\s+)?(?:(?<hours>\d+)h\s+)?(?:(?<minutes>\d+)m)?"),Set(vartimeValue,Match(TextInput1.Text,"(?:(?<weeks>\d+)w\s+)?(?:(?<days>\d+)d\s+)?(?:(?<hours>\d+)h\s+)?(?:(?<minutes>\d+)m)?"));Set(varIsBlank,false),
+            If(IsMatch(TextInput1.Text,"(?:(?<weeks>\d+)w\s+)?(?:(?<days>\d+)d\s+)?(?:(?<minutes>\d+)m)?"),Set(vartimeValue,Match(TextInput1.Text,"(?:(?<weeks>\d+)w\s+)?(?:(?<days>\d+)d\s+)?(?:(?<hours>\d+)h\s+)?(?:(?<minutes>\d+)m)?"));Set(varIsBlank,false),
+            If(IsMatch(TextInput1.Text,"(?:(?<weeks>\d+)w\s+)?(?:(?<days>\d+)d\s+)?(?:(?<hours>\d+)h)?(?:(?<minutes>\d+)m)?"),Set(vartimeValue,Match(TextInput1.Text,"(?:(?<weeks>\d+)w\s+)?(?:(?<days>\d+)d\s+)?(?:(?<hours>\d+)h)?(?:(?<minutes>\d+)m)?"));Set(varIsBlank,false),
+            If(IsMatch(TextInput1.Text,"(?:(?<weeks>\d+)w\s+)?(?:(?<hours>\d+)h\s+)?(?:(?<minutes>\d+)m)?"),Set(vartimeValue,Match(TextInput1.Text,"(?:(?<weeks>\d+)w\s+)?(?:(?<days>\d+)d\s+)?(?:(?<hours>\d+)h\s+)?(?:(?<minutes>\d+)m)?"));Set(varIsBlank,false),
+            If(IsMatch(TextInput1.Text,"(?:(?<days>\d+)d\s+)?(?:(?<hours>\d+)h\s+)?(?:(?<minutes>\d+)m)?"),Set(vartimeValue,Match(TextInput1.Text,"(?:(?<weeks>\d+)w\s+)?(?:(?<days>\d+)d\s+)?(?:(?<hours>\d+)h\s+)?(?:(?<minutes>\d+)m)?"));Set(varIsBlank,false),
+            If(IsMatch(TextInput1.Text,"(?:(?<days>\d+)d\s+)?(?:(?<hours>\d+)h)?"),Set(vartimeValue,Match(TextInput1.Text,"(?:(?<weeks>\d+)w\s+)?(?:(?<days>\d+)d\s+)?(?:(?<hours>\d+)h)?(?:(?<minutes>\d+)m)?"));Set(varIsBlank,false),
+            If(IsMatch(TextInput1.Text,"(?:(?<days>\d+)d\s+)?(?:(?<minutes>\d+)m)?"),Set(vartimeValue,Match(TextInput1.Text,"(?:(?<weeks>\d+)w\s+)?(?:(?<days>\d+)d\s+)?(?:(?<hours>\d+)h\s+)?(?:(?<minutes>\d+)m)?"));Set(varIsBlank,false),
+            If(IsMatch(TextInput1.Text,"(?:(?<hours>\d+)h\s+)?(?:(?<minutes>\d+)m)?"),Set(vartimeValue,Match(TextInput1.Text,"(?:(?<weeks>\d+)w\s+)?(?:(?<days>\d+)d\s+)?(?:(?<hours>\d+)h\s+)?(?:(?<minutes>\d+)m)?"));Set(varIsBlank,false),
+            If(IsMatch(TextInput1.Text,"(?:(?<weeks>\d+)w\s+)?(?:(?<days>\d+)d)?"),Set(vartimeValue,Match(TextInput1.Text,"(?:(?<weeks>\d+)w\s+)?(?:(?<days>\d+)d)?(?:(?<hours>\d+)h\s+)?(?:(?<minutes>\d+)m)?"));Set(varIsBlank,false),
+            If(IsMatch(TextInput1.Text,"(?:(?<weeks>\d+)w\s+)?(?:(?<hours>\d+)h)?"),Set(vartimeValue,Match(TextInput1.Text,"(?:(?<weeks>\d+)w\s+)?(?:(?<days>\d+)d\s+)?(?:(?<hours>\d+)h)?(?:(?<minutes>\d+)m)?"));Set(varIsBlank,false),
+            If(IsMatch(TextInput1.Text,"(?:(?<weeks>\d+)w\s+)?(?:(?<minutes>\d+)m)?"),Set(vartimeValue,Match(TextInput1.Text,"(?:(?<weeks>\d+)w\s+)?(?:(?<days>\d+)d\s+)?(?:(?<hours>\d+)h\s+)?(?:(?<minutes>\d+)m)?"));Set(varIsBlank,false),
+            If(IsMatch(TextInput1.Text,"(?:(?<weeks>\d+)w)?"),Set(vartimeValue,Match(TextInput1.Text,"(?:(?<weeks>\d+)w)?(?:(?<days>\d+)d\s+)?(?:(?<hours>\d+)h\s+)?(?:(?<minutes>\d+)m)?"));Set(varIsBlank,false),
+            If(IsMatch(TextInput1.Text,"(?:(?<days>\d+)d)?"),Set(vartimeValue,Match(TextInput1.Text,"(?:(?<weeks>\d+)w)?(?:(?<days>\d+)d)?(?:(?<hours>\d+)h\s+)?(?:(?<minutes>\d+)m)?"));Set(varIsBlank,false),
+            If(IsMatch(TextInput1.Text,"(?:(?<hours>\d+)h)?"),Set(vartimeValue,Match(TextInput1.Text,"(?:(?<weeks>\d+)w)?(?:(?<days>\d+)d\s+)?(?:(?<hours>\d+)h)?(?:(?<minutes>\d+)m)?"));Set(varIsBlank,false),
+            If(IsMatch(TextInput1.Text,"(?:(?<weeks>\d+)m)?"),Set(vartimeValue,Match(TextInput1.Text,"(?:(?<weeks>\d+)w)?(?:(?<days>\d+)d\s+)?(?:(?<hours>\d+)h\s+)?(?:(?<minutes>\d+)m)?"));Set(varIsBlank,false)
+            ,Set(vartimeValue,Match("0w 0d 0h 0m","(?:(?<weeks>\d+)w\s+)?(?:(?<days>\d+)d\s+)?(?:(?<hours>\d+)h\s+)?(?:(?<minutes>\d+)m)?"));Set(varIsBlank,true))
+            ))))
+            ))))))
+            ))));
+            Set(varCalculatedSeconds,vartimeValue.weeks*604800 + vartimeValue.days*86400 + vartimeValue.hours*3600 + vartimeValue.minutes*60)
         Size: =21
         Width: =232
         X: =40
