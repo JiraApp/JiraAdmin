@@ -7,8 +7,8 @@
         Size: =27
         Text: ="My Issues"
         Width: =560
-        X: =8
-        Y: =92
+        X: =13
+        Y: =88
         ZIndex: =1
 
     IssueHeaderGallery As gallery.variableTemplateHeightGallery:
@@ -18,7 +18,7 @@
         ShowScrollbar: =false
         TemplateSize: =937
         Width: =630
-        Y: =260
+        Y: =235
         ZIndex: =2
 
         IssueGallery As gallery.variableTemplateHeightGallery:
@@ -27,7 +27,6 @@
             Layout: =Layout.Vertical
             TemplateSize: =157
             Width: =630
-            Y: =8
             ZIndex: =1
 
             Label_Project_Name_1 As label:
@@ -120,7 +119,7 @@
                 Icon: =Icon.Add
                 OnSelect: =Select(Parent)
                 Width: =40
-                X: =526
+                X: =543
                 Y: =107
                 ZIndex: =9
 
