@@ -46,19 +46,20 @@
         OnSelect: =
         Size: =21
         Width: =232
-        X: =25
+        X: =40
         Y: =262
         ZIndex: =3
 
     Label6 As label:
         Color: =RGBA(166, 166, 166, 1)
+        Fill: =RGBA(255, 255, 255, 1)
         FontWeight: =FontWeight.Bold
-        Height: =70
+        Height: =60
         Size: =21
         Text: ="Time Spent"
         Width: =560
-        X: =17
-        Y: =181
+        X: =40
+        Y: =202
         ZIndex: =4
 
     Label6_1 As label:
@@ -68,7 +69,7 @@
         Size: =21
         Text: ="Date Started"
         Width: =560
-        X: =25
+        X: =40
         Y: =352
         ZIndex: =5
 
@@ -79,8 +80,8 @@
         Size: =21
         Text: ="Work Description"
         Width: =560
-        X: =25
-        Y: =536
+        X: =40
+        Y: =570
         ZIndex: =7
 
     Button1 As button:
@@ -140,17 +141,17 @@
         Visible: =If(varIsBlank,true,false)
         Width: =314
         X: =291
-        Y: =245
+        Y: =262
         ZIndex: =12
 
     TextInput2 As text:
         Default: =If(UpdateWorklog=1,First(First(First(MyWorklog).comment.content).content).text,"")
-        Height: =270
+        Height: =156
         Mode: =TextMode.MultiLine
         Size: =21
         Width: =560
-        X: =25
-        Y: =623
+        X: =40
+        Y: =640
         ZIndex: =13
 
     DatePicker2 As datepicker:
@@ -158,7 +159,16 @@
         Height: =68
         Size: =24
         Width: =232
-        X: =25
+        X: =40
         Y: =422
         ZIndex: =14
+
+    Rectangle2_2 As rectangle:
+        BorderColor: =RGBA(237, 237, 237, 1)
+        Fill: =RGBA(219, 219, 219, 1)
+        Height: =2
+        Width: =580
+        X: =40
+        Y: =530
+        ZIndex: =15
 
