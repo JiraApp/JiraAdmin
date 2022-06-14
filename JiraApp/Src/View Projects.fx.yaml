@@ -78,6 +78,13 @@
                 Y: =149
                 ZIndex: =5
 
+            Rectangle2 As rectangle:
+                Height: =2
+                OnSelect: =Select(Parent)
+                Width: =ProjectGallery.TemplateWidth-2*Rectangle2.X
+                X: =2
+                ZIndex: =6
+
     "'Back To View Issues_3' As icon.Add":
         Color: =RGBA(235, 132, 44, 1)
         Height: =68
