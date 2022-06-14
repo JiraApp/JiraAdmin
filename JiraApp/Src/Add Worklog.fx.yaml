@@ -57,7 +57,7 @@
         Text: ="Time Spent"
         Width: =560
         X: =40
-        Y: =202
+        Y: =200
         ZIndex: =4
 
     Label6_1 As label:
