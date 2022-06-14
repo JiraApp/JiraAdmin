@@ -57,7 +57,7 @@
                 Text: =ThisItem.fields.duedate
                 Width: =200
                 X: =182
-                Y: =107
+                Y: =111
                 ZIndex: =3
 
             Image_Project_Avtar_1 As image:
