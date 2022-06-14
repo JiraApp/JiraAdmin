@@ -1,18 +1,18 @@
 "'Add Worklog' As screen":
 
     Label_My_Add_New_Worklog As label:
-        FontWeight: =FontWeight.Semibold
+        FontWeight: =FontWeight.Bold
         Height: =70
-        Size: =25
+        Size: =27
         Text: ="Add New Worklog"
         Width: =560
-        X: =8
-        Y: =58
+        X: =13
+        Y: =88
         ZIndex: =1
 
     "'Back To View Issues' As icon.Add":
         Color: =RGBA(235, 132, 44, 1)
-        Height: =58
+        Height: =68
         Icon: =Icon.ArrowLeft
         OnSelect: =Back()
         Width: =66
@@ -46,8 +46,8 @@
         OnSelect: =
         Size: =21
         Width: =232
-        X: =8
-        Y: =245
+        X: =25
+        Y: =262
         ZIndex: =3
 
     Label6 As label:
@@ -57,7 +57,8 @@
         Size: =21
         Text: ="Time Spent"
         Width: =560
-        Y: =164
+        X: =17
+        Y: =181
         ZIndex: =4
 
     Label6_1 As label:
@@ -67,8 +68,8 @@
         Size: =21
         Text: ="Date Started"
         Width: =560
-        X: =8
-        Y: =335
+        X: =25
+        Y: =352
         ZIndex: =5
 
     Label6_2 As label:
@@ -78,8 +79,8 @@
         Size: =21
         Text: ="Work Description"
         Width: =560
-        X: =8
-        Y: =502
+        X: =25
+        Y: =536
         ZIndex: =7
 
     Button1 As button:
@@ -101,8 +102,8 @@
         Size: =24
         Text: ="Save"
         Width: =192
-        X: =66
-        Y: =968
+        X: =83
+        Y: =985
         ZIndex: =9
 
     Button1_1 As button:
@@ -118,8 +119,8 @@
         Size: =24
         Text: ="Cancel"
         Width: =192
-        X: =326
-        Y: =968
+        X: =343
+        Y: =985
         ZIndex: =10
 
     Label1 As label:
@@ -148,8 +149,8 @@
         Mode: =TextMode.MultiLine
         Size: =21
         Width: =560
-        X: =8
-        Y: =572
+        X: =25
+        Y: =623
         ZIndex: =13
 
     DatePicker2 As datepicker:
@@ -157,7 +158,7 @@
         Height: =68
         Size: =24
         Width: =232
-        X: =8
-        Y: =405
+        X: =25
+        Y: =422
         ZIndex: =14
 

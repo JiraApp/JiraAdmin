@@ -79,6 +79,7 @@
                     Set(varProjectIssueAvtar,ThisItem.fields.issuetype.iconUrl);
                     //Set(varProjectWorklogKey,ThisItem.id);
                     Navigate('Add Worklog');
+                Visible: =false
                 Width: =46
                 X: =347
                 Y: =105
