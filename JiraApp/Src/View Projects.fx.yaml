@@ -43,8 +43,8 @@
                 Size: =18
                 Text: =ThisItem.key
                 Width: =522
-                X: =77
-                Y: =70
+                X: =75
+                Y: =53
                 ZIndex: =2
 
             Label_Project_Category As label:
@@ -54,7 +54,7 @@
                 Text: =ThisItem.projectTypeKey
                 Width: =395
                 X: =77
-                Y: =129
+                Y: =95
                 ZIndex: =3
 
             Image_Project_Avtar As image:
@@ -74,8 +74,8 @@
                     ClearCollect(MyProjectIssue,GetIssuesRelatedtoProject.Run(ThisItem.key,User().Email,varAPItoken));
                     Navigate('View Issues')
                 Width: =46
-                X: =534
-                Y: =149
+                X: =551
+                Y: =112
                 ZIndex: =5
 
             Rectangle2 As rectangle:
