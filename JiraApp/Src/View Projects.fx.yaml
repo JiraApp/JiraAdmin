@@ -20,7 +20,7 @@
         ZIndex: =2
 
         ProjectGallery As gallery.variableTemplateHeightGallery:
-            Height: =937
+            Height: =900
             Items: =ThisItem.values
             Layout: =Layout.Vertical
             TemplateSize: =193

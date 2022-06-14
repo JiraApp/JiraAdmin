@@ -2,34 +2,36 @@
     OnVisible: =ClearCollect(MyProjectValues,MyProjects.values)
 
     Label_My_Issues As label:
-        FontWeight: =FontWeight.Semibold
+        FontWeight: =FontWeight.Bold
         Height: =70
-        Size: =25
+        Size: =27
         Text: ="My Issues"
         Width: =560
         X: =8
-        Y: =58
+        Y: =92
         ZIndex: =1
 
     IssueHeaderGallery As gallery.variableTemplateHeightGallery:
-        Height: =942
+        Height: =876
         Items: =MyProjectIssue
         Layout: =Layout.Vertical
         ShowScrollbar: =false
         TemplateSize: =937
-        Y: =190
+        Width: =630
+        Y: =260
         ZIndex: =2
 
         IssueGallery As gallery.variableTemplateHeightGallery:
-            Height: =937
+            Height: =856
             Items: =ThisItem.issues
             Layout: =Layout.Vertical
             TemplateSize: =157
             Width: =630
+            Y: =8
             ZIndex: =1
 
             Label_Project_Name_1 As label:
-                FontWeight: =FontWeight.Semibold
+                FontWeight: =FontWeight.Bold
                 Height: =70
                 OnSelect: =Select(Parent)
                 Size: =18
@@ -79,7 +81,7 @@
                     //Set(varProjectWorklogKey,ThisItem.id);
                     Navigate('Add Worklog');
                 Width: =46
-                X: =534
+                X: =347
                 Y: =105
                 ZIndex: =5
 
@@ -104,9 +106,27 @@
                 Y: =111
                 ZIndex: =7
 
+            Rectangle2_1 As rectangle:
+                BorderColor: =RGBA(237, 237, 237, 1)
+                Fill: =RGBA(219, 219, 219, 1)
+                Height: =2
+                OnSelect: =Select(Parent)
+                Width: =618
+                X: =2
+                ZIndex: =8
+
+            Icon5 As icon.Add:
+                Height: =40
+                Icon: =Icon.Add
+                OnSelect: =Select(Parent)
+                Width: =40
+                X: =526
+                Y: =107
+                ZIndex: =9
+
     "'Back To View Issues_2' As icon.Add":
         Color: =RGBA(235, 132, 44, 1)
-        Height: =58
+        Height: =68
         Icon: =Icon.ArrowLeft
         OnSelect: =If(MyIssues=1,Navigate(Home),Navigate('View Projects'))
         Width: =66
