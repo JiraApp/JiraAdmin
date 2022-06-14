@@ -55,9 +55,9 @@
                 OnSelect: =Select(Parent)
                 Size: =18
                 Text: =ThisItem.fields.duedate
-                Width: =310
-                X: =199
-                Y: =111
+                Width: =200
+                X: =182
+                Y: =107
                 ZIndex: =3
 
             Image_Project_Avtar_1 As image:
@@ -91,7 +91,7 @@
                 Text: =ThisItem.fields.status.name
                 Width: =174
                 X: =438
-                Y: =57
+                Y: =40
                 ZIndex: =6
 
             Label_Issue_DueDate_Key As label:
@@ -120,7 +120,7 @@
                 OnSelect: =Select(Parent)
                 Width: =40
                 X: =543
-                Y: =107
+                Y: =100
                 ZIndex: =9
 
     "'Back To View Issues_2' As icon.Add":
