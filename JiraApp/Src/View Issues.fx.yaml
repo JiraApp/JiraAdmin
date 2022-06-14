@@ -117,7 +117,13 @@
             Icon5 As icon.Add:
                 Height: =37
                 Icon: =Icon.Add
-                OnSelect: =Select(Parent)
+                OnSelect: |-
+                    =Set(UpdateWorklog,0);
+                    Set(varProjectIssueKey,ThisItem.key);
+                    Set(varProjectIssueName,ThisItem.fields.summary);
+                    Set(varProjectIssueAvtar,ThisItem.fields.issuetype.iconUrl);
+                    //Set(varProjectWorklogKey,ThisItem.id);
+                    Navigate('Add Worklog');
                 Width: =37
                 X: =543
                 Y: =100
