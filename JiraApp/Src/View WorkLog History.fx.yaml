@@ -1,5 +1,5 @@
 "'View WorkLog History' As screen":
-    OnVisible: =ClearCollect(MyIssueWorklogIssues,MyIssueWorklog.issues);
+    OnVisible: =
 
     Label_My_Add_New_Worklog_1 As label:
         FontWeight: =FontWeight.Semibold
@@ -30,7 +30,7 @@
 
         ProjectGallery_1 As gallery.variableTemplateHeightGallery:
             Height: =Parent.Height
-            Items: =ThisItem.issues
+            Items: =Filter(ThisItem.worklogs,updateAuthor.accountId=varAccountId.varaccountid)
             Layout: =Layout.Vertical
             TemplateSize: =157
             Width: =630
@@ -41,7 +41,7 @@
                 Height: =70
                 OnSelect: =Select(Parent)
                 Size: =18
-                Text: =ThisItem.fields.summary
+                Text: =varProjectIssueName
                 Width: =522
                 X: =77
                 ZIndex: =1
@@ -50,7 +50,7 @@
                 Height: =39
                 OnSelect: =Select(Parent)
                 Size: =18
-                Text: =ThisItem.key
+                Text: =varProjectIssueKey
                 Width: =279
                 X: =77
                 Y: =59
@@ -61,7 +61,7 @@
                 OnSelect: =Select(Parent)
                 Size: =18
                 Text: |-
-                    ="Date: " & First(Split(First(ThisItem.changelog.histories).created,"T").Result).Result
+                    ="Date: " & First(Split(ThisItem.started,"T").Result).Result
                 Width: =395
                 X: =77
                 Y: =98
@@ -69,7 +69,7 @@
 
             Image_Project_Avtar_2 As image:
                 Height: =50
-                Image: =ThisItem.fields.issuetype.iconUrl
+                Image: =varProjectIssueAvtar
                 ImagePosition: =ImagePosition.Fill
                 OnSelect: =Select(Parent)
                 Width: =64
@@ -100,12 +100,6 @@
                 Y: =40
                 ZIndex: =6
 
-        Icon2 As icon.Check:
-            Icon: =Icon.Check
-            OnSelect: =ClearCollect(MyIssueWorklogIssues,ThisItem.issues)
-            X: =535
-            ZIndex: =2
-
     Container1 As groupContainer.horizontalAutoLayoutContainer:
         Height: =111
         LayoutMode: =LayoutMode.Auto
@@ -133,17 +127,27 @@
                 Width: =Parent.Width
                 ZIndex: =1
 
-            Label5_3 As label:
-                Align: =Center
-                Color: =RGBA(137, 227, 179, 1)
-                FontWeight: =FontWeight.Bold
+            Gallery3_1 As gallery.galleryVertical:
                 Height: =70
+                Items: =MyIssueWorklog
+                Layout: =Layout.Vertical
                 LayoutMinHeight: =70
-                LayoutMinWidth: =560
-                Size: =21
-                Text: ="24h"
-                Width: =Parent.Width
+                LayoutMinWidth: =213
+                TemplateSize: =If(Self.Layout = Layout.Horizontal, Min(280, Self.Width - 60), Min(280, Self.Height - 60))
+                Y: =200
                 ZIndex: =2
+
+                Label8_1 As label:
+                    Align: =Center
+                    AutoHeight: =true
+                    Color: =RGBA(135, 227, 178, 1)
+                    FontWeight: =FontWeight.Bold
+                    Height: =1
+                    OnSelect: =Select(Parent)
+                    Size: =25
+                    Text: =Text(Sum(Filter(Filter(ThisItem.worklogs,updateAuthor.accountId=varAccountId.varaccountid),DateTimeValue(First(Split(started,"T").Result).Result,"yyy-mm-dd") >= Today() - Weekday(Today())+2 || DateTimeValue(First(Split(started,"T").Result).Result,"yyy-mm-dd") <= (Today() + (9- Weekday((Today()))))),timeSpentSeconds)/3600,"00.0") & "h"
+                    Width: =213
+                    ZIndex: =1
 
         Container2_1 As groupContainer.verticalAutoLayoutContainer:
             Height: =225
@@ -165,17 +169,27 @@
                 Width: =Parent.Width
                 ZIndex: =1
 
-            Label5_4 As label:
-                Align: =Center
-                Color: =RGBA(251, 144, 152, 1)
-                FontWeight: =FontWeight.Bold
+            Gallery3_2 As gallery.galleryVertical:
                 Height: =70
+                Items: =MyIssueWorklog
+                Layout: =Layout.Vertical
                 LayoutMinHeight: =70
-                LayoutMinWidth: =560
-                Size: =21
-                Text: ="40h"
-                Width: =Parent.Width
-                ZIndex: =2
+                LayoutMinWidth: =213
+                TemplateSize: =If(Self.Layout = Layout.Horizontal, Min(280, Self.Width - 60), Min(280, Self.Height - 60))
+                Y: =200
+                ZIndex: =3
+
+                Label8_2 As label:
+                    Align: =Center
+                    AutoHeight: =true
+                    Color: =RGBA(250, 137, 145, 1)
+                    FontWeight: =FontWeight.Bold
+                    Height: =1
+                    OnSelect: =Select(Parent)
+                    Size: =25
+                    Text: =Text(Sum(Filter(Filter(ThisItem.worklogs,updateAuthor.accountId=varAccountId.varaccountid),DateTimeValue(First(Split(started,"T").Result).Result,"yyy-mm-dd") >= DateAdd(Now(), -6-Weekday(Today())+1,Days) || DateTimeValue(First(Split(started,"T").Result).Result,"yyy-mm-dd") <= DateAdd(Now(), -Weekday((Today())+1,Days))),timeSpentSeconds)/3600,"00.0") & "h"
+                    Width: =213
+                    ZIndex: =1
 
         Container2_2 As groupContainer.verticalAutoLayoutContainer:
             Height: =225
@@ -197,17 +211,27 @@
                 Width: =Parent.Width
                 ZIndex: =1
 
-            Label5_5 As label:
-                Align: =Center
-                Color: =RGBA(138, 147, 250, 1)
-                FontWeight: =FontWeight.Bold
+            Gallery3_3 As gallery.galleryVertical:
                 Height: =70
+                Items: =MyIssueWorklog
+                Layout: =Layout.Vertical
                 LayoutMinHeight: =70
-                LayoutMinWidth: =560
-                Size: =21
-                Text: ="145h"
-                Width: =Parent.Width
+                LayoutMinWidth: =213
+                TemplateSize: =If(Self.Layout = Layout.Horizontal, Min(280, Self.Width - 60), Min(280, Self.Height - 60))
+                Y: =200
                 ZIndex: =2
+
+                Label8_3 As label:
+                    Align: =Center
+                    AutoHeight: =true
+                    Color: =RGBA(97, 109, 248, 1)
+                    FontWeight: =FontWeight.Bold
+                    Height: =1
+                    OnSelect: =Select(Parent)
+                    Size: =25
+                    Text: =Text(Sum(Filter(Filter(ThisItem.worklogs,updateAuthor.accountId=varAccountId.varaccountid),DateTimeValue(First(Split(started,"T").Result).Result,"yyy-mm-dd") >= Today() - Weekday(Today())+2 || DateTimeValue(First(Split(started,"T").Result).Result,"yyy-mm-dd") <= (Today() + (9- Weekday((Today()))))),timeSpentSeconds)/3600,"00.0") & "h"
+                    Width: =213
+                    ZIndex: =1
 
     Button2 As button:
         Fill: =RGBA(0, 141, 177, 1)

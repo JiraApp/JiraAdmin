@@ -104,7 +104,8 @@
         Height: =72
         HoverFill: =ColorFade(Self.Fill, -20%)
         OnSelect: |-
-            =ClearCollect(MyIssueWorklog,CreateandGetIssueWorklogs.Run(varProjectIssueKey,DatePicker2.SelectedDate,varCalculatedSeconds,User().Email,varAPItoken,DatePicker2.SelectedDate,If(IsBlank(TextInput2.Text)," ",TextInput2.Text),UpdateWorklog,varProjectIssueKey,0,Lower(User().Email)));
+            =Set(varAccountId,getcurrentuser.Run(varProjectIssueKey,User().Email,varAPItoken,Lower(User().Email)));
+            ClearCollect(MyIssueWorklog,CreateandGetIssueWorklogs.Run(varProjectIssueKey,DatePicker2.SelectedDate,varCalculatedSeconds,User().Email,varAPItoken,DatePicker2.SelectedDate,If(IsBlank(TextInput2.Text)," ",TextInput2.Text),UpdateWorklog,varProjectIssueKey,varProjectWorklogKey,Lower(User().Email)));
             Reset(TextInput1);
             Reset(DatePicker2);
             Reset(TextInput2);
