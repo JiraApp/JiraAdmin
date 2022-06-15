@@ -106,7 +106,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Button_View_My_All_Issues",
-      "ParentIndex": 3,
+      "ParentIndex": 4,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -399,7 +399,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Button_View_My_Projects",
-      "ParentIndex": 2,
+      "ParentIndex": 3,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -611,7 +611,7 @@
       },
       "MetaDataIDKey": "",
       "Name": "Hamburger Menu_1",
-      "ParentIndex": 4,
+      "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -779,7 +779,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Image_Company_Logo",
-      "ParentIndex": 0,
+      "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -1019,7 +1019,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Label_Welcome_User",
-      "ParentIndex": 1,
+      "ParentIndex": 2,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
