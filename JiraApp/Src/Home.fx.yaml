@@ -58,5 +58,6 @@ Home As screen:
         ZIndex: =4
 
     "'Hamburger Menu_1' As 'Hamburger Menu'":
+        Height: =200
         ZIndex: =5
 

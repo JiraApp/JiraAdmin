@@ -125,7 +125,7 @@
           },
           {
             "Category": "Design",
-            "InvariantScript": "If(First(showmenu).Value = false, 18, 294)",
+            "InvariantScript": "If(First(showmenu).Value = false, 590, 450)",
             "Property": "X",
             "RuleProviderType": "Unknown"
           },
@@ -344,7 +344,7 @@
           },
           {
             "Category": "Design",
-            "InvariantScript": "490",
+            "InvariantScript": "318",
             "Property": "X",
             "RuleProviderType": "Unknown"
           },
@@ -356,13 +356,13 @@
           },
           {
             "Category": "Design",
-            "InvariantScript": "If(First(showmenu).Value = false, 100,375)",
+            "InvariantScript": "If(First(showmenu).Value = false, 100,325)",
             "Property": "Width",
             "RuleProviderType": "Unknown"
           },
           {
             "Category": "Design",
-            "InvariantScript": "If(First(showmenu).Value = false, 100,700)",
+            "InvariantScript": "If(First(showmenu).Value = false, 100,200)",
             "Property": "Height",
             "RuleProviderType": "Unknown"
           },
@@ -889,13 +889,13 @@
               },
               {
                 "Category": "Design",
-                "InvariantScript": "32",
+                "InvariantScript": "12",
                 "Property": "X",
                 "RuleProviderType": "Unknown"
               },
               {
                 "Category": "Design",
-                "InvariantScript": "(Parent.TemplateHeight / 2) - (Self.Height / 2)",
+                "InvariantScript": "6",
                 "Property": "Y",
                 "RuleProviderType": "Unknown"
               },
@@ -1291,7 +1291,7 @@
           },
           {
             "Category": "Design",
-            "InvariantScript": "294",
+            "InvariantScript": "318",
             "Property": "X",
             "RuleProviderType": "Unknown"
           },
@@ -1303,13 +1303,13 @@
           },
           {
             "Category": "Design",
-            "InvariantScript": "346",
+            "InvariantScript": "322",
             "Property": "Width",
             "RuleProviderType": "Unknown"
           },
           {
             "Category": "Design",
-            "InvariantScript": "575",
+            "InvariantScript": "199",
             "Property": "Height",
             "RuleProviderType": "Unknown"
           },
@@ -1351,7 +1351,7 @@
       "Y",
       "ZIndex"
     ],
-    "LastModifiedTimestamp": "637908738305043148",
+    "LastModifiedTimestamp": "637908744333060487",
     "Name": "Hamburger Menu",
     "Rules": [
       {
@@ -1410,7 +1410,7 @@
   "IsPcfControl": false,
   "IsPremiumPcfControl": false,
   "IsWidgetTemplate": false,
-  "LastModifiedTimestamp": "637908738305043148",
+  "LastModifiedTimestamp": "637908744333060487",
   "Name": "855b37d45e6946d39c5e1b1a8158b521",
   "OverridableProperties": {},
   "Version": "637908674392126806"
