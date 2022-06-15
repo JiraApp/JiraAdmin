@@ -1150,7 +1150,15 @@
           "Y",
           "Width",
           "Height",
-          "ZIndex"
+          "ZIndex",
+          {
+            "AFDDataSourceName": "",
+            "AutoRuleBindingEnabled": false,
+            "AutoRuleBindingString": "true",
+            "InvariantPropertyName": "Visible",
+            "IsLockable": false,
+            "NameMapSourceSchema": "?"
+          }
         ],
         "ControlUniqueId": "101",
         "HasDynamicProperties": false,
@@ -1310,6 +1318,12 @@
             "InvariantScript": "1",
             "Property": "ZIndex",
             "RuleProviderType": "Unknown"
+          },
+          {
+            "Category": "Design",
+            "InvariantScript": "First(showmenu).Value",
+            "Property": "Visible",
+            "RuleProviderType": "Unknown"
           }
         ],
         "StyleName": "defaultGalleryStyle",
@@ -1337,7 +1351,7 @@
       "Y",
       "ZIndex"
     ],
-    "LastModifiedTimestamp": "637908729089919886",
+    "LastModifiedTimestamp": "637908731108617086",
     "Name": "Hamburger Menu",
     "Rules": [
       {
@@ -1396,7 +1410,7 @@
   "IsPcfControl": false,
   "IsPremiumPcfControl": false,
   "IsWidgetTemplate": false,
-  "LastModifiedTimestamp": "637908729089919886",
+  "LastModifiedTimestamp": "637908731108617086",
   "Name": "855b37d45e6946d39c5e1b1a8158b521",
   "OverridableProperties": {},
   "Version": "637908674392126806"

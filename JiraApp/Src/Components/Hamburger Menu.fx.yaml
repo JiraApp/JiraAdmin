@@ -22,6 +22,7 @@
             Navigate(ThisItem.Screen,ScreenTransition.Cover)
         TemplatePadding: =0
         TemplateSize: =Min(96, Self.Height - 60)
+        Visible: =First(showmenu).Value
         Y: =40
         ZIndex: =1
 
