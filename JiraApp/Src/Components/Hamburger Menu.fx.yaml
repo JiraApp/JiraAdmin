@@ -10,7 +10,7 @@
         Height: =44
         Icon: =Icon.Cancel
         OnSelect: |-
-            =UpdateIf(showMenu, Value=true, {Value: false})
+            =UpdateIf(showmenu, Value=true, {Value: false})
         Width: =44
         X: =590
         Y: =9
@@ -19,6 +19,8 @@
     Icon3 As icon.Hamburger:
         Height: =44
         Icon: =Icon.Hamburger
+        OnSelect: |-
+            =UpdateIf(showmenu, Value=false, {Value: true})
         Width: =44
         X: =528
         Y: =9

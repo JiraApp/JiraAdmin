@@ -5,5 +5,5 @@ App As appinfo:
         Set(varAPItoken,First(Tokencoll).'API Token');
         ClearCollect(menuitems,{Name:"Home",Screen:Home},
         {Name:"View Work Log History",Screen:'View WorkLog History'});
-        ClearCollect(showMenu,{Value: false});
+        ClearCollect(showmenu,{Value: false});
 
