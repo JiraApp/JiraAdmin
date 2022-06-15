@@ -270,7 +270,7 @@
         "Name": "Icon1",
         "Parent": "Filter Component",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 76,
+        "PublishOrderIndex": 75,
         "Rules": [
           {
             "Category": "Design",
@@ -1227,39 +1227,15 @@
         "IsLocked": false,
         "LayoutName": "",
         "MetaDataIDKey": "",
-        "Name": "FromDate",
+        "Name": "DatePicker1",
         "Parent": "Filter Component",
         "PersistMetaDataIDKey": false,
         "PublishOrderIndex": 79,
         "Rules": [
           {
             "Category": "Data",
-            "InvariantScript": "StartOfWeek.Sunday",
-            "Property": "StartOfWeek",
-            "RuleProviderType": "Unknown"
-          },
-          {
-            "Category": "Data",
-            "InvariantScript": "2050",
-            "Property": "EndYear",
-            "RuleProviderType": "Unknown"
-          },
-          {
-            "Category": "Data",
-            "InvariantScript": "1970",
-            "Property": "StartYear",
-            "RuleProviderType": "Unknown"
-          },
-          {
-            "Category": "Data",
-            "InvariantScript": "If(IsBlank(Self.SelectedDate), Text(Date(2001,12,31), Self.Format, Self.Language))",
-            "Property": "InputTextPlaceholder",
-            "RuleProviderType": "Unknown"
-          },
-          {
-            "Category": "Data",
-            "InvariantScript": "DateTimeFormat.ShortDate",
-            "Property": "Format",
+            "InvariantScript": "Today()",
+            "Property": "DefaultDate",
             "RuleProviderType": "Unknown"
           },
           {
@@ -1270,164 +1246,56 @@
           },
           {
             "Category": "Data",
-            "InvariantScript": "Today()",
-            "Property": "DefaultDate",
+            "InvariantScript": "DateTimeFormat.ShortDate",
+            "Property": "Format",
             "RuleProviderType": "Unknown"
           },
           {
-            "Category": "Design",
-            "InvariantScript": "5",
-            "Property": "PaddingBottom",
+            "Category": "Data",
+            "InvariantScript": "If(IsBlank(Self.SelectedDate), Text(Date(2001,12,31), Self.Format, Self.Language))",
+            "Property": "InputTextPlaceholder",
             "RuleProviderType": "Unknown"
           },
           {
-            "Category": "Design",
-            "InvariantScript": "5",
-            "Property": "PaddingRight",
+            "Category": "Data",
+            "InvariantScript": "1970",
+            "Property": "StartYear",
             "RuleProviderType": "Unknown"
           },
           {
-            "Category": "Design",
-            "InvariantScript": "0",
-            "Property": "PaddingTop",
+            "Category": "Data",
+            "InvariantScript": "2050",
+            "Property": "EndYear",
             "RuleProviderType": "Unknown"
           },
           {
-            "Category": "Design",
-            "InvariantScript": "7",
-            "Property": "ZIndex",
-            "RuleProviderType": "Unknown"
-          },
-          {
-            "Category": "Design",
-            "InvariantScript": "47",
-            "Property": "Height",
-            "RuleProviderType": "Unknown"
-          },
-          {
-            "Category": "Design",
-            "InvariantScript": "285",
-            "Property": "Width",
-            "RuleProviderType": "Unknown"
-          },
-          {
-            "Category": "Design",
-            "InvariantScript": "RGBA(166, 166, 166, 1)",
-            "Property": "DisabledColor",
-            "RuleProviderType": "Unknown"
-          },
-          {
-            "Category": "Design",
-            "InvariantScript": "RGBA(0, 0, 0, 1)",
-            "Property": "Color",
-            "RuleProviderType": "Unknown"
-          },
-          {
-            "Category": "Design",
-            "InvariantScript": "false",
-            "Property": "Italic",
-            "RuleProviderType": "Unknown"
-          },
-          {
-            "Category": "Design",
-            "InvariantScript": "FontWeight.Normal",
-            "Property": "FontWeight",
-            "RuleProviderType": "Unknown"
-          },
-          {
-            "Category": "Design",
-            "InvariantScript": "25",
-            "Property": "Size",
-            "RuleProviderType": "Unknown"
-          },
-          {
-            "Category": "Design",
-            "InvariantScript": "Font.'Open Sans'",
-            "Property": "Font",
+            "Category": "Data",
+            "InvariantScript": "StartOfWeek.Sunday",
+            "Property": "StartOfWeek",
             "RuleProviderType": "Unknown"
           },
           {
             "Category": "Design",
             "InvariantScript": "RGBA(255, 255, 255, 1)",
-            "Property": "Fill",
-            "RuleProviderType": "Unknown"
-          },
-          {
-            "Category": "Design",
-            "InvariantScript": "4",
-            "Property": "FocusedBorderThickness",
-            "RuleProviderType": "Unknown"
-          },
-          {
-            "Category": "Design",
-            "InvariantScript": "2",
-            "Property": "BorderThickness",
-            "RuleProviderType": "Unknown"
-          },
-          {
-            "Category": "Design",
-            "InvariantScript": "BorderStyle.Solid",
-            "Property": "BorderStyle",
-            "RuleProviderType": "Unknown"
-          },
-          {
-            "Category": "Design",
-            "InvariantScript": "RGBA(166, 166, 166, 1)",
-            "Property": "DisabledBorderColor",
-            "RuleProviderType": "Unknown"
-          },
-          {
-            "Category": "Design",
-            "InvariantScript": "RGBA(244, 244, 244, 1)",
-            "Property": "DisabledFill",
-            "RuleProviderType": "Unknown"
-          },
-          {
-            "Category": "Design",
-            "InvariantScript": "152",
-            "Property": "X",
-            "RuleProviderType": "Unknown"
-          },
-          {
-            "Category": "Design",
-            "InvariantScript": "12",
-            "Property": "PaddingLeft",
-            "RuleProviderType": "Unknown"
-          },
-          {
-            "Category": "Design",
-            "InvariantScript": "DisplayMode.Edit",
-            "Property": "DisplayMode",
-            "RuleProviderType": "Unknown"
-          },
-          {
-            "Category": "Design",
-            "InvariantScript": "true",
-            "Property": "Visible",
-            "RuleProviderType": "Unknown"
-          },
-          {
-            "Category": "Design",
-            "InvariantScript": "RGBA(0, 18, 107, 1)",
-            "Property": "BorderColor",
-            "RuleProviderType": "Unknown"
-          },
-          {
-            "Category": "Design",
-            "InvariantScript": "RGBA(255, 255, 255, 1)",
-            "Property": "DayColor",
-            "RuleProviderType": "Unknown"
-          },
-          {
-            "Category": "Design",
-            "InvariantScript": "195",
-            "Property": "Y",
+            "Property": "IconFill",
             "RuleProviderType": "Unknown"
           },
           {
             "Category": "Design",
             "InvariantScript": "RGBA(56, 96, 178, 1)",
-            "Property": "CalendarHeaderFill",
+            "Property": "IconBackground",
+            "RuleProviderType": "Unknown"
+          },
+          {
+            "Category": "Design",
+            "InvariantScript": "RGBA(56, 96, 178, 1)",
+            "Property": "SelectedDateFill",
+            "RuleProviderType": "Unknown"
+          },
+          {
+            "Category": "Design",
+            "InvariantScript": "RGBA(186, 202, 226, 1)",
+            "Property": "HoverDateFill",
             "RuleProviderType": "Unknown"
           },
           {
@@ -1439,31 +1307,13 @@
           {
             "Category": "Design",
             "InvariantScript": "RGBA(56, 96, 178, 1)",
-            "Property": "SelectedDateFill",
+            "Property": "CalendarHeaderFill",
             "RuleProviderType": "Unknown"
           },
           {
             "Category": "Design",
             "InvariantScript": "RGBA(255, 255, 255, 1)",
-            "Property": "IconFill",
-            "RuleProviderType": "Unknown"
-          },
-          {
-            "Category": "Design",
-            "InvariantScript": "Self.Fill",
-            "Property": "PressedFill",
-            "RuleProviderType": "Unknown"
-          },
-          {
-            "Category": "Design",
-            "InvariantScript": "Self.BorderColor",
-            "Property": "FocusedBorderColor",
-            "RuleProviderType": "Unknown"
-          },
-          {
-            "Category": "Design",
-            "InvariantScript": "Self.BorderColor",
-            "Property": "PressedBorderColor",
+            "Property": "MonthColor",
             "RuleProviderType": "Unknown"
           },
           {
@@ -1475,19 +1325,25 @@
           {
             "Category": "Design",
             "InvariantScript": "RGBA(255, 255, 255, 1)",
-            "Property": "MonthColor",
+            "Property": "DayColor",
             "RuleProviderType": "Unknown"
           },
           {
             "Category": "Design",
-            "InvariantScript": "RGBA(186, 202, 226, 1)",
-            "Property": "HoverDateFill",
+            "InvariantScript": "RGBA(0, 18, 107, 1)",
+            "Property": "BorderColor",
             "RuleProviderType": "Unknown"
           },
           {
             "Category": "Design",
-            "InvariantScript": "RGBA(56, 96, 178, 1)",
-            "Property": "IconBackground",
+            "InvariantScript": "RGBA(244, 244, 244, 1)",
+            "Property": "DisabledFill",
+            "RuleProviderType": "Unknown"
+          },
+          {
+            "Category": "Design",
+            "InvariantScript": "Self.Fill",
+            "Property": "PressedFill",
             "RuleProviderType": "Unknown"
           },
           {
@@ -1499,7 +1355,151 @@
           {
             "Category": "Design",
             "InvariantScript": "Self.BorderColor",
+            "Property": "PressedBorderColor",
+            "RuleProviderType": "Unknown"
+          },
+          {
+            "Category": "Design",
+            "InvariantScript": "Self.BorderColor",
             "Property": "HoverBorderColor",
+            "RuleProviderType": "Unknown"
+          },
+          {
+            "Category": "Design",
+            "InvariantScript": "RGBA(166, 166, 166, 1)",
+            "Property": "DisabledBorderColor",
+            "RuleProviderType": "Unknown"
+          },
+          {
+            "Category": "Design",
+            "InvariantScript": "BorderStyle.Solid",
+            "Property": "BorderStyle",
+            "RuleProviderType": "Unknown"
+          },
+          {
+            "Category": "Design",
+            "InvariantScript": "Self.BorderColor",
+            "Property": "FocusedBorderColor",
+            "RuleProviderType": "Unknown"
+          },
+          {
+            "Category": "Design",
+            "InvariantScript": "RGBA(255, 255, 255, 1)",
+            "Property": "Fill",
+            "RuleProviderType": "Unknown"
+          },
+          {
+            "Category": "Design",
+            "InvariantScript": "Font.'Open Sans'",
+            "Property": "Font",
+            "RuleProviderType": "Unknown"
+          },
+          {
+            "Category": "Design",
+            "InvariantScript": "FontWeight.Normal",
+            "Property": "FontWeight",
+            "RuleProviderType": "Unknown"
+          },
+          {
+            "Category": "Design",
+            "InvariantScript": "RGBA(0, 0, 0, 1)",
+            "Property": "Color",
+            "RuleProviderType": "Unknown"
+          },
+          {
+            "Category": "Design",
+            "InvariantScript": "RGBA(166, 166, 166, 1)",
+            "Property": "DisabledColor",
+            "RuleProviderType": "Unknown"
+          },
+          {
+            "Category": "Design",
+            "InvariantScript": "285",
+            "Property": "Width",
+            "RuleProviderType": "Unknown"
+          },
+          {
+            "Category": "Design",
+            "InvariantScript": "47",
+            "Property": "Height",
+            "RuleProviderType": "Unknown"
+          },
+          {
+            "Category": "Design",
+            "InvariantScript": "152",
+            "Property": "X",
+            "RuleProviderType": "Unknown"
+          },
+          {
+            "Category": "Design",
+            "InvariantScript": "195",
+            "Property": "Y",
+            "RuleProviderType": "Unknown"
+          },
+          {
+            "Category": "Design",
+            "InvariantScript": "DisplayMode.Edit",
+            "Property": "DisplayMode",
+            "RuleProviderType": "Unknown"
+          },
+          {
+            "Category": "Design",
+            "InvariantScript": "7",
+            "Property": "ZIndex",
+            "RuleProviderType": "Unknown"
+          },
+          {
+            "Category": "Design",
+            "InvariantScript": "2",
+            "Property": "BorderThickness",
+            "RuleProviderType": "Unknown"
+          },
+          {
+            "Category": "Design",
+            "InvariantScript": "4",
+            "Property": "FocusedBorderThickness",
+            "RuleProviderType": "Unknown"
+          },
+          {
+            "Category": "Design",
+            "InvariantScript": "25",
+            "Property": "Size",
+            "RuleProviderType": "Unknown"
+          },
+          {
+            "Category": "Design",
+            "InvariantScript": "false",
+            "Property": "Italic",
+            "RuleProviderType": "Unknown"
+          },
+          {
+            "Category": "Design",
+            "InvariantScript": "0",
+            "Property": "PaddingTop",
+            "RuleProviderType": "Unknown"
+          },
+          {
+            "Category": "Design",
+            "InvariantScript": "5",
+            "Property": "PaddingRight",
+            "RuleProviderType": "Unknown"
+          },
+          {
+            "Category": "Design",
+            "InvariantScript": "5",
+            "Property": "PaddingBottom",
+            "RuleProviderType": "Unknown"
+          },
+          {
+            "Category": "Design",
+            "InvariantScript": "12",
+            "Property": "PaddingLeft",
+            "RuleProviderType": "Unknown"
+          },
+          {
+            "Category": "Design",
+            "InvariantScript": "true",
+            "Property": "Visible",
             "RuleProviderType": "Unknown"
           }
         ],
@@ -1959,39 +1959,15 @@
         "IsLocked": false,
         "LayoutName": "",
         "MetaDataIDKey": "",
-        "Name": "ToDate",
+        "Name": "DatePicker1_1",
         "Parent": "Filter Component",
         "PersistMetaDataIDKey": false,
         "PublishOrderIndex": 81,
         "Rules": [
           {
             "Category": "Data",
-            "InvariantScript": "StartOfWeek.Sunday",
-            "Property": "StartOfWeek",
-            "RuleProviderType": "Unknown"
-          },
-          {
-            "Category": "Data",
-            "InvariantScript": "2050",
-            "Property": "EndYear",
-            "RuleProviderType": "Unknown"
-          },
-          {
-            "Category": "Data",
-            "InvariantScript": "1970",
-            "Property": "StartYear",
-            "RuleProviderType": "Unknown"
-          },
-          {
-            "Category": "Data",
-            "InvariantScript": "If(IsBlank(Self.SelectedDate), Text(Date(2001,12,31), Self.Format, Self.Language))",
-            "Property": "InputTextPlaceholder",
-            "RuleProviderType": "Unknown"
-          },
-          {
-            "Category": "Data",
-            "InvariantScript": "DateTimeFormat.ShortDate",
-            "Property": "Format",
+            "InvariantScript": "Today()",
+            "Property": "DefaultDate",
             "RuleProviderType": "Unknown"
           },
           {
@@ -2002,164 +1978,56 @@
           },
           {
             "Category": "Data",
-            "InvariantScript": "Today()",
-            "Property": "DefaultDate",
+            "InvariantScript": "DateTimeFormat.ShortDate",
+            "Property": "Format",
             "RuleProviderType": "Unknown"
           },
           {
-            "Category": "Design",
-            "InvariantScript": "5",
-            "Property": "PaddingBottom",
+            "Category": "Data",
+            "InvariantScript": "If(IsBlank(Self.SelectedDate), Text(Date(2001,12,31), Self.Format, Self.Language))",
+            "Property": "InputTextPlaceholder",
             "RuleProviderType": "Unknown"
           },
           {
-            "Category": "Design",
-            "InvariantScript": "5",
-            "Property": "PaddingRight",
+            "Category": "Data",
+            "InvariantScript": "1970",
+            "Property": "StartYear",
             "RuleProviderType": "Unknown"
           },
           {
-            "Category": "Design",
-            "InvariantScript": "0",
-            "Property": "PaddingTop",
+            "Category": "Data",
+            "InvariantScript": "2050",
+            "Property": "EndYear",
             "RuleProviderType": "Unknown"
           },
           {
-            "Category": "Design",
-            "InvariantScript": "8",
-            "Property": "ZIndex",
-            "RuleProviderType": "Unknown"
-          },
-          {
-            "Category": "Design",
-            "InvariantScript": "47",
-            "Property": "Height",
-            "RuleProviderType": "Unknown"
-          },
-          {
-            "Category": "Design",
-            "InvariantScript": "285",
-            "Property": "Width",
-            "RuleProviderType": "Unknown"
-          },
-          {
-            "Category": "Design",
-            "InvariantScript": "RGBA(166, 166, 166, 1)",
-            "Property": "DisabledColor",
-            "RuleProviderType": "Unknown"
-          },
-          {
-            "Category": "Design",
-            "InvariantScript": "RGBA(0, 0, 0, 1)",
-            "Property": "Color",
-            "RuleProviderType": "Unknown"
-          },
-          {
-            "Category": "Design",
-            "InvariantScript": "false",
-            "Property": "Italic",
-            "RuleProviderType": "Unknown"
-          },
-          {
-            "Category": "Design",
-            "InvariantScript": "FontWeight.Normal",
-            "Property": "FontWeight",
-            "RuleProviderType": "Unknown"
-          },
-          {
-            "Category": "Design",
-            "InvariantScript": "25",
-            "Property": "Size",
-            "RuleProviderType": "Unknown"
-          },
-          {
-            "Category": "Design",
-            "InvariantScript": "Font.'Open Sans'",
-            "Property": "Font",
+            "Category": "Data",
+            "InvariantScript": "StartOfWeek.Sunday",
+            "Property": "StartOfWeek",
             "RuleProviderType": "Unknown"
           },
           {
             "Category": "Design",
             "InvariantScript": "RGBA(255, 255, 255, 1)",
-            "Property": "Fill",
-            "RuleProviderType": "Unknown"
-          },
-          {
-            "Category": "Design",
-            "InvariantScript": "4",
-            "Property": "FocusedBorderThickness",
-            "RuleProviderType": "Unknown"
-          },
-          {
-            "Category": "Design",
-            "InvariantScript": "2",
-            "Property": "BorderThickness",
-            "RuleProviderType": "Unknown"
-          },
-          {
-            "Category": "Design",
-            "InvariantScript": "BorderStyle.Solid",
-            "Property": "BorderStyle",
-            "RuleProviderType": "Unknown"
-          },
-          {
-            "Category": "Design",
-            "InvariantScript": "RGBA(166, 166, 166, 1)",
-            "Property": "DisabledBorderColor",
-            "RuleProviderType": "Unknown"
-          },
-          {
-            "Category": "Design",
-            "InvariantScript": "RGBA(244, 244, 244, 1)",
-            "Property": "DisabledFill",
-            "RuleProviderType": "Unknown"
-          },
-          {
-            "Category": "Design",
-            "InvariantScript": "152",
-            "Property": "X",
-            "RuleProviderType": "Unknown"
-          },
-          {
-            "Category": "Design",
-            "InvariantScript": "12",
-            "Property": "PaddingLeft",
-            "RuleProviderType": "Unknown"
-          },
-          {
-            "Category": "Design",
-            "InvariantScript": "DisplayMode.Edit",
-            "Property": "DisplayMode",
-            "RuleProviderType": "Unknown"
-          },
-          {
-            "Category": "Design",
-            "InvariantScript": "true",
-            "Property": "Visible",
-            "RuleProviderType": "Unknown"
-          },
-          {
-            "Category": "Design",
-            "InvariantScript": "RGBA(0, 18, 107, 1)",
-            "Property": "BorderColor",
-            "RuleProviderType": "Unknown"
-          },
-          {
-            "Category": "Design",
-            "InvariantScript": "RGBA(255, 255, 255, 1)",
-            "Property": "DayColor",
-            "RuleProviderType": "Unknown"
-          },
-          {
-            "Category": "Design",
-            "InvariantScript": "331",
-            "Property": "Y",
+            "Property": "IconFill",
             "RuleProviderType": "Unknown"
           },
           {
             "Category": "Design",
             "InvariantScript": "RGBA(56, 96, 178, 1)",
-            "Property": "CalendarHeaderFill",
+            "Property": "IconBackground",
+            "RuleProviderType": "Unknown"
+          },
+          {
+            "Category": "Design",
+            "InvariantScript": "RGBA(56, 96, 178, 1)",
+            "Property": "SelectedDateFill",
+            "RuleProviderType": "Unknown"
+          },
+          {
+            "Category": "Design",
+            "InvariantScript": "RGBA(186, 202, 226, 1)",
+            "Property": "HoverDateFill",
             "RuleProviderType": "Unknown"
           },
           {
@@ -2171,31 +2039,13 @@
           {
             "Category": "Design",
             "InvariantScript": "RGBA(56, 96, 178, 1)",
-            "Property": "SelectedDateFill",
+            "Property": "CalendarHeaderFill",
             "RuleProviderType": "Unknown"
           },
           {
             "Category": "Design",
             "InvariantScript": "RGBA(255, 255, 255, 1)",
-            "Property": "IconFill",
-            "RuleProviderType": "Unknown"
-          },
-          {
-            "Category": "Design",
-            "InvariantScript": "Self.Fill",
-            "Property": "PressedFill",
-            "RuleProviderType": "Unknown"
-          },
-          {
-            "Category": "Design",
-            "InvariantScript": "Self.BorderColor",
-            "Property": "FocusedBorderColor",
-            "RuleProviderType": "Unknown"
-          },
-          {
-            "Category": "Design",
-            "InvariantScript": "Self.BorderColor",
-            "Property": "PressedBorderColor",
+            "Property": "MonthColor",
             "RuleProviderType": "Unknown"
           },
           {
@@ -2207,19 +2057,25 @@
           {
             "Category": "Design",
             "InvariantScript": "RGBA(255, 255, 255, 1)",
-            "Property": "MonthColor",
+            "Property": "DayColor",
             "RuleProviderType": "Unknown"
           },
           {
             "Category": "Design",
-            "InvariantScript": "RGBA(186, 202, 226, 1)",
-            "Property": "HoverDateFill",
+            "InvariantScript": "RGBA(0, 18, 107, 1)",
+            "Property": "BorderColor",
             "RuleProviderType": "Unknown"
           },
           {
             "Category": "Design",
-            "InvariantScript": "RGBA(56, 96, 178, 1)",
-            "Property": "IconBackground",
+            "InvariantScript": "RGBA(244, 244, 244, 1)",
+            "Property": "DisabledFill",
+            "RuleProviderType": "Unknown"
+          },
+          {
+            "Category": "Design",
+            "InvariantScript": "Self.Fill",
+            "Property": "PressedFill",
             "RuleProviderType": "Unknown"
           },
           {
@@ -2231,7 +2087,151 @@
           {
             "Category": "Design",
             "InvariantScript": "Self.BorderColor",
+            "Property": "PressedBorderColor",
+            "RuleProviderType": "Unknown"
+          },
+          {
+            "Category": "Design",
+            "InvariantScript": "Self.BorderColor",
             "Property": "HoverBorderColor",
+            "RuleProviderType": "Unknown"
+          },
+          {
+            "Category": "Design",
+            "InvariantScript": "RGBA(166, 166, 166, 1)",
+            "Property": "DisabledBorderColor",
+            "RuleProviderType": "Unknown"
+          },
+          {
+            "Category": "Design",
+            "InvariantScript": "BorderStyle.Solid",
+            "Property": "BorderStyle",
+            "RuleProviderType": "Unknown"
+          },
+          {
+            "Category": "Design",
+            "InvariantScript": "Self.BorderColor",
+            "Property": "FocusedBorderColor",
+            "RuleProviderType": "Unknown"
+          },
+          {
+            "Category": "Design",
+            "InvariantScript": "RGBA(255, 255, 255, 1)",
+            "Property": "Fill",
+            "RuleProviderType": "Unknown"
+          },
+          {
+            "Category": "Design",
+            "InvariantScript": "Font.'Open Sans'",
+            "Property": "Font",
+            "RuleProviderType": "Unknown"
+          },
+          {
+            "Category": "Design",
+            "InvariantScript": "FontWeight.Normal",
+            "Property": "FontWeight",
+            "RuleProviderType": "Unknown"
+          },
+          {
+            "Category": "Design",
+            "InvariantScript": "RGBA(0, 0, 0, 1)",
+            "Property": "Color",
+            "RuleProviderType": "Unknown"
+          },
+          {
+            "Category": "Design",
+            "InvariantScript": "RGBA(166, 166, 166, 1)",
+            "Property": "DisabledColor",
+            "RuleProviderType": "Unknown"
+          },
+          {
+            "Category": "Design",
+            "InvariantScript": "285",
+            "Property": "Width",
+            "RuleProviderType": "Unknown"
+          },
+          {
+            "Category": "Design",
+            "InvariantScript": "47",
+            "Property": "Height",
+            "RuleProviderType": "Unknown"
+          },
+          {
+            "Category": "Design",
+            "InvariantScript": "152",
+            "Property": "X",
+            "RuleProviderType": "Unknown"
+          },
+          {
+            "Category": "Design",
+            "InvariantScript": "331",
+            "Property": "Y",
+            "RuleProviderType": "Unknown"
+          },
+          {
+            "Category": "Design",
+            "InvariantScript": "DisplayMode.Edit",
+            "Property": "DisplayMode",
+            "RuleProviderType": "Unknown"
+          },
+          {
+            "Category": "Design",
+            "InvariantScript": "8",
+            "Property": "ZIndex",
+            "RuleProviderType": "Unknown"
+          },
+          {
+            "Category": "Design",
+            "InvariantScript": "2",
+            "Property": "BorderThickness",
+            "RuleProviderType": "Unknown"
+          },
+          {
+            "Category": "Design",
+            "InvariantScript": "4",
+            "Property": "FocusedBorderThickness",
+            "RuleProviderType": "Unknown"
+          },
+          {
+            "Category": "Design",
+            "InvariantScript": "25",
+            "Property": "Size",
+            "RuleProviderType": "Unknown"
+          },
+          {
+            "Category": "Design",
+            "InvariantScript": "false",
+            "Property": "Italic",
+            "RuleProviderType": "Unknown"
+          },
+          {
+            "Category": "Design",
+            "InvariantScript": "0",
+            "Property": "PaddingTop",
+            "RuleProviderType": "Unknown"
+          },
+          {
+            "Category": "Design",
+            "InvariantScript": "5",
+            "Property": "PaddingRight",
+            "RuleProviderType": "Unknown"
+          },
+          {
+            "Category": "Design",
+            "InvariantScript": "5",
+            "Property": "PaddingBottom",
+            "RuleProviderType": "Unknown"
+          },
+          {
+            "Category": "Design",
+            "InvariantScript": "12",
+            "Property": "PaddingLeft",
+            "RuleProviderType": "Unknown"
+          },
+          {
+            "Category": "Design",
+            "InvariantScript": "true",
+            "Property": "Visible",
             "RuleProviderType": "Unknown"
           }
         ],
@@ -3046,14 +3046,7 @@
           "Transition",
           "LoadingSpinner",
           "LoadingSpinnerColor",
-          {
-            "AFDDataSourceName": "",
-            "AutoRuleBindingEnabled": false,
-            "AutoRuleBindingString": "DisplayMode.Edit",
-            "InvariantPropertyName": "DisplayMode",
-            "IsLockable": false,
-            "NameMapSourceSchema": "?"
-          },
+          "DisplayMode",
           "BorderColor",
           "DisabledBorderColor",
           "PressedBorderColor",
@@ -3158,7 +3151,7 @@
           },
           {
             "Category": "Design",
-            "InvariantScript": "DisplayMode.Disabled",
+            "InvariantScript": "DisplayMode.Edit",
             "Property": "DisplayMode",
             "RuleProviderType": "Unknown"
           },
@@ -3375,14 +3368,6 @@
             "AutoRuleBindingEnabled": false,
             "AutoRuleBindingString": "varFilters",
             "InvariantPropertyName": "Visible",
-            "IsLockable": false,
-            "NameMapSourceSchema": "?"
-          },
-          {
-            "AFDDataSourceName": "",
-            "AutoRuleBindingEnabled": false,
-            "AutoRuleBindingString": "false",
-            "InvariantPropertyName": "OnSelect",
             "IsLockable": false,
             "NameMapSourceSchema": "?"
           }
@@ -3616,12 +3601,6 @@
             "Category": "Design",
             "InvariantScript": "true",
             "Property": "Visible",
-            "RuleProviderType": "Unknown"
-          },
-          {
-            "Category": "Behavior",
-            "InvariantScript": "Set(varDateFilter,Value(Text(varDateFilter,Number)+1));Set(varFilters,false)",
-            "Property": "OnSelect",
             "RuleProviderType": "Unknown"
           }
         ],
@@ -4032,8 +4011,8 @@
           "Label7",
           "Label7_1",
           "Label7_2",
-          "FromDate",
-          "ToDate",
+          "DatePicker1",
+          "DatePicker1_1",
           "Button3",
           "Button3_1",
           "Gallery1"
@@ -4050,7 +4029,7 @@
         "Name": "Group2",
         "Parent": "Filter Component",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 75,
+        "PublishOrderIndex": 76,
         "Rules": [
           {
             "Category": "Design",
@@ -4113,47 +4092,11 @@
       "Width",
       "X",
       "Y",
-      "ZIndex",
-      {
-        "AFDDataSourceName": "",
-        "AutoRuleBindingEnabled": false,
-        "AutoRuleBindingString": "Now()",
-        "InvariantPropertyName": "FromDate",
-        "IsLockable": false,
-        "NameMapSourceSchema": "?"
-      },
-      {
-        "AFDDataSourceName": "",
-        "AutoRuleBindingEnabled": false,
-        "AutoRuleBindingString": "Now()",
-        "InvariantPropertyName": "ToDate",
-        "IsLockable": false,
-        "NameMapSourceSchema": "?"
-      },
-      {
-        "AFDDataSourceName": "",
-        "AutoRuleBindingEnabled": false,
-        "AutoRuleBindingString": "",
-        "InvariantPropertyName": "OnReset",
-        "IsLockable": false,
-        "NameMapSourceSchema": "?"
-      }
+      "ZIndex"
     ],
-    "LastModifiedTimestamp": "637908760388900198",
+    "LastModifiedTimestamp": "637908703680679033",
     "Name": "Filter Component",
     "Rules": [
-      {
-        "Category": "Data",
-        "InvariantScript": "FromDate.SelectedDate",
-        "Property": "FromDate",
-        "RuleProviderType": "System"
-      },
-      {
-        "Category": "Data",
-        "InvariantScript": "ToDate.SelectedDate",
-        "Property": "ToDate",
-        "RuleProviderType": "System"
-      },
       {
         "Category": "Design",
         "InvariantScript": "1",
@@ -4188,12 +4131,6 @@
         "Category": "Design",
         "InvariantScript": "RGBA(192, 192, 192, 0.14)",
         "Property": "Fill",
-        "RuleProviderType": "System"
-      },
-      {
-        "Category": "Behavior",
-        "InvariantScript": "true",
-        "Property": "OnReset",
         "RuleProviderType": "System"
       }
     ]
@@ -4235,7 +4172,7 @@
   "IsPcfControl": false,
   "IsPremiumPcfControl": false,
   "IsWidgetTemplate": false,
-  "LastModifiedTimestamp": "637908760388900198",
+  "LastModifiedTimestamp": "637908703680679033",
   "Name": "37bc61ef725642d699a7ec43fb7706ab",
   "OverridableProperties": {},
   "Version": "637904663295356987"

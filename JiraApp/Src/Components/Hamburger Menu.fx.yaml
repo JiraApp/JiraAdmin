@@ -6,19 +6,67 @@
     Y: =0
     ZIndex: =1
 
-    Icon2 As icon.Cancel:
-        Height: =44
-        Icon: =Icon.Cancel
-        Width: =44
-        X: =590
-        Y: =9
+    Rectangle3 As rectangle:
+        Fill: =RGBA(230, 230, 230, 1)
+        Height: =262
+        Visible: =First(showmenu).Value
+        Width: =If(First(showmenu).Value = false, 100,165)
+        X: =475
         ZIndex: =1
 
-    Icon3 As icon.Hamburger:
-        Height: =44
-        Icon: =Icon.Hamburger
-        Width: =44
-        X: =528
-        Y: =9
+    "Gallery2 As gallery.'BrowseLayout_Vertical_OneTextVariant_ver4.0'":
+        Height: =600
+        Items: =menuitems
+        Layout: =Layout.Vertical
+        OnSelect: |-
+            =UpdateIf(showmenu, Value=true, {Value: false});
+            Navigate(ThisItem.Screen,ScreenTransition.Cover)
+        TemplatePadding: =0
+        TemplateSize: =56
+        Visible: =First(showmenu).Value
+        Width: =162
+        X: =478
+        Y: =42
+        ZIndex: =1
+
+        Title3 As label:
+            Height: =49
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Size: =15
+            Text: =ThisItem.Name
+            VerticalAlign: =VerticalAlign.Top
+            Width: =172
+            X: =12
+            Y: =6
+            ZIndex: =1
+
+        Separator3 As rectangle:
+            Height: =1
+            OnSelect: =Select(Parent)
+            Width: =Parent.TemplateWidth
+            Y: =Parent.TemplateHeight - 1
+            ZIndex: =3
+
+    Icon2 As icon.Cancel:
+        Height: =42
+        Icon: =Icon.Cancel
+        OnSelect: |-
+            =UpdateIf(showmenu, Value=true, {Value: false})
+        Visible: =First(showmenu).Value
+        Width: =42
+        X: =596
         ZIndex: =2
+
+    Icon3 As icon.Hamburger:
+        Height: =42
+        Icon: =Icon.Hamburger
+        OnSelect: |-
+            =UpdateIf(showmenu, Value=false, {Value: true})
+        Width: =42
+        X: =If(First(showmenu).Value = false, 590, 478)
+        ZIndex: =3
 

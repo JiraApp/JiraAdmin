@@ -74,19 +74,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Filter Component'.FromDate.AccessibleLabel"
+                  "fullyQualifiedName": "'Filter Component'.DatePicker1.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Filter Component'.FromDate.AccessibleLabel",
+                  "fullyQualifiedName": "'Filter Component'.DatePicker1.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Filter Component",
-                "type": "'Filter Component'.FromDate"
+                "type": "'Filter Component'.DatePicker1"
               }
             }
           ],
@@ -104,19 +104,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Filter Component'.ToDate.AccessibleLabel"
+                  "fullyQualifiedName": "'Filter Component'.DatePicker1_1.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Filter Component'.ToDate.AccessibleLabel",
+                  "fullyQualifiedName": "'Filter Component'.DatePicker1_1.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Filter Component",
-                "type": "'Filter Component'.ToDate"
+                "type": "'Filter Component'.DatePicker1_1"
               }
             }
           ],
