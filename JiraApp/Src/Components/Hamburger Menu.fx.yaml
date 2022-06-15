@@ -1,0 +1,24 @@
+"'Hamburger Menu' As CanvasComponent":
+    Fill: =RGBA(0, 0, 0, 0)
+    Height: =640
+    Width: =640
+    X: =0
+    Y: =0
+    ZIndex: =1
+
+    Icon2 As icon.Cancel:
+        Height: =44
+        Icon: =Icon.Cancel
+        Width: =44
+        X: =590
+        Y: =9
+        ZIndex: =1
+
+    Icon3 As icon.Hamburger:
+        Height: =44
+        Icon: =Icon.Hamburger
+        Width: =44
+        X: =528
+        Y: =9
+        ZIndex: =2
+
