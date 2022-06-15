@@ -32,8 +32,8 @@ Home As screen:
         RadiusTopRight: =20
         Size: =24
         Text: ="View My Projects"
-        Width: =400
-        X: =120
+        Width: =360
+        X: =140
         Y: =537
         ZIndex: =3
 
@@ -52,8 +52,8 @@ Home As screen:
         RadiusTopRight: =20
         Size: =24
         Text: ="View My All Issues"
-        Width: =400
-        X: =120
+        Width: =360
+        X: =140
         Y: =695
         ZIndex: =4
 
