@@ -59,7 +59,7 @@
         "Name": "Rectangle1",
         "Parent": "Filter Component",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 2,
+        "PublishOrderIndex": 75,
         "Rules": [
           {
             "Category": "Design",
@@ -270,7 +270,7 @@
         "Name": "Icon1",
         "Parent": "Filter Component",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 3,
+        "PublishOrderIndex": 77,
         "Rules": [
           {
             "Category": "Design",
@@ -542,7 +542,7 @@
         "Name": "Label4",
         "Parent": "Filter Component",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 4,
+        "PublishOrderIndex": 78,
         "Rules": [
           {
             "Category": "Data",
@@ -880,7 +880,7 @@
         "Name": "Label7",
         "Parent": "Filter Component",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 5,
+        "PublishOrderIndex": 79,
         "Rules": [
           {
             "Category": "Data",
@@ -1230,7 +1230,7 @@
         "Name": "DatePicker1",
         "Parent": "Filter Component",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 6,
+        "PublishOrderIndex": 80,
         "Rules": [
           {
             "Category": "Data",
@@ -1605,7 +1605,7 @@
         "Name": "Label7_1",
         "Parent": "Filter Component",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 7,
+        "PublishOrderIndex": 81,
         "Rules": [
           {
             "Category": "Data",
@@ -1962,7 +1962,7 @@
         "Name": "DatePicker1_1",
         "Parent": "Filter Component",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 8,
+        "PublishOrderIndex": 82,
         "Rules": [
           {
             "Category": "Data",
@@ -2337,7 +2337,7 @@
         "Name": "Label7_2",
         "Parent": "Filter Component",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 9,
+        "PublishOrderIndex": 83,
         "Rules": [
           {
             "Category": "Data",
@@ -2618,7 +2618,7 @@
             "Name": "galleryTemplate1",
             "Parent": "Gallery1",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 14,
+            "PublishOrderIndex": 85,
             "Rules": [
               {
                 "Category": "Design",
@@ -2753,7 +2753,7 @@
             "Name": "ComboBox2",
             "Parent": "Gallery1",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 15,
+            "PublishOrderIndex": 86,
             "Rules": [
               {
                 "Category": "Data",
@@ -3105,7 +3105,7 @@
         "Name": "Gallery1",
         "Parent": "Filter Component",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 10,
+        "PublishOrderIndex": 84,
         "Rules": [
           {
             "Category": "Data",
@@ -3385,7 +3385,7 @@
         "Name": "Button3",
         "Parent": "Filter Component",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 11,
+        "PublishOrderIndex": 87,
         "Rules": [
           {
             "Category": "Data",
@@ -3752,7 +3752,7 @@
         "Name": "Button3_1",
         "Parent": "Filter Component",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 12,
+        "PublishOrderIndex": 88,
         "Rules": [
           {
             "Category": "Data",
@@ -4029,7 +4029,7 @@
         "Name": "Group2",
         "Parent": "Filter Component",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 13,
+        "PublishOrderIndex": 76,
         "Rules": [
           {
             "Category": "Design",
@@ -4094,7 +4094,7 @@
       "Y",
       "ZIndex"
     ],
-    "LastModifiedTimestamp": "637908755047416197",
+    "LastModifiedTimestamp": "637908752830240385",
     "Name": "Filter Component",
     "Rules": [
       {
@@ -4153,7 +4153,7 @@
   "IsPcfControl": false,
   "IsPremiumPcfControl": false,
   "IsWidgetTemplate": false,
-  "LastModifiedTimestamp": "637908755047416197",
+  "LastModifiedTimestamp": "637908752830240385",
   "Name": "37bc61ef725642d699a7ec43fb7706ab",
   "OverridableProperties": {},
   "Version": "637904663295356987"

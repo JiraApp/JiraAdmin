@@ -21,7 +21,7 @@ Home As screen:
 
     Button_View_My_Projects As button:
         Fill: =RGBA(248, 95, 106, 1)
-        Height: =70
+        Height: =60
         HoverFill: =ColorFade(Self.Fill, -20%)
         OnSelect: |-
             =ClearCollect(MyProjects,GetMyProjects.Run(User().Email,varAPItoken));
@@ -39,7 +39,7 @@ Home As screen:
 
     Button_View_My_All_Issues As button:
         Fill: =RGBA(254, 198, 61, 1)
-        Height: =70
+        Height: =60
         HoverFill: =ColorFade(Self.Fill, -20%)
         OnSelect: |-
             =Set(MyIssues,1);
