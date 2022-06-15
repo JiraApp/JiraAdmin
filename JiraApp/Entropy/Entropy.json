@@ -1,8 +1,7 @@
 {
   "ComponentIndexes": {
     "Filter Component": 5,
-    "Hamburger Menu": 6,
-    "Hamburger Menu_1": 6
+    "Hamburger Menu": 6
   },
   "ControlUniqueIds": {
     "Add Worklog": 21,
@@ -46,7 +45,6 @@
     "galleryTemplate5_2": 92,
     "Group2": 20,
     "Hamburger Menu": 3,
-    "Hamburger Menu_1": 114,
     "Home": 35,
     "Icon1": 8,
     "Icon2": 5,
@@ -112,7 +110,7 @@
   },
   "FunctionParamsInvariantScripts": {},
   "FunctionParamsInvariantScriptsOnInstances": {},
-  "HeaderLastSavedDateTimeUTC": "06/15/2022 06:59:24",
+  "HeaderLastSavedDateTimeUTC": "06/15/2022 07:00:48",
   "IsLegacyComponentAllowGlobalScopeCase": false,
   "LocalConnectionIDReferences": {
     "13217afb-3380-4617-bee8-ca627eb416e8": "\"/providers/microsoft.powerapps/apis/shared_logicflows/connections/d6c2d34c4f67456d94133ddbc9085c30-1fa159e731227f78\"",
@@ -180,10 +178,10 @@
     "button": 5,
     "combobox": 8,
     "datepicker": 3,
-    "gallery": 6,
+    "gallery": 7,
     "groupContainer": 9,
     "icon": 0,
-    "image": 7,
+    "image": 6,
     "label": 1,
     "rectangle": 4,
     "text": 2
@@ -230,7 +228,6 @@
     "galleryTemplate5_2": 67,
     "Group2": 76,
     "Hamburger Menu": 16,
-    "Hamburger Menu_1": 0,
     "Home": 34,
     "Icon1": 77,
     "Icon2": 91,
@@ -304,7 +301,7 @@
     "AnalysisLoadTime": 0.9681266,
     "ControlCount": {
       "37bc61ef725642d699a7ec43fb7706ab": 2,
-      "855b37d45e6946d39c5e1b1a8158b521": 2,
+      "855b37d45e6946d39c5e1b1a8158b521": 3,
       "button": 7,
       "combobox": 1,
       "datepicker": 3,
