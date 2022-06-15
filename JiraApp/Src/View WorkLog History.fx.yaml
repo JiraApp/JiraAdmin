@@ -61,7 +61,7 @@
                 OnSelect: =Select(Parent)
                 Size: =18
                 Text: |-
-                    ="Date: " & First(Split(ThisItem.started,"T").Result).Result
+                    ="Date: " & DateValue(First(Split(ThisItem.started,"T").Result).Result)
                 Width: =395
                 X: =77
                 Y: =98
@@ -145,7 +145,7 @@
                     Height: =1
                     OnSelect: =Select(Parent)
                     Size: =25
-                    Text: =Text(Sum(Filter(Filter(ThisItem.worklogs,updateAuthor.accountId=varAccountId.varaccountid),DateTimeValue(First(Split(started,"T").Result).Result,"yyy-mm-dd") >= Today() - Weekday(Today())+2 || DateTimeValue(First(Split(started,"T").Result).Result,"yyy-mm-dd") <= (Today() + (9- Weekday((Today()))))),timeSpentSeconds)/3600,"00.0") & "h"
+                    Text: =Text(Sum(Filter(Filter(ThisItem.worklogs,updateAuthor.accountId=varAccountId.varaccountid),DateValue(First(Split(started,"T").Result).Result) >= (Today() - Weekday(Today())+2 ) && DateValue(First(Split(started,"T").Result).Result) <=  (Today()+(9- Weekday(Today())))),timeSpentSeconds)/3600,"0.0") & "h"
                     Width: =213
                     ZIndex: =1
 
@@ -187,7 +187,7 @@
                     Height: =1
                     OnSelect: =Select(Parent)
                     Size: =25
-                    Text: =Text(Sum(Filter(Filter(ThisItem.worklogs,updateAuthor.accountId=varAccountId.varaccountid),DateTimeValue(First(Split(started,"T").Result).Result,"yyy-mm-dd") >= DateAdd(Now(), -6-Weekday(Today())+1,Days) || DateTimeValue(First(Split(started,"T").Result).Result,"yyy-mm-dd") <= DateAdd(Now(), -Weekday((Today())+1,Days))),timeSpentSeconds)/3600,"00.0") & "h"
+                    Text: =Text(Sum(Filter(Filter(ThisItem.worklogs,updateAuthor.accountId=varAccountId.varaccountid),DateValue(First(Split(started,"T").Result).Result) >= DateAdd(Now(), -6-Weekday(Today())+1,Days) && DateValue(First(Split(started,"T").Result).Result) <= DateAdd(Now(), -Weekday((Today())+1,Days))),timeSpentSeconds)/3600,"0.0") & "h"
                     Width: =213
                     ZIndex: =1
 
@@ -229,7 +229,7 @@
                     Height: =1
                     OnSelect: =Select(Parent)
                     Size: =25
-                    Text: =Text(Sum(Filter(Filter(ThisItem.worklogs,updateAuthor.accountId=varAccountId.varaccountid),DateTimeValue(First(Split(started,"T").Result).Result,"yyy-mm-dd") >= Today() - Weekday(Today())+2 || DateTimeValue(First(Split(started,"T").Result).Result,"yyy-mm-dd") <= (Today() + (9- Weekday((Today()))))),timeSpentSeconds)/3600,"00.0") & "h"
+                    Text: =Text(Sum(Filter(Filter(ThisItem.worklogs,updateAuthor.accountId=varAccountId.varaccountid),DateValue(First(Split(started,"T").Result).Result) >= Date(Year(DateAdd(Today(),-1,Months)),Month((DateAdd(Today(),-1,Months))),1) , DateValue(First(Split(started,"T").Result).Result) <= DateAdd(Today(),-Day(Today()),Days)),timeSpentSeconds)/3600,"0.0") & "h"
                     Width: =213
                     ZIndex: =1
 
