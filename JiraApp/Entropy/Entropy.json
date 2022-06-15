@@ -105,7 +105,7 @@
   },
   "FunctionParamsInvariantScripts": {},
   "FunctionParamsInvariantScriptsOnInstances": {},
-  "HeaderLastSavedDateTimeUTC": "06/15/2022 06:36:21",
+  "HeaderLastSavedDateTimeUTC": "06/15/2022 07:28:47",
   "IsLegacyComponentAllowGlobalScopeCase": false,
   "LocalConnectionIDReferences": {
     "13217afb-3380-4617-bee8-ca627eb416e8": "\"/providers/microsoft.powerapps/apis/shared_logicflows/connections/d6c2d34c4f67456d94133ddbc9085c30-1fa159e731227f78\"",
@@ -121,7 +121,7 @@
     "ntz": "0001.png"
   },
   "LocalResourceRootPaths": {
-    "ntz": "https://docserverpwaprodeus.blob.core.windows.net/623b9f63-eb2e-45ff-a54e-ea4ceb6a4c2e-1/resource/Assets0Images00001.png?sv=2017-04-17&sr=b&sig=h3eQ76QB0GBCk4rcDr0ILzYABWBDci5krCr7laGedH8%3D&spr=https&se=2022-06-16T06%3A32%3A40Z&sp=r"
+    "ntz": "https://docserverpwaprodeus.blob.core.windows.net/cba867cf-2c1d-4bb4-a11c-6ee62afd7b15-1/resource/Assets0Images00001.png?sv=2017-04-17&sr=b&sig=cNEQqKMit7c2Af0OB4NfyFMR9MGpoDhQlbdgLPIFDlg%3D&spr=https&se=2022-06-16T06%3A58%3A57Z&sp=r"
   },
   "OldLogoFileName": "logo.jpg",
   "OrderComponentMetadata": {
@@ -219,10 +219,10 @@
     "galleryTemplate5": 9,
     "galleryTemplate5_1": 21,
     "galleryTemplate5_2": 66,
-    "Group2": 75,
+    "Group2": 76,
     "Hamburger Menu": 16,
     "Home": 34,
-    "Icon1": 76,
+    "Icon1": 75,
     "Icon2": 89,
     "Icon3": 88,
     "Icon5": 27,
@@ -288,7 +288,7 @@
   "RuleScreenIdWithoutScreen": {},
   "TemplateVersions": {},
   "VolatileProperties": {
-    "AnalysisLoadTime": 0.9681266,
+    "AnalysisLoadTime": 1.0530601,
     "ControlCount": {
       "37bc61ef725642d699a7ec43fb7706ab": 2,
       "855b37d45e6946d39c5e1b1a8158b521": 1,
@@ -306,7 +306,7 @@
       "screen": 5,
       "text": 2
     },
-    "DeserializationLoadTime": 2.0187862,
+    "DeserializationLoadTime": 3.4716727,
     "ErrorCount": 0
   },
   "WasLocalDatabaseReferencesEmpty": true

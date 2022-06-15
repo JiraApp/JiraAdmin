@@ -2,11 +2,11 @@ Home As screen:
     OnVisible: =
 
     Image_Company_Logo As image:
-        Height: =245
+        Height: =200
         Image: =ntz
         ImagePosition: =ImagePosition.Fill
-        Width: =372
-        X: =121
+        Width: =360
+        X: =140
         ZIndex: =1
 
     Label_Welcome_User As label:
@@ -32,8 +32,8 @@ Home As screen:
         RadiusTopRight: =20
         Size: =24
         Text: ="View My Projects"
-        Width: =473
-        X: =83
+        Width: =400
+        X: =120
         Y: =537
         ZIndex: =3
 
@@ -52,8 +52,8 @@ Home As screen:
         RadiusTopRight: =20
         Size: =24
         Text: ="View My All Issues"
-        Width: =473
-        X: =83
-        Y: =690
+        Width: =400
+        X: =120
+        Y: =695
         ZIndex: =4
 
