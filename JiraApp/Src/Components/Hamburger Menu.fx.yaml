@@ -21,13 +21,15 @@
             =UpdateIf(showmenu, Value=true, {Value: false});
             Navigate(ThisItem.Screen,ScreenTransition.Cover)
         TemplatePadding: =0
-        TemplateSize: =Min(96, Self.Height - 60)
+        TemplateSize: =48
         Visible: =First(showmenu).Value
+        Width: =346
+        X: =294
         Y: =40
         ZIndex: =1
 
         Title3 As label:
-            Height: =Self.Size * 1.8
+            Height: =37
             OnSelect: =Select(Parent)
             PaddingBottom: =0
             PaddingLeft: =0
@@ -35,7 +37,7 @@
             PaddingTop: =0
             Text: =ThisItem.Name
             VerticalAlign: =VerticalAlign.Top
-            Width: =Parent.TemplateWidth - 104
+            Width: =300
             X: =32
             Y: =(Parent.TemplateHeight / 2) - (Self.Height / 2)
             ZIndex: =1
@@ -63,6 +65,6 @@
         OnSelect: |-
             =UpdateIf(showmenu, Value=false, {Value: true})
         Width: =44
-        X: =580
+        X: =If(First(showmenu).Value = false, 18, 294)
         ZIndex: =3
 
