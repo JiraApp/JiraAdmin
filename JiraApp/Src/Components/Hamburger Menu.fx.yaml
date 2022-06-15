@@ -6,15 +6,22 @@
     Y: =0
     ZIndex: =1
 
+    Rectangle3 As rectangle:
+        Fill: =RGBA(255, 255, 255, 1)
+        Height: =If(First(showmenu).Value = false, 100,700)
+        Visible: =First(showmenu).Value
+        Width: =If(First(showmenu).Value = false, 100,375)
+        X: =490
+        ZIndex: =1
+
     Icon2 As icon.Cancel:
         Height: =44
         Icon: =Icon.Cancel
         OnSelect: |-
             =UpdateIf(showmenu, Value=true, {Value: false})
         Width: =44
-        X: =590
-        Y: =9
-        ZIndex: =1
+        X: =596
+        ZIndex: =2
 
     Icon3 As icon.Hamburger:
         Height: =44
@@ -22,7 +29,6 @@
         OnSelect: |-
             =UpdateIf(showmenu, Value=false, {Value: true})
         Width: =44
-        X: =528
-        Y: =9
-        ZIndex: =2
+        X: =580
+        ZIndex: =3
 
