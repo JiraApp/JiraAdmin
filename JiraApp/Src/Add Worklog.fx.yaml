@@ -105,8 +105,9 @@
         HoverFill: =ColorFade(Self.Fill, -20%)
         OnSelect: |-
             =Set(varAccountId,getcurrentuser.Run(varProjectIssueKey,User().Email,varAPItoken,Lower(User().Email)));
-            ClearCollect(MyIssueWorklog,CreateandGetIssueWorklogs.Run(varProjectIssueKey,DatePicker2.SelectedDate,varCalculatedSeconds,User().Email,varAPItoken,DatePicker2.SelectedDate,If(IsBlank(TextInput2.Text)," ",TextInput2.Text),UpdateWorklog,varProjectIssueKey,varProjectWorklogKey,Lower(User().Email)));
+            ClearCollect(MyIssueWorklog,CreateandGetIssueWorklogs.Run(varProjectIssueKey,DatePicker2.SelectedDate,varCalculatedSeconds,User().Email,varAPItoken,DatePicker2.SelectedDate,If(IsBlank(TextInput2.Text)," ",TextInput2.Text),UpdateWorklog,varProjectIssueKey,If(IsBlank(varProjectWorklogKey),"0",varProjectWorklogKey),Lower(User().Email)));
             Reset(TextInput1);
+            Set(varDateFilter,0);
             Reset(DatePicker2);
             Reset(TextInput2);
             //ClearCollect(varthisweekhour,gethistoryworkloghours.Run(User().Email,varAPItoken));

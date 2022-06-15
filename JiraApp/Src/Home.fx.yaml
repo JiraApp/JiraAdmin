@@ -24,7 +24,8 @@ Home As screen:
         Height: =60
         HoverFill: =ColorFade(Self.Fill, -20%)
         OnSelect: |-
-            =ClearCollect(MyProjects,GetMyProjects.Run(User().Email,varAPItoken));
+            =Set(varAccountId,getcurrentuser.Run(varProjectIssueKey,User().Email,varAPItoken,Lower(User().Email)));
+            ClearCollect(MyProjects,GetMyProjects.Run(User().Email,varAPItoken));
             Navigate('View Projects');
         RadiusBottomLeft: =20
         RadiusBottomRight: =20
@@ -42,7 +43,8 @@ Home As screen:
         Height: =60
         HoverFill: =ColorFade(Self.Fill, -20%)
         OnSelect: |-
-            =Set(MyIssues,1);
+            =Set(varAccountId,getcurrentuser.Run(varProjectIssueKey,User().Email,varAPItoken,Lower(User().Email)));
+            Set(MyIssues,1);
             ClearCollect(MyProjects,GetMyProjects.Run(User().Email,varAPItoken));
             ClearCollect(MyProjectIssue,GetAssigneeRelatedtoProject.Run("1001",User().Email,varAPItoken,Lower(User().Email)));
             Navigate('View Issues');
