@@ -302,7 +302,7 @@
           },
           {
             "Category": "Design",
-            "InvariantScript": "If(First(showmenu).Value = false, 590, 478)",
+            "InvariantScript": "If(First(showmenu).Value = false, 590, 500)",
             "Property": "X",
             "RuleProviderType": "Unknown"
           },
@@ -1351,7 +1351,7 @@
       "Y",
       "ZIndex"
     ],
-    "LastModifiedTimestamp": "637908754976571623",
+    "LastModifiedTimestamp": "637908753950453323",
     "Name": "Hamburger Menu",
     "Rules": [
       {
@@ -1410,7 +1410,7 @@
   "IsPcfControl": false,
   "IsPremiumPcfControl": false,
   "IsWidgetTemplate": false,
-  "LastModifiedTimestamp": "637908754976571623",
+  "LastModifiedTimestamp": "637908753950453323",
   "Name": "855b37d45e6946d39c5e1b1a8158b521",
   "OverridableProperties": {},
   "Version": "637908674392126806"
