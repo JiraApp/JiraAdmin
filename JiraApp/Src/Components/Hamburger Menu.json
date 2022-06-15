@@ -125,7 +125,7 @@
           },
           {
             "Category": "Design",
-            "InvariantScript": "If(First(showmenu).Value = false, 590, 450)",
+            "InvariantScript": "478",
             "Property": "X",
             "RuleProviderType": "Unknown"
           },
@@ -137,13 +137,13 @@
           },
           {
             "Category": "Design",
-            "InvariantScript": "44",
+            "InvariantScript": "42",
             "Property": "Width",
             "RuleProviderType": "Unknown"
           },
           {
             "Category": "Design",
-            "InvariantScript": "44",
+            "InvariantScript": "42",
             "Property": "Height",
             "RuleProviderType": "Unknown"
           },
@@ -296,7 +296,7 @@
         "Rules": [
           {
             "Category": "Design",
-            "InvariantScript": "RGBA(255, 255, 255, 1)",
+            "InvariantScript": "RGBA(230, 230, 230, 1)",
             "Property": "Fill",
             "RuleProviderType": "Unknown"
           },
@@ -344,7 +344,7 @@
           },
           {
             "Category": "Design",
-            "InvariantScript": "318",
+            "InvariantScript": "475",
             "Property": "X",
             "RuleProviderType": "Unknown"
           },
@@ -356,13 +356,13 @@
           },
           {
             "Category": "Design",
-            "InvariantScript": "If(First(showmenu).Value = false, 100,325)",
+            "InvariantScript": "If(First(showmenu).Value = false, 100,165)",
             "Property": "Width",
             "RuleProviderType": "Unknown"
           },
           {
             "Category": "Design",
-            "InvariantScript": "If(First(showmenu).Value = false, 100,200)",
+            "InvariantScript": "262",
             "Property": "Height",
             "RuleProviderType": "Unknown"
           },
@@ -423,7 +423,14 @@
           "DisplayMode",
           "X",
           "Y",
-          "Width",
+          {
+            "AFDDataSourceName": "",
+            "AutoRuleBindingEnabled": false,
+            "AutoRuleBindingString": "",
+            "InvariantPropertyName": "Width",
+            "IsLockable": false,
+            "NameMapSourceSchema": "?"
+          },
           {
             "AFDDataSourceName": "",
             "AutoRuleBindingEnabled": false,
@@ -547,13 +554,13 @@
           },
           {
             "Category": "Design",
-            "InvariantScript": "44",
+            "InvariantScript": "42",
             "Property": "Width",
             "RuleProviderType": "Unknown"
           },
           {
             "Category": "Design",
-            "InvariantScript": "44",
+            "InvariantScript": "42",
             "Property": "Height",
             "RuleProviderType": "Unknown"
           },
@@ -730,7 +737,14 @@
               "X",
               "Y",
               "Width",
-              "Height",
+              {
+                "AFDDataSourceName": "",
+                "AutoRuleBindingEnabled": false,
+                "AutoRuleBindingString": "",
+                "InvariantPropertyName": "Height",
+                "IsLockable": false,
+                "NameMapSourceSchema": "?"
+              },
               "DisplayMode",
               "OnSelect",
               "ZIndex",
@@ -738,7 +752,14 @@
               "PaddingRight",
               "PaddingBottom",
               "PaddingLeft",
-              "Size"
+              {
+                "AFDDataSourceName": "",
+                "AutoRuleBindingEnabled": false,
+                "AutoRuleBindingString": "",
+                "InvariantPropertyName": "Size",
+                "IsLockable": false,
+                "NameMapSourceSchema": "?"
+              }
             ],
             "ControlUniqueId": "9",
             "HasDynamicProperties": false,
@@ -901,13 +922,13 @@
               },
               {
                 "Category": "Design",
-                "InvariantScript": "300",
+                "InvariantScript": "172",
                 "Property": "Width",
                 "RuleProviderType": "Unknown"
               },
               {
                 "Category": "Design",
-                "InvariantScript": "37",
+                "InvariantScript": "49",
                 "Property": "Height",
                 "RuleProviderType": "Unknown"
               },
@@ -949,7 +970,7 @@
               },
               {
                 "Category": "Design",
-                "InvariantScript": "20",
+                "InvariantScript": "15",
                 "Property": "Size",
                 "RuleProviderType": "Unknown"
               },
@@ -1147,7 +1168,14 @@
           "PressedFill",
           "HoverFill",
           "X",
-          "Y",
+          {
+            "AFDDataSourceName": "",
+            "AutoRuleBindingEnabled": false,
+            "AutoRuleBindingString": "",
+            "InvariantPropertyName": "Y",
+            "IsLockable": false,
+            "NameMapSourceSchema": "?"
+          },
           "Width",
           "Height",
           "ZIndex",
@@ -1189,7 +1217,7 @@
           },
           {
             "Category": "Design",
-            "InvariantScript": "48",
+            "InvariantScript": "56",
             "Property": "TemplateSize",
             "RuleProviderType": "Unknown"
           },
@@ -1291,25 +1319,25 @@
           },
           {
             "Category": "Design",
-            "InvariantScript": "318",
+            "InvariantScript": "478",
             "Property": "X",
             "RuleProviderType": "Unknown"
           },
           {
             "Category": "Design",
-            "InvariantScript": "40",
+            "InvariantScript": "42",
             "Property": "Y",
             "RuleProviderType": "Unknown"
           },
           {
             "Category": "Design",
-            "InvariantScript": "322",
+            "InvariantScript": "162",
             "Property": "Width",
             "RuleProviderType": "Unknown"
           },
           {
             "Category": "Design",
-            "InvariantScript": "199",
+            "InvariantScript": "600",
             "Property": "Height",
             "RuleProviderType": "Unknown"
           },
@@ -1351,7 +1379,7 @@
       "Y",
       "ZIndex"
     ],
-    "LastModifiedTimestamp": "637908744333060487",
+    "LastModifiedTimestamp": "637908752731647347",
     "Name": "Hamburger Menu",
     "Rules": [
       {
@@ -1410,7 +1438,7 @@
   "IsPcfControl": false,
   "IsPremiumPcfControl": false,
   "IsWidgetTemplate": false,
-  "LastModifiedTimestamp": "637908744333060487",
+  "LastModifiedTimestamp": "637908752731647347",
   "Name": "855b37d45e6946d39c5e1b1a8158b521",
   "OverridableProperties": {},
   "Version": "637908674392126806"
