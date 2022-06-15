@@ -67,6 +67,6 @@
         OnSelect: |-
             =UpdateIf(showmenu, Value=false, {Value: true})
         Width: =42
-        X: =478
+        X: =If(First(showmenu).Value = false, 590, 500)
         ZIndex: =3
 
