@@ -6,6 +6,14 @@
     Y: =0
     ZIndex: =1
 
+    Rectangle3 As rectangle:
+        Fill: =RGBA(255, 255, 255, 1)
+        Height: =If(First(showmenu).Value = false, 100,700)
+        Visible: =First(showmenu).Value
+        Width: =If(First(showmenu).Value = false, 100,375)
+        X: =490
+        ZIndex: =1
+
     "Gallery2 As gallery.'BrowseLayout_Vertical_OneTextVariant_ver4.0'":
         Items: =menuitems
         Layout: =Layout.Vertical
@@ -34,14 +42,6 @@
             Width: =Parent.TemplateWidth
             Y: =Parent.TemplateHeight - 1
             ZIndex: =3
-
-    Rectangle3 As rectangle:
-        Fill: =RGBA(255, 255, 255, 1)
-        Height: =If(First(showmenu).Value = false, 100,700)
-        Visible: =First(showmenu).Value
-        Width: =If(First(showmenu).Value = false, 100,375)
-        X: =490
-        ZIndex: =1
 
     Icon2 As icon.Cancel:
         Height: =44
