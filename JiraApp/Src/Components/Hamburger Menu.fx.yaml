@@ -9,6 +9,7 @@
     Icon2 As icon.Cancel:
         Height: =44
         Icon: =Icon.Cancel
+        OnSelect: =
         Width: =44
         X: =590
         Y: =9

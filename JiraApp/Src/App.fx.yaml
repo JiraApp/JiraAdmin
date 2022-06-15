@@ -4,5 +4,6 @@ App As appinfo:
         =ClearCollect(Tokencoll,Filter(APIToken,UserEmail=User().Email));
         Set(varAPItoken,First(Tokencoll).'API Token');
         ClearCollect(menuitems,{Name:"Home",Screen:Home},
-        {Name:"View Work Log History",Screen:'View WorkLog History'})
+        {Name:"View Work Log History",Screen:'View WorkLog History'});
+        ClearCollect(showMenu,{Value: false});
 
