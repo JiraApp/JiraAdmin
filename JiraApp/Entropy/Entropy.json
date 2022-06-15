@@ -15,23 +15,23 @@
     "Button1": 33,
     "Button1_1": 34,
     "Button2": 99,
-    "Button3": 15,
-    "Button3_1": 16,
-    "ComboBox2": 14,
+    "Button3": 18,
+    "Button3_1": 19,
+    "ComboBox2": 17,
     "Container1": 73,
     "Container2": 74,
     "Container2_1": 79,
     "Container2_2": 84,
-    "DatePicker1": 8,
-    "DatePicker1_1": 10,
+    "DatePicker1": 11,
+    "DatePicker1_1": 13,
     "DatePicker2": 29,
-    "Filter Component": 3,
+    "Filter Component": 6,
     "Filter Component_1": 71,
-    "Gallery1": 12,
+    "Gallery1": 15,
     "Gallery3_1": 76,
     "Gallery3_2": 81,
     "Gallery3_3": 86,
-    "galleryTemplate1": 13,
+    "galleryTemplate1": 16,
     "galleryTemplate3_1": 77,
     "galleryTemplate3_2": 82,
     "galleryTemplate3_3": 87,
@@ -41,12 +41,12 @@
     "galleryTemplate5": 62,
     "galleryTemplate5_1": 46,
     "galleryTemplate5_2": 92,
-    "Group2": 17,
-    "Hamburger Menu": 18,
+    "Group2": 20,
+    "Hamburger Menu": 3,
     "Home": 35,
-    "Icon1": 5,
-    "Icon2": 20,
-    "Icon3": 19,
+    "Icon1": 8,
+    "Icon2": 5,
+    "Icon3": 4,
     "Icon5": 52,
     "Image_Company_Logo": 36,
     "Image_Project_Avtar": 65,
@@ -73,16 +73,16 @@
     "Label1": 24,
     "Label2": 27,
     "Label3": 95,
-    "Label4": 6,
+    "Label4": 9,
     "Label5": 75,
     "Label5_1": 80,
     "Label5_2": 85,
     "Label6": 25,
     "Label6_1": 28,
     "Label6_2": 31,
-    "Label7": 7,
-    "Label7_1": 9,
-    "Label7_2": 11,
+    "Label7": 10,
+    "Label7_1": 12,
+    "Label7_2": 14,
     "Label8_1": 78,
     "Label8_2": 83,
     "Label8_3": 88,
@@ -90,7 +90,7 @@
     "ProjectGallery_1": 91,
     "ProjectHeaderGallery": 59,
     "ProjectHeaderGallery_1": 89,
-    "Rectangle1": 4,
+    "Rectangle1": 7,
     "Rectangle2": 64,
     "Rectangle2_1": 47,
     "Rectangle2_2": 30,
@@ -105,7 +105,7 @@
   },
   "FunctionParamsInvariantScripts": {},
   "FunctionParamsInvariantScriptsOnInstances": {},
-  "HeaderLastSavedDateTimeUTC": "06/15/2022 06:14:08",
+  "HeaderLastSavedDateTimeUTC": "06/15/2022 06:22:01",
   "IsLegacyComponentAllowGlobalScopeCase": false,
   "LocalConnectionIDReferences": {
     "13217afb-3380-4617-bee8-ca627eb416e8": "\"/providers/microsoft.powerapps/apis/shared_logicflows/connections/d6c2d34c4f67456d94133ddbc9085c30-1fa159e731227f78\"",
@@ -121,16 +121,16 @@
     "ntz": "0001.png"
   },
   "LocalResourceRootPaths": {
-    "ntz": "https://docserverpwaprodwus.blob.core.windows.net/44d5f9fd-0e22-4a7f-a5bf-384fc9393276-1/resource/Assets0Images00001.png?sv=2017-04-17&sr=b&sig=E1p3F2mpVESamJum%2FSZkCmO%2F3OtbCi3aqjrYfCidlbw%3D&spr=https&se=2022-06-16T06%3A27%3A48Z&sp=r"
+    "ntz": "https://docserverpwaprodeus.blob.core.windows.net/623b9f63-eb2e-45ff-a54e-ea4ceb6a4c2e-1/resource/Assets0Images00001.png?sv=2017-04-17&sr=b&sig=h3eQ76QB0GBCk4rcDr0ILzYABWBDci5krCr7laGedH8%3D&spr=https&se=2022-06-16T06%3A32%3A40Z&sp=r"
   },
   "OldLogoFileName": "logo.jpg",
   "OrderComponentMetadata": {
-    "37bc61ef725642d699a7ec43fb7706ab": 0,
-    "855b37d45e6946d39c5e1b1a8158b521": 1
+    "37bc61ef725642d699a7ec43fb7706ab": 1,
+    "855b37d45e6946d39c5e1b1a8158b521": 0
   },
   "OrderComponentTemplate": {
-    "37bc61ef725642d699a7ec43fb7706ab": 0,
-    "855b37d45e6946d39c5e1b1a8158b521": 1
+    "37bc61ef725642d699a7ec43fb7706ab": 1,
+    "855b37d45e6946d39c5e1b1a8158b521": 0
   },
   "OrderDataSource": {
     "APIToken": 6,
@@ -287,7 +287,7 @@
   "RuleScreenIdWithoutScreen": {},
   "TemplateVersions": {},
   "VolatileProperties": {
-    "AnalysisLoadTime": 0.5889984,
+    "AnalysisLoadTime": 0.9681266,
     "ControlCount": {
       "37bc61ef725642d699a7ec43fb7706ab": 2,
       "855b37d45e6946d39c5e1b1a8158b521": 1,
@@ -305,7 +305,7 @@
       "screen": 5,
       "text": 2
     },
-    "DeserializationLoadTime": 0.8099283,
+    "DeserializationLoadTime": 2.0187862,
     "ErrorCount": 0
   },
   "WasLocalDatabaseReferencesEmpty": true

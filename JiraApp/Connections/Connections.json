@@ -1,11 +1,10 @@
 {
   "13217afb-3380-4617-bee8-ca627eb416e8": {
     "connectionParameters": {
-      "sku": "Enterprise",
       "workFlowCallbackUri": "https://prod-131.westus.logic.azure.com:443/workflows/b4f679762b014303a75eeb9b0ea46357/triggers/manual/paths/invoke?api-version=2016-06-01&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=Ml-c8C18WvNe9a1YQE-V72ksrsPyXM_bF7sBEpvt6t0",
-      "workflowEndpoint": "/subscriptions/5072fcc3-8341-442e-9b98-4b441017c969/resourceGroups/162EFAD1472C40A2A66A659828D923FE-D05E28D1F46D446C8F844FE420B15E5B/providers/Microsoft.Logic/workflows/d6c2d34c-4f67-456d-9413-3ddbc9085c30",
+      "workflowEndpoint": "/subscriptions/5072fcc3-8341-442e-9b98-4b441017c969/resourceGroups/162efad1472c40a2a66a659828d923fe-d05e28d1f46d446c8f844fe420b15e5b/providers/Microsoft.Logic/workflows/d6c2d34c-4f67-456d-9413-3ddbc9085c30",
       "workflowName": "d6c2d34c-4f67-456d-9413-3ddbc9085c30",
-      "workflowPath": "/subscriptions/5072fcc3-8341-442e-9b98-4b441017c969/resourceGroups/162EFAD1472C40A2A66A659828D923FE-D05E28D1F46D446C8F844FE420B15E5B/providers/Microsoft.Logic/workflows/d6c2d34c-4f67-456d-9413-3ddbc9085c30"
+      "workflowPath": "/subscriptions/5072fcc3-8341-442e-9b98-4b441017c969/resourceGroups/162efad1472c40a2a66a659828d923fe-d05e28d1f46d446c8f844fe420b15e5b/providers/Microsoft.Logic/workflows/d6c2d34c-4f67-456d-9413-3ddbc9085c30"
     },
     "connectionRef": {
       "displayName": "Logic flows",
