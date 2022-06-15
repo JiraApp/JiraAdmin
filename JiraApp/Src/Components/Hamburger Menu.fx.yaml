@@ -17,6 +17,9 @@
     "Gallery2 As gallery.'BrowseLayout_Vertical_OneTextVariant_ver4.0'":
         Items: =menuitems
         Layout: =Layout.Vertical
+        OnSelect: |-
+            =UpdateIf(showmenu, Value=true, {Value: false});
+            Navigate(ThisItem.Screen,ScreenTransition.Cover)
         TemplatePadding: =0
         TemplateSize: =Min(96, Self.Height - 60)
         Y: =40
@@ -58,7 +61,6 @@
         Icon: =Icon.Hamburger
         OnSelect: |-
             =UpdateIf(showmenu, Value=false, {Value: true})
-        Visible: =First(showmenu).Value
         Width: =44
         X: =580
         ZIndex: =3

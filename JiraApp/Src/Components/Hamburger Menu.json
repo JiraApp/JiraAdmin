@@ -223,14 +223,7 @@
             "IsLockable": false,
             "NameMapSourceSchema": "?"
           },
-          {
-            "AFDDataSourceName": "",
-            "AutoRuleBindingEnabled": false,
-            "AutoRuleBindingString": "true",
-            "InvariantPropertyName": "Visible",
-            "IsLockable": false,
-            "NameMapSourceSchema": "?"
-          }
+          "Visible"
         ],
         "ControlUniqueId": "4",
         "HasDynamicProperties": false,
@@ -387,7 +380,7 @@
           },
           {
             "Category": "Design",
-            "InvariantScript": "First(showmenu).Value",
+            "InvariantScript": "true",
             "Property": "Visible",
             "RuleProviderType": "Unknown"
           },
@@ -654,7 +647,15 @@
             "AllowAccessToGlobals": true,
             "Children": [],
             "ControlPropertyState": [
-              "TemplateFill"
+              "TemplateFill",
+              {
+                "AFDDataSourceName": "",
+                "AutoRuleBindingEnabled": false,
+                "AutoRuleBindingString": "false",
+                "InvariantPropertyName": "OnSelect",
+                "IsLockable": false,
+                "NameMapSourceSchema": "?"
+              }
             ],
             "ControlUniqueId": "102",
             "HasDynamicProperties": false,
@@ -675,6 +676,12 @@
                 "Category": "Design",
                 "InvariantScript": "RGBA(0, 0, 0, 0)",
                 "Property": "TemplateFill",
+                "RuleProviderType": "Unknown"
+              },
+              {
+                "Category": "Behavior",
+                "InvariantScript": "UpdateIf(showmenu, Value=true, {Value: false});\r\nNavigate(ThisItem.Screen,ScreenTransition.Cover)",
+                "Property": "OnSelect",
                 "RuleProviderType": "Unknown"
               }
             ],
@@ -1330,7 +1337,7 @@
       "Y",
       "ZIndex"
     ],
-    "LastModifiedTimestamp": "637908726264356572",
+    "LastModifiedTimestamp": "637908729089919886",
     "Name": "Hamburger Menu",
     "Rules": [
       {
@@ -1389,7 +1396,7 @@
   "IsPcfControl": false,
   "IsPremiumPcfControl": false,
   "IsWidgetTemplate": false,
-  "LastModifiedTimestamp": "637908726264356572",
+  "LastModifiedTimestamp": "637908729089919886",
   "Name": "855b37d45e6946d39c5e1b1a8158b521",
   "OverridableProperties": {},
   "Version": "637908674392126806"
