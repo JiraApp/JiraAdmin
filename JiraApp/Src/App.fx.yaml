@@ -3,5 +3,5 @@ App As appinfo:
     OnStart: |-
         =ClearCollect(Tokencoll,Filter(APIToken,UserEmail=User().Email));
         Set(varAPItoken,First(Tokencoll).'API Token');
-        ClearCollect(menuitems,{Name:"Home",Screen:Home})
+        ClearCollect(menuitems,{Name:"Home",Screen:Home});
 

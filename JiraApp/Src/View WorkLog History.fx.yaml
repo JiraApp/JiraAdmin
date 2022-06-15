@@ -30,7 +30,9 @@
 
         ProjectGallery_1 As gallery.variableTemplateHeightGallery:
             Height: =Parent.Height
-            Items: =Filter(ThisItem.worklogs,updateAuthor.accountId=varAccountId.varaccountid)
+            Items: |-
+                =If(varDateFilter=0,SortByColumns(Filter(ThisItem.worklogs,updateAuthor.accountId=varAccountId.varaccountid),"started",Descending),
+                SortByColumns(Filter(Filter(ThisItem.worklogs,updateAuthor.accountId=varAccountId.varaccountid),DateValue(First(Split(started,"T").Result).Result) >= 'Filter Component_1'.FromDate && DateValue(First(Split(started,"T").Result).Result) <=  'Filter Component_1'.ToDate),"started"))
             Layout: =Layout.Vertical
             TemplateSize: =157
             Width: =630
@@ -236,7 +238,9 @@
     Button2 As button:
         Fill: =RGBA(0, 141, 177, 1)
         Height: =82
-        OnSelect: =Set(varFilters,true);
+        OnSelect: |-
+            =Set(varFilters,true);
+            Set(varDateFilter,0)
         Size: =24
         Text: ="Filters"
         Width: =484
