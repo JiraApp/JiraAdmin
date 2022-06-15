@@ -5,7 +5,7 @@
     "AllowAccessToGlobals": false,
     "AllowCustomization": true,
     "Description": "",
-    "Name": "Component1",
+    "Name": "Hamburger Menu",
     "TemplateGuid": "855b37d45e6946d39c5e1b1a8158b521"
   },
   "ComponentType": "CanvasComponent",
@@ -19,7 +19,7 @@
   "IsPcfControl": false,
   "IsPremiumPcfControl": false,
   "IsWidgetTemplate": false,
-  "LastModifiedTimestamp": "637908674392335671",
+  "LastModifiedTimestamp": "637908674768400595",
   "Name": "855b37d45e6946d39c5e1b1a8158b521",
   "OverridableProperties": {},
   "Version": "637908674392126806"

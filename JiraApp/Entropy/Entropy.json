@@ -1,7 +1,7 @@
 {
   "ComponentIndexes": {
-    "Component1": 6,
-    "Filter Component": 5
+    "Filter Component": 5,
+    "Hamburger Menu": 6
   },
   "ControlUniqueIds": {
     "Add Worklog": 18,
@@ -18,7 +18,6 @@
     "Button3": 15,
     "Button3_1": 16,
     "ComboBox2": 14,
-    "Component1": 97,
     "Container1": 70,
     "Container2": 71,
     "Container2_1": 76,
@@ -43,6 +42,7 @@
     "galleryTemplate5_1": 43,
     "galleryTemplate5_2": 89,
     "Group2": 17,
+    "Hamburger Menu": 97,
     "Home": 32,
     "Icon1": 5,
     "Icon5": 49,
@@ -103,7 +103,7 @@
   },
   "FunctionParamsInvariantScripts": {},
   "FunctionParamsInvariantScriptsOnInstances": {},
-  "HeaderLastSavedDateTimeUTC": "06/15/2022 05:24:22",
+  "HeaderLastSavedDateTimeUTC": "06/15/2022 05:24:41",
   "IsLegacyComponentAllowGlobalScopeCase": false,
   "LocalConnectionIDReferences": {
     "13217afb-3380-4617-bee8-ca627eb416e8": "\"/providers/microsoft.powerapps/apis/shared_logicflows/connections/d6c2d34c4f67456d94133ddbc9085c30-1fa159e731227f78\"",
@@ -192,7 +192,6 @@
     "Button3": 86,
     "Button3_1": 87,
     "ComboBox2": 85,
-    "Component1": 0,
     "Container1": 47,
     "Container2": 48,
     "Container2_1": 53,
@@ -217,6 +216,7 @@
     "galleryTemplate5_1": 21,
     "galleryTemplate5_2": 66,
     "Group2": 75,
+    "Hamburger Menu": 0,
     "Home": 30,
     "Icon1": 76,
     "Icon5": 27,
