@@ -48,6 +48,7 @@
         Icon: =Icon.Cancel
         OnSelect: |-
             =UpdateIf(showmenu, Value=true, {Value: false})
+        Visible: =First(showmenu).Value
         Width: =44
         X: =596
         ZIndex: =2
@@ -57,6 +58,7 @@
         Icon: =Icon.Hamburger
         OnSelect: |-
             =UpdateIf(showmenu, Value=false, {Value: true})
+        Visible: =First(showmenu).Value
         Width: =44
         X: =580
         ZIndex: =3

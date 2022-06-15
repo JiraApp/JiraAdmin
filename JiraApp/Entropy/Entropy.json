@@ -1,7 +1,8 @@
 {
   "ComponentIndexes": {
     "Filter Component": 5,
-    "Hamburger Menu": 6
+    "Hamburger Menu": 6,
+    "Hamburger Menu_1": 6
   },
   "ControlUniqueIds": {
     "Add Worklog": 21,
@@ -45,6 +46,7 @@
     "galleryTemplate5_2": 92,
     "Group2": 20,
     "Hamburger Menu": 3,
+    "Hamburger Menu_1": 114,
     "Home": 35,
     "Icon1": 8,
     "Icon2": 5,
@@ -110,7 +112,7 @@
   },
   "FunctionParamsInvariantScripts": {},
   "FunctionParamsInvariantScriptsOnInstances": {},
-  "HeaderLastSavedDateTimeUTC": "06/15/2022 06:48:59",
+  "HeaderLastSavedDateTimeUTC": "06/15/2022 06:50:30",
   "IsLegacyComponentAllowGlobalScopeCase": false,
   "LocalConnectionIDReferences": {
     "13217afb-3380-4617-bee8-ca627eb416e8": "\"/providers/microsoft.powerapps/apis/shared_logicflows/connections/d6c2d34c4f67456d94133ddbc9085c30-1fa159e731227f78\"",
@@ -228,6 +230,7 @@
     "galleryTemplate5_2": 66,
     "Group2": 75,
     "Hamburger Menu": 16,
+    "Hamburger Menu_1": 16,
     "Home": 34,
     "Icon1": 76,
     "Icon2": 90,
@@ -301,7 +304,7 @@
     "AnalysisLoadTime": 0.9681266,
     "ControlCount": {
       "37bc61ef725642d699a7ec43fb7706ab": 2,
-      "855b37d45e6946d39c5e1b1a8158b521": 1,
+      "855b37d45e6946d39c5e1b1a8158b521": 2,
       "button": 7,
       "combobox": 1,
       "datepicker": 3,
