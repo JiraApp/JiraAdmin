@@ -270,7 +270,7 @@
         "Name": "Icon1",
         "Parent": "Filter Component",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 75,
+        "PublishOrderIndex": 76,
         "Rules": [
           {
             "Category": "Design",
@@ -4029,7 +4029,7 @@
         "Name": "Group2",
         "Parent": "Filter Component",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 76,
+        "PublishOrderIndex": 75,
         "Rules": [
           {
             "Category": "Design",
